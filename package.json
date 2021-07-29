@@ -4,18 +4,19 @@
   "description": "Création du site Ohmyfood! Paris",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./sass/main.scss:./public/css/styles.css -w --style compressed",
-      "prefix": "postcss ./public/css/styles.css --use autoprefixer -d ./public/css/prefixed/"
+     "sass": "sass ./sass/main.scss:./public/css/styles.css -w --style compressed",
+     "prefix": "postcss ./public/css/styles.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RpRun/RemyPaquier_3_27072021.git"
+     "type": "git",
+     "url": "git+https://github.com/RpRun/RemyPaquier_3_27072021.git"
   },
   "author": "Rémy Paquier",
   "license": "ISC",
-  "browserslist":"last 50 versions",
+  "browserslist": "last 50 versions",
   "bugs": {
-    "url": "https://github.com/RpRun/RemyPaquier_3_27072021/issues"
+     "url": "https://github.com/RpRun/RemyPaquier_3_27072021/issues"
   },
   "homepage": "https://github.com/RpRun/RemyPaquier_3_27072021#readme"
 }
+
