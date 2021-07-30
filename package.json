@@ -4,7 +4,7 @@
   "description": "Création du site Ohmyfood! Paris",
   "main": "index.js",
   "scripts": {
-     "sass": "sass ./sass/main.scss:./public/css/styles.css -w --style compressed",
+     "sass": "sass ./sass/main.scss:./public/css/styles.css -w --style expanded",
      "prefix": "postcss ./public/css/styles.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
