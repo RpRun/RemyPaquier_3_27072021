@@ -90,8 +90,9 @@ header {
   justify-content: center;
   align-items: center;
 }
-header .restaurant-localisation {
-  background-color: #f2f2f2;
+
+.localisation {
+  background-color: #d9d9d9;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
