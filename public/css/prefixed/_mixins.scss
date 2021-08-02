@@ -1,0 +1,17 @@
+@mixin svg-icon($path, $height, $width, $color ) {
+    height: $height;
+    width: $width;
+    background: $color;
+    -webkit-mask-image: url($path);
+            mask-image: url($path); 
+    background-size: cover;
+    -webkit-mask-size: contain;
+            mask-size: contain; 
+    -webkit-mask-position: center; 
+            mask-position: center; 
+    -webkit-mask-repeat: no-repeat; 
+            mask-repeat: no-repeat;
+  }
+
+  
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Nhc3MvdXRpbHMvX21peGlucy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksZUFBZTtJQUNmLGFBQWE7SUFDYixrQkFBa0I7SUFDbEIsOEJBQXNCO1lBQXRCLHNCQUFzQjtJQUN0QixzQkFBc0I7SUFDdEIsMEJBQWtCO1lBQWxCLGtCQUFrQjtJQUNsQiw2QkFBcUI7WUFBckIscUJBQXFCO0lBQ3JCLDhCQUFzQjtZQUF0QixzQkFBc0I7RUFDeEIiLCJmaWxlIjoiX21peGlucy5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQG1peGluIHN2Zy1pY29uKCRwYXRoLCAkaGVpZ2h0LCAkd2lkdGgsICRjb2xvciApIHtcclxuICAgIGhlaWdodDogJGhlaWdodDtcclxuICAgIHdpZHRoOiAkd2lkdGg7XHJcbiAgICBiYWNrZ3JvdW5kOiAkY29sb3I7XHJcbiAgICBtYXNrLWltYWdlOiB1cmwoJHBhdGgpOyBcclxuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbiAgICBtYXNrLXNpemU6IGNvbnRhaW47IFxyXG4gICAgbWFzay1wb3NpdGlvbjogY2VudGVyOyBcclxuICAgIG1hc2stcmVwZWF0OiBuby1yZXBlYXQ7XHJcbiAgfVxyXG5cclxuICAiXX0= */

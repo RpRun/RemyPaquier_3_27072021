@@ -1,15 +1,20 @@
+
+
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
-/*@import "./utils/extensions";*/
 @import "./base/reset.scss";
-@import "./base/typography";
-@import "./components/buttons";
+
+/*@import "./utils/extensions";*/
 @import "./layouts/header";
 @import "./layouts/nav";
-@import "./layouts/container";
-@import "./layouts/footer";
-/*
-quel fichier utiliser pour scss main? -^
 
-*/
+@import "./layouts/container";
+
+@import "./layouts/footer";
+
+@import "./base/typography";
+@import "./components/buttons";
+@import "./components/icons"
+
+
