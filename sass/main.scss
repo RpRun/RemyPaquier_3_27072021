@@ -2,15 +2,14 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 /*@import "./utils/extensions";*/
-/*@import "./base/base";*/
-/*@import "./base/typography";*/
+@import "./base/reset.scss";
+@import "./base/typography";
 @import "./components/buttons";
 @import "./layouts/header";
 @import "./layouts/nav";
 @import "./layouts/container";
-@import "./layouts/form";
+@import "./layouts/footer";
 /*
-@import "./pages/work";
-@import "./pages/about";
-@import "./pages/project";
+quel fichier utiliser pour scss main? -^
+
 */

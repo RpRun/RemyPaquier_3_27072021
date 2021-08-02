@@ -7,7 +7,7 @@
     <meta name="description"
         content="Commandez vos repas en ligne avec Ohmyfood! Notre concept vous permets de composer votre propre menu et de réduire votre temps d’attente dans les restaurants!" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/public/css/reset.css" />
+    
     <link rel="stylesheet" href="/public/css/styles.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -24,10 +24,10 @@
         </div>
     </header>
     <main>
-        <section class="search-restaurant">
+        <section class="search-restaurants">
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <button>Explorer nos restaurants</button>
+            <button class="btn btn__explore" type="submit">Explorer nos restaurants</button>
         </section>
         <section>
             <h2>Fonctionnement</h2>
@@ -37,7 +37,7 @@
                 <li>Dégustez au restaurant</li>
             </ul>
         </section>
-        <section>
+        <section class="restaurants">
             <h2>Restaurants</h2>
             <div><a href="menu-la_palette.html">
                     <h3>La palette du goût</h3>
@@ -58,7 +58,8 @@
         </section>
     </main>
     <footer>
-        <h4>Ohmyfood</h4>
+        <div class="svg-logo"></div>
+        
         <ul>
             <li><a href="#">Proposer un restaurant</a></li>
             <li><a href="#">Devenir partenaire</a></li>

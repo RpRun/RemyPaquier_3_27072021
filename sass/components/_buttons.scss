@@ -1,0 +1,18 @@
+.btn {
+    background: $colour-secondary;
+    border-radius: 25px;
+    border-style: none;
+    padding: 1%;
+    font-size: 1em;
+
+    &__explore {
+        color: #fff;
+    }
+
+    /*test*/
+    &__order {
+
+        color: yellowgreen;
+    }
+
+}
