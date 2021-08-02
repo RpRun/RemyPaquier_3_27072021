@@ -1,6 +1,16 @@
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
-@import "./layout/form";
-@import "./layout/header";
-@import "./layout/nav";
+/*@import "./utils/extensions";*/
+/*@import "./base/base";*/
+/*@import "./base/typography";*/
+@import "./components/buttons";
+@import "./layouts/header";
+@import "./layouts/nav";
+@import "./layouts/container";
+@import "./layouts/form";
+/*
+@import "./pages/work";
+@import "./pages/about";
+@import "./pages/project";
+*/
