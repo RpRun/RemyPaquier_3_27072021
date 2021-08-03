@@ -85,6 +85,10 @@ body {
   background-color: #f2f2f2;
 }
 
+.restaurants {
+  padding-bottom: 40px;
+}
+
 footer {
   background: #353535;
   display: flex;
@@ -92,7 +96,6 @@ footer {
   align-items: flex-start;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
 }
 footer ul {
   margin-left: auto;
@@ -169,6 +172,8 @@ h1, h2, h3 {
   border-style: none;
   padding: 1%;
   font-size: 1em;
+  margin-top: 20px;
+  margin-bottom: 40px;
   /*test*/
 }
 .btn__explore {
