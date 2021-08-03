@@ -4,9 +4,9 @@
    "description": "Création du site Ohmyfood! Paris",
    "main": "index.js",
    "scripts": {
-      "sass": "sass ./sass/main.scss:./public/css/styles.css -w --style expanded",
-      "prefix": "postcss ./public/css/styles.css --use autoprefixer -d ./public/css/prefixed/",
-      "devscript": "npm run sass && npm run prefix"
+      "build": "npm-run-all --parallel build:sass build:prefix",
+      "build:sass": "sass ./sass/main.scss:./public/css/styles.css -w --style expanded",
+      "build:prefix": "postcss ./public/css/styles.css -w --use autoprefixer -d ./public/css/prefixed/"
    },
    "repository": {
       "type": "git",
@@ -23,5 +23,8 @@
       "autoprefixer": "^10.3.1",
       "postcss": "^8.3.6",
       "postcss-cli": "^8.3.1"
+   },
+   "devDependencies": {
+      "npm-run-all": "*"
    }
 }
