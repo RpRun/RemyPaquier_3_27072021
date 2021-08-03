@@ -1,9 +1,29 @@
-.cards
-{
-    border: olivedrab solid 1px;
+.cards {
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 1px #d3d3d3;
     
- .links
- {
-    text-decoration: none;
+    height: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 20em;
+    
+
+    .links {
+        text-decoration: none;
+    }
 }
+
+.preview{
+    border-radius: 25px 25px 0 0 ;
+    
+}
+.preview-image
+{
+ height: 210px;
+ width: 100%;
+ border-radius: 25px 25px 0 0;
+ object-fit: cover;
+ background-position: center;
+
 }

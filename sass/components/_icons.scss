@@ -1,4 +1,6 @@
 .svg-logo {
     @include svg-icon ("../../../images/logo/ohmyfood@2x.svg", 100px, 100px, #fff);
-
+    margin-left: auto;
+    margin-right: auto;
+    
 }

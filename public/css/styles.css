@@ -96,7 +96,7 @@ footer {
   align-items: flex-start;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 footer ul {
   margin-left: auto;
@@ -131,10 +131,28 @@ h1, h2, h3 {
 }
 
 .cards {
-  border: olivedrab solid 1px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 2px 1px #d3d3d3;
+  height: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 20em;
 }
 .cards .links {
   text-decoration: none;
+}
+
+.preview {
+  border-radius: 25px 25px 0 0;
+}
+
+.preview-image {
+  height: 210px;
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+  object-fit: cover;
+  background-position: center;
 }
 
 .btn {
@@ -161,6 +179,8 @@ h1, h2, h3 {
   mask-size: contain;
   mask-position: center;
   mask-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
