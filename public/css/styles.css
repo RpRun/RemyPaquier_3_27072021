@@ -145,10 +145,10 @@ h1, h2, h3 {
 }
 
 .svg-logo {
-  height: 50px;
-  width: 50px;
-  background: #818aac;
-  mask-image: url("../images/logo/ohmyfood@2x.svg");
+  height: 100px;
+  width: 100px;
+  background: #fff;
+  mask-image: url("../../../images/logo/ohmyfood@2x.svg");
   background-size: cover;
   mask-size: contain;
   mask-position: center;
