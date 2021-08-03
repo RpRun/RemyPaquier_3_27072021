@@ -157,7 +157,7 @@ h1, h2, h3 {
   font-style: italic;
 }
 
-.restaurants h2, .search-restaurants h2 {
+.heading-sections {
   padding-top: 30px;
   padding-bottom: 20px;
 }
