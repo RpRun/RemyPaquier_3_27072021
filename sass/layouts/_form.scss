@@ -6,4 +6,15 @@
     padding: 20px;
     margin: 15px 15px 15px 30px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    
+            &:hover
+            {
+                background-color:#FF79DA;
+                
+            }
+        
+   
+   
 }

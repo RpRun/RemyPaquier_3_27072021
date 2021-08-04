@@ -90,6 +90,42 @@ body {
   margin-top: 50px;
 }
 
+.svg-logo {
+  height: 100px;
+  width: 100px;
+  background: #fff;
+  mask-image: url("../../../images/logo/ohmyfood@2x.svg");
+  background-size: cover;
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+span.circle {
+  background: #9356DC;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  font-size: small;
+  line-height: 20px;
+  margin-right: 5px;
+  text-align: center;
+  width: 20px;
+  position: absolute;
+  left: 0;
+  margin-left: 20px;
+}
+
+.choice .fas {
+  display: inline-block;
+  left: 57px;
+  position: absolute;
+  color: #a9a9a9;
+}
+
 .choice {
   border-radius: 25px;
   box-shadow: 2px 2px 2px 1px #d3d3d3;
@@ -97,6 +133,11 @@ body {
   padding: 20px;
   margin: 15px 15px 15px 30px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.choice:hover {
+  background-color: #FF79DA;
 }
 
 footer {
@@ -191,19 +232,6 @@ h1, h2, h3 {
 }
 .btn__order {
   color: #990008;
-}
-
-.svg-logo {
-  height: 100px;
-  width: 100px;
-  background: #fff;
-  mask-image: url("../../../images/logo/ohmyfood@2x.svg");
-  background-size: cover;
-  mask-size: contain;
-  mask-position: center;
-  mask-repeat: no-repeat;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

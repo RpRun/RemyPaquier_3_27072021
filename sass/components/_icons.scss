@@ -4,3 +4,28 @@
     margin-right: auto;
     
 }
+
+span.circle {
+    background: $colour-primary;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    font-size: small;
+    line-height: 20px;
+    margin-right: 5px;
+    text-align: center;
+    width: 20px;
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+}
+
+.choice .fas
+{
+    display: inline-block;
+    left: 57px;
+    position: absolute;
+    color: #a9a9a9;
+     
+}
