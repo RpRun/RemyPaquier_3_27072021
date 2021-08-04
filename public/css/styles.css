@@ -87,6 +87,16 @@ body {
 
 .restaurants {
   padding-bottom: 40px;
+  margin-top: 50px;
+}
+
+.choice {
+  border-radius: 25px;
+  box-shadow: 2px 2px 2px 1px #d3d3d3;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 15px 15px 15px 30px;
+  font-weight: bold;
 }
 
 footer {
@@ -170,7 +180,7 @@ h1, h2, h3 {
   background: #FF79DA;
   border-radius: 25px;
   border-style: none;
-  padding: 1%;
+  padding: 2%;
   font-size: 1em;
   margin-top: 20px;
   margin-bottom: 40px;
