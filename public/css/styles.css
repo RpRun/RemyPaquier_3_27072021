@@ -67,8 +67,8 @@ header {
 .localisation {
   background-color: #d9d9d9;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .heading-menu {
@@ -91,7 +91,7 @@ body {
 }
 
 .svg-logo {
-  height: 100px;
+  height: 45px;
   width: 100px;
   background: #fff;
   mask-image: url("../../../images/logo/ohmyfood@2x.svg");
@@ -124,6 +124,17 @@ span.circle {
   left: 57px;
   position: absolute;
   color: #a9a9a9;
+}
+
+.footer {
+  line-height: 22px;
+  padding-bottom: 30px;
+}
+
+.footer .fas {
+  margin-right: 10px;
+  width: 16px;
+  font-size: small;
 }
 
 .choice {
@@ -217,6 +228,12 @@ h1 {
 .cards .links {
   text-decoration: none;
   color: #020202;
+}
+
+span .heart {
+  position: absolute;
+  right: 10px;
+  top: 20px;
 }
 
 .preview {
