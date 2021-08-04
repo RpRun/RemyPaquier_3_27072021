@@ -9,7 +9,7 @@
     justify-content: center;
 
     &:hover {
-        background-color: lighten($color: $colour-secondary, $amount: 20%);
+        background-color: lighten($color: $colour-primary, $amount: 35%);
 
         .fas {
             color: $colour-primary;
