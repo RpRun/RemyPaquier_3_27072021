@@ -137,7 +137,10 @@ span.circle {
   justify-content: center;
 }
 .choice:hover {
-  background-color: #FF79DA;
+  background-color: #ffdff6;
+}
+.choice:hover .fas {
+  color: #9356DC;
 }
 
 footer {
