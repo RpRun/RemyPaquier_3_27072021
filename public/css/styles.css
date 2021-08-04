@@ -143,6 +143,12 @@ span.circle {
   color: #9356DC;
 }
 
+/*redondant avec .links .cards*/
+.form {
+  text-decoration: none;
+  color: #020202;
+}
+
 footer {
   background: #353535;
   display: flex;
