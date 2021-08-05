@@ -1,0 +1,51 @@
+main.menu {
+    border-radius: 25px 25px;
+    background-color: $colour-background;
+    text-align: left;
+    padding-top: 25px;
+}
+
+.menu h2 {
+    font-family: 'Shrikhand', cursive;
+
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+/*wrap menu ici ou dans layouts/container?*/
+main.menu {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*wrap menu ici ou dans layouts/container? h3 typo?*/
+h3.heading-cards {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: $colour-tertiary solid thick;
+
+}
+.cards_choices h4
+{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cards_choices
+{
+    border-radius: 20px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: small;
+    box-shadow: 2px 2px 2px 1px #d3d3d3;
+}
+span.price
+{
+    font-weight: bold;
+}
