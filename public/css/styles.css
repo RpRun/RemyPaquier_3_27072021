@@ -119,14 +119,17 @@ span.circle {
   width: 20px;
   position: absolute;
   left: 0;
-  margin-left: 20px;
+  margin-left: -10px;
 }
 
 .choice .fas {
   display: inline-block;
-  left: 57px;
+  left: 30px;
   position: absolute;
   color: #a9a9a9;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
 }
 
 span.heart {
@@ -179,10 +182,6 @@ span.heart {
 .cards .links {
   text-decoration: none;
   color: #020202;
-}
-
-.choice {
-  position: relative;
 }
 
 .preview {
@@ -261,7 +260,7 @@ body {
   box-shadow: 2px 2px 2px 1px #d3d3d3;
   background-color: #f2f2f2;
   padding: 20px;
-  margin: 15px 0px 15px 0px;
+  margin: 15px 15px 15px 30px;
   font-weight: bold;
   display: flex;
   justify-content: center;

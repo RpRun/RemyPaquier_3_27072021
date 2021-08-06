@@ -18,14 +18,17 @@ span.circle {
     width: 20px;
     position: absolute;
     left: 0;
-    margin-left: 20px;
+    margin-left: -10px;
 }
 
 .choice .fas {
     display: inline-block;
-    left: 57px;
+    left: 30px;
     position: absolute;
     color: #a9a9a9;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
 
 }
 
