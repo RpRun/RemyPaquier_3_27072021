@@ -54,6 +54,16 @@ img {
 }
 
 /*@import "./utils/extensions";*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.menu h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+
 .heading-cards {
   text-transform: uppercase;
 }
@@ -171,6 +181,10 @@ span.heart {
   color: #020202;
 }
 
+.choice {
+  position: relative;
+}
+
 .preview {
   border-radius: 25px 25px 0 0;
 }
@@ -227,7 +241,6 @@ body {
   margin: 0 auto;
   text-align: center;
   max-width: 768px;
-  font-family: "Roboto", sans-serif;
 }
 
 .search-restaurants, .restaurants {
@@ -248,10 +261,11 @@ body {
   box-shadow: 2px 2px 2px 1px #d3d3d3;
   background-color: #f2f2f2;
   padding: 20px;
-  margin: 15px 15px 15px 30px;
+  margin: 15px 0px 15px 0px;
   font-weight: bold;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 .choice:hover {
   background-color: #f2eafb;
@@ -299,12 +313,6 @@ main.menu {
   background-color: #f2f2f2;
   text-align: left;
   padding-top: 25px;
-}
-
-.menu h1 {
-  font-family: "Shrikhand", cursive;
-  font-weight: normal;
-  font-size: 1.3rem;
 }
 
 /*wrap menu ici ou dans layouts/container?*/
