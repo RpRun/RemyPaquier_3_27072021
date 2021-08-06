@@ -175,7 +175,6 @@ span.heart {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  width: 20em;
 }
 .cards .links {
   text-decoration: none;
@@ -232,6 +231,10 @@ header {
 
 .heading-menu {
   flex-direction: row;
+}
+
+.restaurants__list {
+  width: 100%;
 }
 
 body {
