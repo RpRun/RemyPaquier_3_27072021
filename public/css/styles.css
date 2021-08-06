@@ -249,6 +249,16 @@ body {
 .restaurants {
   padding-bottom: 60px;
   margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapp-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .restaurant-name {
