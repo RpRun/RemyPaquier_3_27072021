@@ -102,8 +102,6 @@ h3 {
   mask-size: contain;
   mask-position: center;
   mask-repeat: no-repeat;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 span.circle {
@@ -253,12 +251,16 @@ body {
   flex-direction: column;
 }
 
-.wrapp-list {
+.wrapp {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-left: auto;
   margin-right: auto;
+  width: 20em;
+}
+.wrapp__wrapp__process {
+  width: 100%;
 }
 
 .restaurant-name {
@@ -266,11 +268,11 @@ body {
 }
 
 .choice {
-  border-radius: 15px;
+  border-radius: 20px;
   box-shadow: 2px 2px 2px 1px #d3d3d3;
   background-color: #f2f2f2;
   padding: 20px;
-  margin: 15px 15px 15px 30px;
+  margin: 15px 0 15px 0px;
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -298,8 +300,6 @@ footer {
   margin-right: auto;
 }
 footer ul {
-  margin-left: auto;
-  margin-right: auto;
   text-align: left;
 }
 

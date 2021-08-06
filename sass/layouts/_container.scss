@@ -16,13 +16,18 @@ body
    display: flex;
     flex-direction: column;
 }
-.wrapp-list
+.wrapp
 {  
    display: flex;
    flex-direction: column;
    align-items: flex-start;
     margin-left: auto;
     margin-right: auto;
+    width: 20em;
+    &__wrapp__process {
+       width: 100%;
+    }
+  
 }
 
 .restaurant-name
