@@ -20,15 +20,14 @@
         }
 
         .fas {
-            border: none;
-            background: red;
+            
             opacity: 0;
 
         }
 
         .far {
-            border: 1px solid black;
-            background: cadetblue;
+           
+            background:#fff;
             
         }
 
@@ -38,6 +37,8 @@
 
         #check-heart:checked~label .fas {
             opacity: 1;
+            color: chartreuse;
+            
         }
 
         #check-heart {
@@ -48,8 +49,8 @@
     <input type="checkbox" id="check-heart">
 
     <label for="check-heart">
-        <div class="far fa-heart"></div>
-        <div class="fas fa-heart"></div>
+        <i class="far fa-heart"></i>
+        <i class="fas fa-heart"></i>
     </label>
 
 </body>
