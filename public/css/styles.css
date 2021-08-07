@@ -61,7 +61,7 @@ body {
 .menu h1 {
   font-family: "Shrikhand", cursive;
   font-weight: normal;
-  font-size: 1.3rem;
+  font-size: 30px;
 }
 
 .heading-cards {
@@ -93,6 +93,16 @@ h3 {
   margin: 5px 5px 5px 20px;
 }
 
+i.fa-arrow-left {
+  position: absolute;
+  left: 5px;
+  padding: 20px;
+  top: 10px;
+  font-size: 22px;
+  color: #000000;
+  /* à eclaircir*/
+}
+
 .svg-logo {
   height: 45px;
   width: 100px;
@@ -102,6 +112,11 @@ h3 {
   mask-size: contain;
   mask-position: center;
   mask-repeat: no-repeat;
+}
+
+.menu__heart {
+  position: absolute;
+  right: 50px;
 }
 
 span.circle {

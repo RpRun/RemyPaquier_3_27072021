@@ -1,8 +1,25 @@
+i.fa-arrow-left
+{
+    position: absolute;
+    left: 5px;
+    padding: 20px;
+    top: 10px;
+    font-size: 22px;
+    color:#000000;
+    /* à eclaircir*/
+
+
+} 
+
+
 .svg-logo {
     @include svg-icon ("../../../images/logo/ohmyfood@2x.svg", 45px, 100px, #fff);
-    
-   
+}
 
+.menu__heart
+{
+    position: absolute;
+    right: 50px;
 }
 
 span.circle {
