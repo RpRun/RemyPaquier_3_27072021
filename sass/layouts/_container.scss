@@ -1,38 +1,38 @@
-body
-{ margin: 0 auto;
+body {
+   margin: 0 auto;
    text-align: center;
    max-width: 768px;
    height: 100vh;
+   position: relative;
 }
 
-.search-restaurants, .restaurants
-{
-   background-color:$colour-background;
+.search-restaurants,
+.restaurants {
+   background-color: $colour-background;
 }
 
-.restaurants
-{
+.restaurants {
    padding-bottom: 60px;
    margin-top: 70px;
    display: flex;
-    flex-direction: column;
+   flex-direction: column;
 }
-.wrapp
-{  
+
+.wrapp {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;   
-    &__process {
+   margin-left: auto;
+   margin-right: auto;
+   width: 80%;
+
+   &__process {
       width: 100%;
    }
-    
-}
- 
 
-.restaurant-name
-{
+}
+
+
+.restaurant-name {
    position: relative;
 }

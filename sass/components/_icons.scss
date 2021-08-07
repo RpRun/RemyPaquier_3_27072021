@@ -7,10 +7,7 @@ i.fa-arrow-left
     font-size: 22px;
     color:#000000;
     /* à eclaircir*/
-
-
 } 
-
 
 .svg-logo {
     @include svg-icon ("../../../images/logo/ohmyfood@2x.svg", 45px, 100px, #fff);
@@ -46,11 +43,9 @@ span.circle {
     width: 20px;
     height: 20px;
     line-height: 20px;
-
 }
 
 span.heart {
-
 
     font-weight: bold;
     text-align: center;
@@ -58,7 +53,6 @@ span.heart {
     top: 10px;
     right: 20px;
 }
-
 
     .fas.fa-heart:hover {
         display: inline-block;
@@ -69,7 +63,6 @@ span.heart {
     /*ne fonctionne pas comme ça revoir le cours fonctions*/
 }
 
-
 .far.fa-heart {
     display: inline-block;
     color: black;
@@ -77,9 +70,6 @@ span.heart {
     .far.fa-heart:hover {
         display: none;
     }
-
-
-
 
 .footer {
     line-height: 22px;

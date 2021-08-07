@@ -9,23 +9,23 @@
     justify-content: center;
     position: relative;
 
-    
- 
+
+
 
     &:hover {
         background-color: lighten($color: $colour-primary, $amount: 35%);
-        cursor: pointer;  
+        cursor: pointer;
 
         .fas {
             color: $colour-primary;
-            
+
         }
     }
 
 }
+
 /*redondant avec .links .cards*/
-.form
-{
+.form {
     text-decoration: none;
-        color: #020202;
+    color: #020202;
 }

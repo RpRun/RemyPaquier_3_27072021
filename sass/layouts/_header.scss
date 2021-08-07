@@ -1,21 +1,30 @@
-header
-{
+header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-     .localisation
-{
+.localisation {
     background-color: darken($color: $colour-background, $amount: 10%);
     width: 100%;
     padding-top: 12px;
     padding-bottom: 12px;
 }
 
-.heading-menu
-{
+.heading-menu {
     flex-direction: row;
 }
 
+.banner {
+    background-image: url("/images/restaurants/à_la_française.jpg");
+
+    width: 100%;
+    height: 270px;
+
+    object-fit: cover;
+    margin-bottom: -44px;
+    background-size: cover;
+    background-position: center;
+}

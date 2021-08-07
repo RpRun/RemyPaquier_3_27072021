@@ -1,22 +1,17 @@
 main.menu {
-    border-radius: 25px 25px;
+    border-radius: 50px 50px;
     background-color: $colour-background;
-    text-align: left;
-    padding-top: 25px;
-}
-
-
-/*wrap menu ici ou dans layouts/container?*/
-main.menu {
+    position: relative;
     display: flex;
     flex-direction: column;
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 30px;
 }
 
-/*wrap menu ici ou dans layouts/container? h3 typo?*/
 h3.heading-cards {
     margin-top: 35px;
     margin-bottom: 15px;
@@ -24,14 +19,13 @@ h3.heading-cards {
     border-bottom: $colour-tertiary solid thick;
 
 }
-.cards_choices h4
-{
+
+.cards_choices h4 {
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.cards_choices
-{
+.cards_choices {
     border-radius: 20px;
     background-color: #fff;
     margin-bottom: 15px;
@@ -39,7 +33,7 @@ h3.heading-cards {
     font-size: small;
     box-shadow: 2px 2px 2px 1px #d3d3d3;
 }
-span.price
-{
+
+span.price {
     font-weight: bold;
 }
