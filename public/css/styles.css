@@ -299,6 +299,7 @@ body {
 }
 .choice:hover {
   background-color: #f2eafb;
+  cursor: pointer;
 }
 .choice:hover .fas {
   color: #9356DC;

@@ -8,14 +8,17 @@
     display: flex;
     justify-content: center;
     position: relative;
+
     
  
 
     &:hover {
         background-color: lighten($color: $colour-primary, $amount: 35%);
+        cursor: pointer;  
 
         .fas {
             color: $colour-primary;
+            
         }
     }
 
