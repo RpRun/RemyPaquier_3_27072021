@@ -6,6 +6,15 @@ body {
    position: relative;
 }
 
+.step-list
+{
+   margin-left: 38px;
+}
+.step-list p
+{
+   margin-left: 5px;
+}
+
 .search-restaurants,
 .restaurants {
    background-color: $colour-background;
@@ -28,6 +37,7 @@ body {
 
    &__process {
       width: 100%;
+      
    }
 
 }
