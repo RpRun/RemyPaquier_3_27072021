@@ -194,10 +194,16 @@ span.heart {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.cards:hover {
+  transform: scale(1.05);
 }
 .cards .links {
   text-decoration: none;
   color: #020202;
+  transition: 0.9ms;
 }
 
 .preview {
@@ -243,10 +249,13 @@ header {
 }
 
 .localisation {
-  background-color: #d9d9d9;
+  background-color: #e5e5e5;
   width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
+  border-top: 1px solid #d9d9d9;
+  box-shadow: inset 0 -1px 2px 2px #e5e5e5, inset 0 2px 3px 1px rgba(50, 50, 50, 0.75);
+  /* box-shadow:inset 0 1px 2px 2px darken($color: $colour-background, $amount: 15%); */
 }
 
 .heading-menu {
