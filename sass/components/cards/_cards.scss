@@ -6,38 +6,33 @@
     margin-right: auto;
     margin-bottom: 20px;
     transform: scale(1);
-    transition: transform 300ms;
-transition-timing-function:cubic-bezier(0,.91,1,-0.27);
-/* .selector {
+    transition: all 300ms;
+    transition-timing-function: ease-in-out;
+
+    /* .selector {
 (X1,Y1)(X2,Y2)
 transition-timing-function: cubic-bezier(.42, 0, .58, 1); //=transition-timing-function:ease-in-out;//
 }
 */
     &:hover {
         transform: scale(1.05);
-    } 
-    
-    
-    
+    }
 
     .links {
         text-decoration: none;
         color: #020202;
-        
-    
-}
+    }
 }
 
-.preview{
-    border-radius: 25px 25px 0 0 ;
-    
-}
-.preview-image
-{
- height: 210px;
- width: 100%;
- border-radius: 25px 25px 0 0;
- object-fit: cover;
- background-position: center;
+.preview {
+    border-radius: 25px 25px 0 0;
 
+}
+
+.preview-image {
+    height: 210px;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    object-fit: cover;
+    background-position: center;
 }

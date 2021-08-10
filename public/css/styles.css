@@ -195,8 +195,8 @@ span.heart {
   margin-right: auto;
   margin-bottom: 20px;
   transform: scale(1);
-  transition: transform 300ms;
-  transition-timing-function: cubic-bezier(0, 0.91, 1, -0.27);
+  transition: all 300ms;
+  transition-timing-function: ease-in-out;
   /* .selector {
   (X1,Y1)(X2,Y2)
   transition-timing-function: cubic-bezier(.42, 0, .58, 1); //=transition-timing-function:ease-in-out;//
@@ -224,16 +224,18 @@ span.heart {
 }
 
 .btn {
-  background: linear-gradient(#FF79DA 10%, #9356DC);
+  background: linear-gradient(-185deg, #FF79DA 10%, #9356DC);
   border-radius: 25px;
   border-style: none;
   padding: 3% 5%;
   font-size: 1em;
+  line-height: 20px;
   margin-top: 20px;
   margin-bottom: 40px;
   color: #f3f3f5;
   cursor: pointer;
   width: 50%;
+  min-width: 240px;
   margin-left: auto;
   margin-right: auto;
   transform: scale(1);
@@ -268,8 +270,10 @@ header {
   width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
+  /*background-image: repeating-linear-gradient(45deg,$colour-background,$colour-background 5px,black 5px,black 25px);
+  color: #fff;*/
   border-top: 1px solid #d9d9d9;
-  box-shadow: inset 0 -1px 2px 2px #e5e5e5, inset 0 2px 3px 1px rgba(50, 50, 50, 0.75);
+  box-shadow: inset 0 -4px 8px 8px #e5e5e5, inset 0 1px 2px 0px rgba(50, 50, 50, 0.75);
   /* box-shadow:inset 0 1px 2px 2px darken($color: $colour-background, $amount: 15%); */
 }
 
