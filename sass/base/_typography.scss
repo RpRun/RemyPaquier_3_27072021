@@ -8,22 +8,24 @@ body {
 
     font-weight: normal;
     font-size: 30px;
-    
+
     margin-top: 20px;
 }
 
 //Heading
 
+//Menus
 .heading-cards {
     text-transform: uppercase;
 }
+
+//Menus
 
 h1,
 h2,
 h3 {
     font-weight: bold;
     font-size: 1.4rem;
-
 }
 
 h3 {
@@ -39,6 +41,13 @@ h3 {
 .heading-sections {
     padding-top: 35px;
     padding-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.search-restaurants p {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .cards h3,
