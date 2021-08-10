@@ -1,5 +1,5 @@
 .btn {
-    background: $colour-secondary;
+    background: linear-gradient($colour-secondary 10%,$colour-primary);
     border-radius: 25px;
     border-style: none;
     padding: 3% 5%;
@@ -7,7 +7,20 @@
     margin-top: 20px;
     margin-bottom: 40px;
     color: rgb(243, 243, 245);
-/*test
+    cursor: pointer;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(1);
+    transition: all 600ms;
+    &:hover {
+      
+      transform: scale(1.2);
+      /*pb du text à regler"*/
+        
+    }
+  }
+/*test--> classes à supprimmer si inutiles:
     &__explore {
         color: rgb(243, 243, 245);
     }
@@ -18,4 +31,3 @@
         color: rgb(153, 0, 8);
     }
     test*/
-}

@@ -195,7 +195,13 @@ span.heart {
   margin-right: auto;
   margin-bottom: 20px;
   transform: scale(1);
-  transition: transform 400ms;
+  transition: transform 300ms;
+  transition-timing-function: cubic-bezier(0, 0.91, 1, -0.27);
+  /* .selector {
+  (X1,Y1)(X2,Y2)
+  transition-timing-function: cubic-bezier(.42, 0, .58, 1); //=transition-timing-function:ease-in-out;//
+  }
+  */
 }
 .cards:hover {
   transform: scale(1.05);
@@ -203,7 +209,6 @@ span.heart {
 .cards .links {
   text-decoration: none;
   color: #020202;
-  transition: 0.9ms;
 }
 
 .preview {
@@ -219,7 +224,7 @@ span.heart {
 }
 
 .btn {
-  background: #FF79DA;
+  background: linear-gradient(#FF79DA 10%, #9356DC);
   border-radius: 25px;
   border-style: none;
   padding: 3% 5%;
@@ -227,19 +232,29 @@ span.heart {
   margin-top: 20px;
   margin-bottom: 40px;
   color: #f3f3f5;
-  /*test
-      &__explore {
-          color: rgb(243, 243, 245);
-      }
-
-
-      &__order {
-
-          color: rgb(153, 0, 8);
-      }
-      test*/
+  cursor: pointer;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(1);
+  transition: all 600ms;
+}
+.btn:hover {
+  transform: scale(1.2);
+  /*pb du text à regler"*/
 }
 
+/*test--> classes à supprimmer si inutiles:
+    &__explore {
+        color: rgb(243, 243, 245);
+    }
+
+
+    &__order {
+
+        color: rgb(153, 0, 8);
+    }
+    test*/
 header {
   display: flex;
   flex-direction: column;
