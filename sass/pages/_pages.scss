@@ -27,7 +27,7 @@ div.green-border{
 }
 
 
-.cards_choices h4 {
+.cards_choices span {
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -36,14 +36,41 @@ div.green-border{
     border-radius: 20px;
     background-color: #fff;
     margin-bottom: 15px;
-    padding: 15px;
+    padding: 15px 10px;
     font-size: small;
     box-shadow: 2px 2px 2px 1px #d3d3d3;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 40px;
+    align-content: center;
+    align-items: center;
+
+}
+.cards_choices p
+{
+    margin-top: 5px;
 }
 
 span.price {
     font-weight: bold;
     position: absolute;
-    right: 10%;
+    right: 20%;
+    top: 55%;
+    color: black;
     
 }
+
+
+    div.check-box {
+        background: $colour-tertiary;
+        color: #fff;
+        width:20%;
+        height: 100%;
+        border-radius: 0 20px 20px 0;
+        
+        position:absolute;
+        right: 0;
+    }
+

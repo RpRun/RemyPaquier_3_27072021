@@ -93,3 +93,25 @@ span.circle {
     display: none;
 }
 
+//MENU CHECK COMMANDE//
+
+.fa-check
+{
+    color:$colour-tertiary;
+    background: #fff;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+  padding: 4px;
+  line-height: 1.5;
+  font-size: 12px;
+  margin-right: 5px;
+    
+}
+
+// voir mixins//
+
