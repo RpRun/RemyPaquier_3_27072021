@@ -14,11 +14,18 @@ main.menu {
 
 h3.heading-cards {
     margin-top: 35px;
-    margin-bottom: 15px;
-    padding-bottom: 5px;
-    border-bottom: $colour-tertiary solid thick;
-
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 1rem;
 }
+div.green-border{
+    width: 11%;
+    height: 4px;
+    background: $colour-tertiary;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
 
 .cards_choices h4 {
     font-weight: bold;

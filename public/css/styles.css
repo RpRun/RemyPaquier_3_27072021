@@ -102,12 +102,6 @@ h1.heading-sections {
   margin-top: 20px;
 }
 
-h3.heading-cards {
-  text-transform: uppercase;
-  font-weight: lighter;
-  font-size: 1rem;
-}
-
 i.fa-arrow-left {
   position: absolute;
   left: 5px;
@@ -244,7 +238,7 @@ span.circle {
   background: linear-gradient(-185deg, #FF79DA 10%, #9356DC);
   border-radius: 50px;
   border-style: none;
-  padding: 3% 5%;
+  padding: 4%;
   font-size: 1em;
   line-height: 20px;
   margin-top: 20px;
@@ -252,7 +246,6 @@ span.circle {
   color: #f3f3f5;
   cursor: pointer;
   width: 40%;
-  min-width: 240px;
   margin-left: auto;
   margin-right: auto;
   transform: scale(1);
@@ -261,6 +254,12 @@ span.circle {
 .btn:hover {
   transform: scale(1.2);
   /*pb du text à regler"*/
+}
+.btn__explore {
+  min-width: 240px;
+}
+.btn__order {
+  min-width: 190px;
 }
 
 header {
@@ -414,9 +413,17 @@ main.menu {
 
 h3.heading-cards {
   margin-top: 35px;
-  margin-bottom: 15px;
-  padding-bottom: 5px;
-  border-bottom: #99E2D0 solid thick;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+div.green-border {
+  width: 11%;
+  height: 4px;
+  background: #99E2D0;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .cards_choices h4 {
