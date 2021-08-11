@@ -1,6 +1,6 @@
 .btn {
-    background: linear-gradient(-185deg,$colour-secondary 10%,$colour-primary);
-    
+    background: linear-gradient(171deg,$colour-secondary 10%,$colour-primary 90%) ;
+    box-shadow: 0px 3px 6px 3px #d3d3d3;
     border-radius: 50px;
     border-style: none;
     padding: 4%;
@@ -8,27 +8,44 @@
     line-height: 20px;
     margin-top: 20px;
     margin-bottom: 60px;
-    color: rgb(243, 243, 245);
-    cursor: pointer;
-    width: 40%;
-    
     margin-left: auto;
     margin-right: auto;
-    transform: scale(1);
-    transition: all 600ms;
-   
+    color: #fff;
+    cursor: pointer;
+    width: 40%;
+    position: relative;
+    z-index: 1;
     &:hover {
       
-      transform: scale(1.2);
-      
-      /*pb du text à regler"*/
-        
+      border-radius: 50px;
+        &::after{
+          border-radius: 50px;
+          box-shadow: 0px 3px 5px 3px #d3d3d3;
+          opacity: 1;
+          
+        }   
+    }
+    &::after {
+      border-radius: 50px;
+      content: "";
+      position: absolute;
+      top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: radial-gradient(circle, lighten($colour-secondary, 5) 0%, darken($colour-secondary, 10) 100%);
+          opacity: 0;
+          z-index: -1;
+          transition: opacity 300ms;
+
     }
     &__explore{
       min-width: 240px;
     }
     &__order{
       min-width: 190px;
+      margin-top: 46px;
+      margin-bottom: 98px;
     }
   }
 
