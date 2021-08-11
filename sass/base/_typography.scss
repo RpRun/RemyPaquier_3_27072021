@@ -2,8 +2,51 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+//Heading
 
-.menu h1 {
+.header__logo {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+h1,
+h2{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.heading-sections {
+    padding-top: 35px;
+    padding-bottom: 14px;
+}
+h1.heading-sections{
+    
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.search-restaurants P{
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 15px;
+}
+
+.cards h3,
+.cards p {
+    
+    text-align: left;
+    margin: 5px 5px 5px 20px;
+}
+.cards h3{
+    font-weight: bold;
+}
+
+
+
+
+
+//Pages menus restaurants
+.menu h1  {
     font-family: 'Shrikhand', cursive;
 
     font-weight: normal;
@@ -11,47 +54,9 @@ body {
 
     margin-top: 20px;
 }
-
-//Heading
-
-//Menus
-.heading-cards {
+h3.heading-cards {
     text-transform: uppercase;
-}
-
-//Menus
-
-h1,
-h2,
-h3 {
-    font-weight: bold;
-    font-size: 1.4rem;
-}
-
-h3 {
-    font-weight: bold;
+    font-weight: lighter;
     font-size: 1rem;
 }
 
-.header__logo {
-    margin-top: 25px;
-    margin-bottom: 10px;
-}
-
-.heading-sections {
-    padding-top: 35px;
-    padding-bottom: 25px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.search-restaurants p {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.cards h3,
-.cards p {
-    text-align: left;
-    margin: 5px 5px 5px 20px;
-}

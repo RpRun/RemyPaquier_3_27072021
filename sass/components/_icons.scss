@@ -12,10 +12,7 @@ i.fa-arrow-left {
     @include svg-icon ("../../../images/logo/ohmyfood@2x.svg", 45px, 100px, #fff);
 }
 
-.menu__heart {
-    position: absolute;
-    right: 50px;
-}
+
 
 span.circle {
     background: $colour-primary;
@@ -69,7 +66,7 @@ span.circle {
 
     &.fa-heart__heading {
         right: 0;
-        top: 27px;
+        top: 20px;
         font-size: larger;
     }
 }

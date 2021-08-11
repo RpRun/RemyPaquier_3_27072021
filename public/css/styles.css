@@ -58,6 +58,43 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.header__logo {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.heading-sections {
+  padding-top: 35px;
+  padding-bottom: 14px;
+}
+
+h1.heading-sections {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.search-restaurants P {
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 15px;
+}
+
+.cards h3,
+.cards p {
+  text-align: left;
+  margin: 5px 5px 5px 20px;
+}
+
+.cards h3 {
+  font-weight: bold;
+}
+
 .menu h1 {
   font-family: "Shrikhand", cursive;
   font-weight: normal;
@@ -65,43 +102,10 @@ body {
   margin-top: 20px;
 }
 
-.heading-cards {
+h3.heading-cards {
   text-transform: uppercase;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: bold;
-  font-size: 1.4rem;
-}
-
-h3 {
-  font-weight: bold;
+  font-weight: lighter;
   font-size: 1rem;
-}
-
-.header__logo {
-  margin-top: 25px;
-  margin-bottom: 10px;
-}
-
-.heading-sections {
-  padding-top: 35px;
-  padding-bottom: 25px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.search-restaurants p {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.cards h3,
-.cards p {
-  text-align: left;
-  margin: 5px 5px 5px 20px;
 }
 
 i.fa-arrow-left {
@@ -123,11 +127,6 @@ i.fa-arrow-left {
   mask-size: contain;
   mask-position: center;
   mask-repeat: no-repeat;
-}
-
-.menu__heart {
-  position: absolute;
-  right: 50px;
 }
 
 span.circle {
@@ -180,7 +179,7 @@ span.circle {
 }
 .fa-heart.fa-heart__heading {
   right: 0;
-  top: 27px;
+  top: 20px;
   font-size: larger;
 }
 
@@ -243,16 +242,16 @@ span.circle {
 
 .btn {
   background: linear-gradient(-185deg, #FF79DA 10%, #9356DC);
-  border-radius: 25px;
+  border-radius: 50px;
   border-style: none;
   padding: 3% 5%;
   font-size: 1em;
   line-height: 20px;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   color: #f3f3f5;
   cursor: pointer;
-  width: 50%;
+  width: 40%;
   min-width: 240px;
   margin-left: auto;
   margin-right: auto;
