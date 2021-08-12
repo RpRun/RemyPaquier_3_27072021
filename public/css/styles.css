@@ -402,6 +402,51 @@ body {
   color: #020202;
 }
 
+.town-search {
+  outline: none;
+}
+
+#shopping {
+  display: none;
+}
+
+div.check-box {
+  background: #99E2D0;
+  color: #fff;
+  width: 20%;
+  height: 100%;
+  border-radius: 0 20px 20px 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+}
+
+span.price {
+  font-weight: bold;
+  position: absolute;
+  right: 10%;
+  top: 55%;
+  color: black;
+}
+
+#shopping:hover ~ label span.price {
+  transform: translateX(-60px);
+  transition: 0.5s ease-in-out;
+}
+
+#shopping:hover ~ label .check-box {
+  opacity: 1;
+}
+
+#shopping:hover ~ label .fa-check {
+  transform: rotate(-1turn);
+  transition: transform 300ms ease-in-out;
+}
+
+#check-heart {
+  display: none;
+}
+
 footer {
   background: #353535;
   display: flex;
@@ -483,28 +528,12 @@ div.green-border {
   height: 40px;
   align-content: center;
   align-items: center;
+  transition: opacity 0.3s;
+  cursor: pointer;
 }
 
 .cards_choices p {
   margin-top: 5px;
-}
-
-span.price {
-  font-weight: bold;
-  position: absolute;
-  right: 20%;
-  top: 55%;
-  color: black;
-}
-
-div.check-box {
-  background: #99E2D0;
-  color: #fff;
-  width: 20%;
-  height: 100%;
-  border-radius: 0 20px 20px 0;
-  position: absolute;
-  right: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

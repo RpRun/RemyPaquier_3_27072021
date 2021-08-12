@@ -46,6 +46,8 @@ div.green-border{
     height: 40px;
     align-content: center;
     align-items: center;
+    transition: opacity 0.3s;
+    cursor: pointer;
 
 }
 .cards_choices p
@@ -53,24 +55,7 @@ div.green-border{
     margin-top: 5px;
 }
 
-span.price {
-    font-weight: bold;
-    position: absolute;
-    right: 20%;
-    top: 55%;
-    color: black;
+
+
     
-}
-
-
-    div.check-box {
-        background: $colour-tertiary;
-        color: #fff;
-        width:20%;
-        height: 100%;
-        border-radius: 0 20px 20px 0;
-        
-        position:absolute;
-        right: 0;
-    }
 
