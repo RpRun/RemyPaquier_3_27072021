@@ -32,58 +32,50 @@
     color: #020202;
 }
 
-.town-search
-{
+.town-search {
     outline: none;
 }
 
-#shopping
-{
+#shopping {
     display: none;
 }
-
 
 div.check-box {
     background: $colour-tertiary;
     color: #fff;
-    width:20%;
+    width: 20%;
     height: 100%;
     border-radius: 0 20px 20px 0;
     opacity: 0;
-   
-    position:absolute;
+
+    position: absolute;
     right: 0;
 }
+
 span.price {
     font-weight: bold;
     position: absolute;
     right: 10%;
     top: 55%;
     color: black;
-    
 }
 
-#shopping:hover~label span.price  {
-    
-   transform: translateX(-60px);
+#shopping:hover~label span.price {
+
+    transform: translateX(-100px);
     transition: 0.5s ease-in-out;
 }
 
 #shopping:hover~label .check-box {
     opacity: 1;
-   
+
 }
+
 #shopping:hover~label .fa-check {
     transform: rotate(-1turn);
-        transition: transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out;
 }
 
 #check-heart {
     display: none;
 }
-
-
-
-
-
-

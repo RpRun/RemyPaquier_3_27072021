@@ -430,7 +430,7 @@ span.price {
 }
 
 #shopping:hover ~ label span.price {
-  transform: translateX(-60px);
+  transform: translateX(-100px);
   transition: 0.5s ease-in-out;
 }
 
