@@ -396,6 +396,10 @@ body {
   color: #9356DC;
 }
 
+#check-heart {
+  display: none;
+}
+
 /*redondant avec .links .cards*/
 .form {
   text-decoration: none;
@@ -412,13 +416,14 @@ body {
 .check {
   background: #99E2D0;
   color: #fff;
-  width: 15%;
+  width: 100px;
   height: 100%;
   border-radius: 0 20px 20px 0;
-  transition: 0.3s;
+  box-shadow: 2px 2px 2px 1px #d3d3d3;
+  transition: 900ms;
   position: absolute;
-  top: 0px;
-  right: -100%;
+  top: 0;
+  right: -100px;
 }
 
 span.price {
@@ -445,6 +450,7 @@ span.price {
   align-content: center;
   align-items: flex-start;
   cursor: pointer;
+  transition: 0.9s;
 }
 
 input.choices {
@@ -460,38 +466,18 @@ input.choices:checked ~ label .cards_choices .check {
 }
 
 input.choices:checked ~ label span.price {
-  transform: translateX(-40px);
+  transform: translateX(-100px);
 }
 
 input.choices:hover ~ label span.price {
-  transform: translateX(-150px);
-  transition: ease-in;
+  transform: translateX(-100px);
+  transition: transform 600ms ease-in-out;
 }
 
-in input.choices:hover ~ label .fa-check {
-  transform: rotate(-1turn);
-  transition: transform 300ms ease-in-out;
-}
-
-/*
-input.choice:hover~label span.price {
-
-    transform: translateX(-100px);
-    transition: 0.5s ease-in-out;
-}
-
-input.choice:hover~label .check-box {
-    opacity: 1;
-
-}
-
-input.choice:hover~label .fa-check {
-    transform: rotate(-1turn);
-    transition: transform 300ms ease-in-out;
-}
-*/
-#check-heart {
-  display: none;
+/*ou input.choices:hover*/
+input.choices:checked ~ label .fa-check {
+  transform: rotate(1turn);
+  transition: transform 800ms ease-in-out;
 }
 
 footer {
