@@ -280,6 +280,7 @@ span.circle {
   bottom: 0;
   left: 0;
   background: radial-gradient(circle, #ff93e1 0%, #ff46cc 100%);
+  /*linear ne fonctionne pas bienj*/
   opacity: 0;
   z-index: -1;
   transition: opacity 300ms;
@@ -416,14 +417,14 @@ body {
 .check {
   background: #99E2D0;
   color: #fff;
-  width: 100px;
+  width: 70px;
   height: 100%;
   border-radius: 0 20px 20px 0;
   box-shadow: 2px 2px 2px 1px #d3d3d3;
   transition: 900ms;
   position: absolute;
   top: 0;
-  right: -100px;
+  right: -70px;
 }
 
 span.price {
@@ -442,8 +443,6 @@ span.price {
   margin-bottom: 20px;
   padding: 15px 10px;
   font-size: small;
-  position: relative;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -451,6 +450,10 @@ span.price {
   align-items: flex-start;
   cursor: pointer;
   transition: 0.9s;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 input.choices {
@@ -466,18 +469,22 @@ input.choices:checked ~ label .cards_choices .check {
 }
 
 input.choices:checked ~ label span.price {
-  transform: translateX(-100px);
+  transform: translateX(-70px);
 }
 
 input.choices:hover ~ label span.price {
-  transform: translateX(-100px);
+  transform: translateX(-70px);
   transition: transform 600ms ease-in-out;
 }
 
-/*ou input.choices:hover*/
+input.choices:hover ~ label .fa-check {
+  transform: rotate(-1turn);
+  transition: transform 800ms ease-in-out;
+}
+
 input.choices:checked ~ label .fa-check {
   transform: rotate(1turn);
-  transition: transform 800ms ease-in-out;
+  transition: transform 500ms ease-in-out;
 }
 
 footer {
@@ -541,6 +548,10 @@ div.green-border {
 .cards_choices p {
   margin-top: 5px;
   text-align: left;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /*# sourceMappingURL=styles.css.map */

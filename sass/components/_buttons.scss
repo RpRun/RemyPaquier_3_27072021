@@ -34,6 +34,7 @@
           bottom: 0;
           left: 0;
           background: radial-gradient(circle, lighten($colour-secondary, 5) 0%, darken($colour-secondary, 10) 100%);
+          /*linear ne fonctionne pas bienj*/
           opacity: 0;
           z-index: -1;
           transition: opacity 300ms;
