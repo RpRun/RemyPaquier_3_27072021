@@ -29,11 +29,14 @@
 /*redondant avec .links .cards*/
 .form {
     text-decoration: none;
-    color: #020202;
+    color: $colour-background;
 }
 
-.town-search {
-    outline: none;
+#town {
+    border: none;
+    font-size: large;
+    background: #e5e5e5;
+    width: 60%;
 }
 
 #shopping {
