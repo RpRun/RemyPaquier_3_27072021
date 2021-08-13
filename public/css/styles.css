@@ -412,17 +412,20 @@ body {
 .check {
   background: #99E2D0;
   color: #fff;
-  width: 20%;
+  width: 15%;
   height: 100%;
   border-radius: 0 20px 20px 0;
   transition: 0.3s;
   position: absolute;
   top: 0px;
-  right: -200px;
+  right: -100%;
 }
 
 span.price {
   font-weight: bold;
+  position: absolute;
+  right: 5%;
+  top: 55%;
   color: black;
 }
 
@@ -437,10 +440,10 @@ span.price {
   position: relative;
   overflow: hidden;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   align-content: center;
-  align-items: center;
+  align-items: flex-start;
   cursor: pointer;
 }
 
@@ -454,6 +457,20 @@ input.choices {
 
 input.choices:checked ~ label .cards_choices .check {
   right: 0;
+}
+
+input.choices:checked ~ label span.price {
+  transform: translateX(-40px);
+}
+
+input.choices:hover ~ label span.price {
+  transform: translateX(-150px);
+  transition: ease-in;
+}
+
+in input.choices:hover ~ label .fa-check {
+  transform: rotate(-1turn);
+  transition: transform 300ms ease-in-out;
 }
 
 /*
@@ -537,6 +554,7 @@ div.green-border {
 
 .cards_choices p {
   margin-top: 5px;
+  text-align: left;
 }
 
 /*# sourceMappingURL=styles.css.map */
