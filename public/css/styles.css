@@ -450,7 +450,14 @@ span.price {
   align-items: flex-start;
   cursor: pointer;
   transition: 0.9s;
+  width: 250px;
   position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cards_choices__description {
+  display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
