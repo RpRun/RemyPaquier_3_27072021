@@ -73,11 +73,19 @@
     align-items: flex-start;
     cursor: pointer;
     transition: 0.9s;
-    
+    min-width: 250px;
     position: relative;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    &__description
+    {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+    }
 
 
 }
@@ -116,5 +124,4 @@ input.choices:checked~label .fa-check
     transform: rotate(+1turn);
     transition: transform 500ms ease-in-out;
 }
-
 
