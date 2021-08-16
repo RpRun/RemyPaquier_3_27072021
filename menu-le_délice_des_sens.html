@@ -115,8 +115,28 @@
     opacity: 0.5;
   }
 }
+.box
+{
+  border: blueviolet 1px dotted;
+  margin: 25px auto;
+  max-width: 700px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.box__text{
+  color: cadetblue;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+}
     </style>
-  
+  <div class="box">
+    <p class="box__text">Alors c est l histoire d'un mec, il tombe du 3 eme etage... et il se répete sans cesse: jusqu ici tout va bien, jusqu ici tout va bien... mais l'important c'est pas la chute.</p>
+
+  </div>
     <input type="checkbox" id="check-heart">
 
     <label for="check-heart">
@@ -124,7 +144,7 @@
         <i class="fas fa-heart"></i>
     </label>
     <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-
+    
 </body>
 
 </html>

@@ -450,7 +450,7 @@ span.price {
   align-items: flex-start;
   cursor: pointer;
   transition: 0.9s;
-  width: 250px;
+  min-width: 250px;
   position: relative;
   overflow: hidden;
   text-overflow: ellipsis;
