@@ -376,6 +376,183 @@ body {
   position: relative;
 }
 
+.launcher {
+  display: inline-block;
+  background: #1eb7d2 5px;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  text-align: center;
+  margin: 100px;
+  border: #b41ed2 5px;
+  border-style: ridge;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.launcher div {
+  border-radius: 50%;
+  position: absolute;
+  animation: launcher 1.2s linear infinite;
+  animation-direction: alternate;
+}
+
+.launcher div:nth-child(1) {
+  color: darkred;
+  border: 5px double;
+  border-color: transparent #b41ed2 transparent #b41ed2;
+  background: #e01515;
+  width: 25px;
+  height: 25Px;
+  top: 15%;
+  left: 50%;
+  animation-delay: -0.8s;
+}
+
+.launcher div:nth-child(2) {
+  color: darkred;
+  background: #b41ed2;
+  width: 10Px;
+  height: 20Px;
+  top: 35%;
+  left: 38%;
+  animation-delay: -0.8s;
+}
+
+.launcher div:nth-child(3) {
+  border: 5px double;
+  border-color: #a00438 transparent #1404a0 transparent;
+  background: #e015a3;
+  width: 25px;
+  height: 25Px;
+  top: 65%;
+  left: 25%;
+  animation-timing-function: ease-in-out;
+}
+
+.launcher div:nth-child(4) {
+  color: #5f008b;
+  border: 5px double;
+  border-color: transparent #b41ed2 transparent #b41ed2;
+  background: #e01515;
+  width: 20px;
+  height: 20Px;
+  top: 15px;
+  left: 0px;
+  animation-delay: -0.8s;
+}
+
+@keyframes launcher {
+  0%, 100% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.2;
+  }
+}
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.loader-content {
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 0;
+  text-align: center;
+  max-width: 1600px;
+}
+
+.accueil {
+  height: 100%;
+  width: 100%;
+  background: #353535;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accueil h1 {
+  font-size: 140px;
+  margin-bottom: 450px;
+}
+
+.loader-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.letters {
+  color: #484848;
+  font-size: 80px;
+  letter-spacing: 15px;
+  margin-bottom: 150px;
+  animation: flash 1.5s linear infinite;
+}
+
+@keyframes flash {
+  0% {
+    color: #99E2D0;
+    text-shadow: 0 0 7px #99E2D0;
+  }
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
+  100% {
+    color: #99E2D0;
+    text-shadow: 0 0 7px #99E2D0;
+  }
+}
+.letters:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.letters:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.letters:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.letters:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.letters:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.letters:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.letters:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.letters:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+.letters:nth-child(9) {
+  animation-delay: 0.9s;
+}
+
+.letters:nth-child(10) {
+  animation-delay: 1s;
+}
+
 .process {
   border-radius: 20px;
   box-shadow: 2px 2px 2px 1px #d3d3d3;
@@ -427,7 +604,7 @@ body {
   right: -70px;
 }
 
-span.price {
+div.price {
   font-weight: bold;
   position: absolute;
   right: 5%;
@@ -450,17 +627,29 @@ span.price {
   align-items: flex-start;
   cursor: pointer;
   transition: 0.9s;
-  min-width: 250px;
+  min-width: 220px;
   position: relative;
   overflow: hidden;
-  text-overflow: ellipsis;
+  border: blueviolet 1px dotted;
   white-space: nowrap;
 }
 .cards_choices__description {
-  display: inline-block;
-  overflow: hidden;
+  color: cadetblue;
   text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.box {
+  border: blueviolet 1px dotted;
+  margin: 25px auto;
   white-space: nowrap;
+  padding: 30px;
+}
+
+.box__text {
+  color: cadetblue;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 input.choices {
@@ -475,11 +664,11 @@ input.choices:checked ~ label .cards_choices .check {
   right: 0;
 }
 
-input.choices:checked ~ label span.price {
+input.choices:checked ~ label div.price {
   transform: translateX(-70px);
 }
 
-input.choices:hover ~ label span.price {
+input.choices:hover ~ label div.price {
   transform: translateX(-70px);
   transition: transform 600ms ease-in-out;
 }

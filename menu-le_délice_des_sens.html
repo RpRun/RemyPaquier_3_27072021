@@ -122,15 +122,16 @@
 }
 .launcher{
   display: inline-block;
+  background: rgb(30, 183, 210) 5px;
   color: #fff;
   width: 80px;
   height: 80px;
   border-radius: 50%;
   position: relative;
   text-align: center;
-  margin: 400px;
-  border: rgb(30, 183, 210) 5px;
-  border-style: groove;
+  margin: 100px;
+  border: rgb(180, 30, 210) 5px;
+  border-style:ridge;
   margin-left: auto;
   margin-right: auto;
 
@@ -138,45 +139,50 @@
 .launcher div
 {
   border-radius: 50%;
-  width:50px;
-  height: 50px;
   position: absolute;
   animation: launcher 1.2s linear infinite;
+  animation-direction: alternate;
 }
 .launcher div:nth-child(1){
   color: rgb(139, 0, 0);
-  border: rgb(30, 210, 84) 5px double;
+  border: 5px double;
+  border-color:transparent rgb(180, 30, 210) transparent rgb(180, 30, 210) ;
   background: rgb(224, 21, 21);
   width:25px;  
   height: 25Px;
   top: 15%;
   left: 50%;
+  animation-delay: -0.8s;
  
 }
 .launcher div:nth-child(2){
   
-  
-  background: rgb(21, 224, 82);
+  color: rgb(139, 0, 0);
+  background:rgb(180, 30, 210);
   width:10Px;
   height: 20Px;
   top: 35%;
   left: 38%;
+  animation-delay: -0.8s;
  
 }
 .launcher div:nth-child(3){
-  color: rgb(5, 139, 0);
-  border: rgb(30, 210, 84) 5px double;
+  
+  border:5px double;
+  
+  border-color:rgb(160, 4, 56) transparent rgb(20, 4, 160) transparent;
   background: rgb(224, 21, 163);
   width:25px;
   height: 25Px;
   top:65%;
-  left: 30%;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  left: 25%;
+  animation-timing-function: ease-in-out;
  
 }
 .launcher div:nth-child(4){
   color: rgb(95, 0, 139);
-  border: rgb(30, 210, 84) 5px double;
+  border: 5px double;
+  border-color:transparent rgb(180, 30, 210) transparent rgb(180, 30, 210) ;
   background: rgb(224, 21, 21);
   width:20px;
   height: 20Px;
@@ -190,9 +196,12 @@
     opacity: 1;
   }
   80% {
-    opacity: 0.5;
+    opacity: 0.2;
   }
 }
+
+
+
     </style>
   <div class="box">
     <p class="box__text">Alors c est l histoire d'un mec, il tombe du 3 eme etage... et il se répete sans cesse: jusqu ici tout va bien, jusqu ici tout va bien... mais l'important c'est pas la chute.</p>
@@ -215,6 +224,15 @@
       <div></div>
       
   </div>
+
+  <div class="loader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    
+</div>
+  
 </body>
 
 </html>

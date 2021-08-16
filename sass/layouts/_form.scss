@@ -48,7 +48,7 @@
     right: -70px;
 }
 
-    span.price {
+    div.price {
         font-weight: bold;
         position: absolute;
         right: 5%;
@@ -73,21 +73,35 @@
     align-items: flex-start;
     cursor: pointer;
     transition: 0.9s;
-    min-width: 250px;
+    min-width: 220px;
     position: relative;
     overflow: hidden;
-    text-overflow: ellipsis;
+    border: blueviolet 1px dotted;
     white-space: nowrap;
     &__description
     {
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    
+        color: cadetblue;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+      
     
     }
+   
 
-
+}
+.box
+{
+  border: blueviolet 1px dotted;
+  margin: 25px auto;
+  white-space: nowrap;
+  padding: 30px;
+}
+.box__text{
+  color: cadetblue;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 input.choices {
     display: none;
@@ -102,12 +116,12 @@ input.choices:checked ~ label .cards_choices .check  {
     right: 0;
 }
 
-input.choices:checked~label span.price {
+input.choices:checked~label div.price {
 
     transform: translateX(-70px);
     
 }
-input.choices:hover~label span.price {
+input.choices:hover~label div.price {
 
     transform: translateX(-70px);
     transition: transform 600ms ease-in-out;

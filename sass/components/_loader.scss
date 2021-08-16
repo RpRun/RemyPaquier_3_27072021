@@ -1,0 +1,175 @@
+.launcher{
+    display: inline-block;
+    background: rgb(30, 183, 210) 5px;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    margin: 100px;
+    border: rgb(180, 30, 210) 5px;
+    border-style:ridge;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  .launcher div
+  {
+    border-radius: 50%;
+    position: absolute;
+    animation: launcher 1.2s linear infinite;
+    animation-direction: alternate;
+  }
+  .launcher div:nth-child(1){
+    color: rgb(139, 0, 0);
+    border: 5px double;
+    border-color:transparent rgb(180, 30, 210) transparent rgb(180, 30, 210) ;
+    background: rgb(224, 21, 21);
+    width:25px;  
+    height: 25Px;
+    top: 15%;
+    left: 50%;
+    animation-delay: -0.8s;
+   
+  }
+  .launcher div:nth-child(2){
+    
+    color: rgb(139, 0, 0);
+    background:rgb(180, 30, 210);
+    width:10Px;
+    height: 20Px;
+    top: 35%;
+    left: 38%;
+    animation-delay: -0.8s;
+   
+  }
+  .launcher div:nth-child(3){
+    
+    border:5px double;
+    
+    border-color:rgb(160, 4, 56) transparent rgb(20, 4, 160) transparent;
+    background: rgb(224, 21, 163);
+    width:25px;
+    height: 25Px;
+    top:65%;
+    left: 25%;
+    animation-timing-function: ease-in-out;
+   
+  }
+  .launcher div:nth-child(4){
+    color: rgb(95, 0, 139);
+    border: 5px double;
+    border-color:transparent rgb(180, 30, 210) transparent rgb(180, 30, 210) ;
+    background: rgb(224, 21, 21);
+    width:20px;
+    height: 20Px;
+    top: 15px;
+    left: 0px;
+   animation-delay: -0.8s;
+   
+  }
+  @keyframes launcher {
+    0%, 100% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0.2;
+    }
+  }
+//loading-page
+*, ::before, ::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.loader-content
+{
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 0;
+  text-align: center;
+  max-width: 1600px;
+}
+.accueil
+{
+  height: 100%;
+  width: 100%;
+  background:$colour-bg_footer;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accueil h1
+{
+  font-size: 140px;
+  margin-bottom: 450px;
+}
+
+.loader-content
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: $colour-bg_footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.letters
+{
+  color: #484848;
+  font-size: 80px;
+  letter-spacing: 15px;
+  margin-bottom: 150px;
+  animation: flash 1.5s linear infinite;
+
+}
+@keyframes flash  {
+  0%{
+    color:$colour-tertiary;
+    text-shadow: 0 0 7px $colour-tertiary;
+  }
+  90%{
+    color: #484848;
+    text-shadow:none;
+  }
+  100%{
+    color:$colour-tertiary;
+    text-shadow: 0 0 7px $colour-tertiary;
+  }
+}
+.letters:nth-child(1){
+  animation-delay: 0.1s;
+}
+.letters:nth-child(2){
+  animation-delay: 0.2s;
+}
+.letters:nth-child(3){
+  animation-delay: 0.3s;
+}
+.letters:nth-child(4){
+  animation-delay: 0.4s;
+}
+.letters:nth-child(5){
+  animation-delay: 0.5s;
+}
+.letters:nth-child(6){
+  animation-delay: 0.6s;
+}
+.letters:nth-child(7){
+  animation-delay: 0.7s;
+}
+.letters:nth-child(8){
+  animation-delay: 0.8s;
+}
+.letters:nth-child(9){
+  animation-delay: 0.9s;
+}
+.letters:nth-child(10){
+  animation-delay: 1s;
+} 
+
+
+
