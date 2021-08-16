@@ -14,34 +14,27 @@
 
     <style>
         .fa-heart {
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: 20px;
             position: absolute;
+            margin-top: 30px;
+            top: 0;
+            left: 50%;
             transition: opacity 0.3s;
         }
-
         .fas {
-
             opacity: 0;
-
         }
-
         .far {
-
             background: #fff;
-
         }
-
         #check-heart:checked~label .far {
             opacity: 0;
         }
-
         #check-heart:checked~label .fas {
             opacity: 1;
             color: chartreuse;
-
         }
-
         #check-heart {
             display: none;
         }
@@ -119,18 +112,86 @@
 {
   border: blueviolet 1px dotted;
   margin: 25px auto;
-  max-width: 700px;
   white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  display: block;
-  position: relative;
+  padding: 30px;
 }
 .box__text{
   color: cadetblue;
   text-overflow: ellipsis;
   overflow: hidden;
-  display: block;
+}
+.launcher{
+  display: inline-block;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  text-align: center;
+  margin: 400px;
+  border: rgb(30, 183, 210) 5px;
+  border-style: groove;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.launcher div
+{
+  border-radius: 50%;
+  width:50px;
+  height: 50px;
+  position: absolute;
+  animation: launcher 1.2s linear infinite;
+}
+.launcher div:nth-child(1){
+  color: rgb(139, 0, 0);
+  border: rgb(30, 210, 84) 5px double;
+  background: rgb(224, 21, 21);
+  width:25px;  
+  height: 25Px;
+  top: 15%;
+  left: 50%;
+ 
+}
+.launcher div:nth-child(2){
+  
+  
+  background: rgb(21, 224, 82);
+  width:10Px;
+  height: 20Px;
+  top: 35%;
+  left: 38%;
+ 
+}
+.launcher div:nth-child(3){
+  color: rgb(5, 139, 0);
+  border: rgb(30, 210, 84) 5px double;
+  background: rgb(224, 21, 163);
+  width:25px;
+  height: 25Px;
+  top:65%;
+  left: 30%;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+ 
+}
+.launcher div:nth-child(4){
+  color: rgb(95, 0, 139);
+  border: rgb(30, 210, 84) 5px double;
+  background: rgb(224, 21, 21);
+  width:20px;
+  height: 20Px;
+  top: 15px;
+  left: 0px;
+ animation-delay: -0.8s;
+ 
+}
+@keyframes launcher {
+  0%, 100% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
 }
     </style>
   <div class="box">
@@ -143,8 +204,17 @@
         <i class="far fa-heart"></i>
         <i class="fas fa-heart"></i>
     </label>
+
+    
     <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
     
+    <div class="launcher">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      
+  </div>
 </body>
 
 </html>
