@@ -604,7 +604,7 @@ body {
   right: -70px;
 }
 
-div.price {
+span.price {
   font-weight: bold;
   position: absolute;
   right: 5%;
@@ -627,29 +627,10 @@ div.price {
   align-items: flex-start;
   cursor: pointer;
   transition: 0.9s;
-  min-width: 220px;
   position: relative;
   overflow: hidden;
-  border: blueviolet 1px dotted;
-  white-space: nowrap;
-}
-.cards_choices__description {
-  color: cadetblue;
   text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.box {
-  border: blueviolet 1px dotted;
-  margin: 25px auto;
   white-space: nowrap;
-  padding: 30px;
-}
-
-.box__text {
-  color: cadetblue;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 input.choices {
@@ -664,11 +645,11 @@ input.choices:checked ~ label .cards_choices .check {
   right: 0;
 }
 
-input.choices:checked ~ label div.price {
+input.choices:checked ~ label span.price {
   transform: translateX(-70px);
 }
 
-input.choices:hover ~ label div.price {
+input.choices:hover ~ label span.price {
   transform: translateX(-70px);
   transition: transform 600ms ease-in-out;
 }
