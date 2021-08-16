@@ -25,7 +25,7 @@ div.green-border{
     margin-top: 5px;
     margin-bottom: 10px;
 }
-
+// supprimer un des deux une fois le pb reglé
 
 .cards_choices span {
     font-weight: bold;
@@ -36,9 +36,17 @@ div.green-border{
         white-space: nowrap;
     
 }
-
-
-
+// supprimer un des deux une fois le pb reglé
+.cards_choices div{
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    
+}
+// supprimer un des deux une fois le pb reglé
 
 
 
