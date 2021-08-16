@@ -30,19 +30,15 @@ div.green-border{
 .cards_choices span {
     font-weight: bold;
     margin-bottom: 10px;
+    display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     
 }
 
 
-.cards_choices p
-{
-    margin-top: 5px;
-    text-align: left;
-    position: relative;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
+
 
 
 

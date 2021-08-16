@@ -14,14 +14,17 @@
     &:hover {
         background-color: lighten($color: $colour-primary, $amount: 35%);
         cursor: pointer;
+
         .fas {
             color: $colour-primary;
         }
     }
 }
+
 #check-heart {
     display: none;
 }
+
 /*redondant avec .links .cards*/
 .form {
     text-decoration: none;
@@ -38,7 +41,7 @@
 .check {
     background: $colour-tertiary;
     color: #fff;
-    width:70px;
+    width: 70px;
     height: 100%;
     border-radius: 0 20px 20px 0;
     box-shadow: 2px 2px 2px 1px #d3d3d3;
@@ -48,16 +51,21 @@
     right: -70px;
 }
 
-    span.price {
-        font-weight: bold;
-        position: absolute;
-        right: 5%;
-        top: 55%;
-        color: black;
+.price {
+    font-weight: bold;
+
+    width: 30px;
+    padding: 19px;
+    height: 100%;
+    /* MARGIN: AUTO; */
+
+    margin-left: 5px;
+    margin-right: 5px;
+    color: black;
 }
 
 .cards_choices {
-    
+
     background-color: #fff;
     box-shadow: 2px 2px 2px 1px #d3d3d3;
     height: 40px;
@@ -65,63 +73,85 @@
     margin-bottom: 20px;
     padding: 15px 10px;
     font-size: small;
-    
+
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
+    flex-wrap: wrap;
+    align-content:space-between;
     align-items: flex-start;
+    justify-content: space-between;
     cursor: pointer;
     transition: 0.9s;
-    min-width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+     text-overflow: ellipsis;
+    height: 70px;
     position: relative;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    &__description
-    {
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    
-    }
 
+
+    &__description {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: absolute;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        
 
 }
+}
+.cards_choices p
+{
+    
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    
+}
+
+.cards_text {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
 input.choices {
     display: none;
 }
-.cards_choices:hover > .check {
+
+.cards_choices:hover>.check {
     right: 0;
-    
+
 }
 
-input.choices:checked ~ label .cards_choices .check  {
-    
+input.choices:checked~label .cards_choices .check {
+
     right: 0;
 }
 
-input.choices:checked~label span.price {
+input.choices:checked~label .price {
 
     transform: translateX(-70px);
-    
+
 }
-input.choices:hover~label span.price {
+
+input.choices:hover~label .price {
 
     transform: translateX(-70px);
     transition: transform 600ms ease-in-out;
-    
+
 }
+
 input.choices:hover~label .fa-check {
     transform: rotate(-1turn);
     transition: transform 800ms ease-in-out;
 }
 
-input.choices:checked~label .fa-check 
-
-{
+input.choices:checked~label .fa-check {
     transform: rotate(+1turn);
     transition: transform 500ms ease-in-out;
 }
-
