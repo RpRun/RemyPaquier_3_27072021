@@ -39,75 +39,6 @@
             display: none;
         }
 
-        .lds-grid {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-  color: aqua;
-  background: blue;
-}
-.lds-grid div {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #fff;
-  animation: lds-grid 1.2s linear infinite;
-}
-.lds-grid div:nth-child(1) {
-  top: 8px;
-  left: 8px;
-  animation-delay: 0s;
-}
-.lds-grid div:nth-child(2) {
-  top: 8px;
-  left: 32px;
-  animation-delay: -0.4s;
-}
-.lds-grid div:nth-child(3) {
-  top: 8px;
-  left: 56px;
-  animation-delay: -0.8s;
-}
-.lds-grid div:nth-child(4) {
-  top: 32px;
-  left: 8px;
-  animation-delay: -0.4s;
-}
-.lds-grid div:nth-child(5) {
-  top: 32px;
-  left: 32px;
-  animation-delay: -0.8s;
-}
-.lds-grid div:nth-child(6) {
-  top: 32px;
-  left: 56px;
-  animation-delay: -1.2s;
-}
-.lds-grid div:nth-child(7) {
-  top: 56px;
-  left: 8px;
-  animation-delay: -0.8s;
-}
-.lds-grid div:nth-child(8) {
-  top: 56px;
-  left: 32px;
-  animation-delay: -1.2s;
-}
-.lds-grid div:nth-child(9) {
-  top: 56px;
-  left: 56px;
-  animation-delay: -1.6s;
-}
-@keyframes lds-grid {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-}
 .box
 {
   border: blueviolet 1px dotted;
@@ -120,86 +51,60 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.launcher{
+.lds-heart {
   display: inline-block;
-  background: rgb(30, 183, 210) 5px;
-  color: #fff;
+  position: relative;
   width: 80px;
   height: 80px;
-  border-radius: 50%;
-  position: relative;
-  text-align: center;
-  margin: 100px;
-  border: rgb(180, 30, 210) 5px;
-  border-style:ridge;
-  margin-left: auto;
-  margin-right: auto;
-
+  transform: rotate(45deg);
+  transform-origin: 40px 40px;
 }
-.launcher div
-{
-  border-radius: 50%;
+.lds-heart div {
+  top: 32px;
+  left: 32px;
   position: absolute;
-  animation: launcher 1.2s linear infinite;
-  animation-direction: alternate;
+  width: 32px;
+  height: 32px;
+  background: rgb(47, 218, 138);
+  animation: lds-heart 1.9s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.launcher div:nth-child(1){
-  color: rgb(139, 0, 0);
-  border: 5px double;
-  border-color:transparent rgb(180, 30, 210) transparent rgb(180, 30, 210) ;
-  background: rgb(224, 21, 21);
-  width:25px;  
-  height: 25Px;
-  top: 15%;
-  left: 50%;
-  animation-delay: -0.8s;
- 
+.lds-heart div:after,
+.lds-heart div:before {
+  content: " ";
+  position: absolute;  
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: rgb(47, 50, 218);
 }
-.launcher div:nth-child(2){
-  
-  color: rgb(139, 0, 0);
-  background:rgb(180, 30, 210);
-  width:10Px;
-  height: 20Px;
-  top: 35%;
-  left: 38%;
-  animation-delay: -0.8s;
- 
+.lds-heart div:before {
+  left: -24px;
+  border-radius: 50% 0 0 50%;
 }
-.launcher div:nth-child(3){
-  
-  border:5px double;
-  
-  border-color:rgb(160, 4, 56) transparent rgb(20, 4, 160) transparent;
-  background: rgb(224, 21, 163);
-  width:25px;
-  height: 25Px;
-  top:65%;
-  left: 25%;
-  animation-timing-function: ease-in-out;
- 
+.lds-heart div:after {
+  top: -24px;
+  border-radius: 50% 50% 0 0;
 }
-.launcher div:nth-child(4){
-  color: rgb(95, 0, 139);
-  border: 5px double;
-  border-color:transparent rgb(180, 30, 210) transparent rgb(180, 30, 210) ;
-  background: rgb(224, 21, 21);
-  width:20px;
-  height: 20Px;
-  top: 15px;
-  left: 0px;
- animation-delay: -0.8s;
- 
-}
-@keyframes launcher {
-  0%, 100% {
-    opacity: 1;
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
   }
-  80% {
-    opacity: 0.2;
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
   }
 }
-
 
 
     </style>
@@ -214,22 +119,7 @@
         <i class="fas fa-heart"></i>
     </label>
 
-    
-    <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-    
-    <div class="launcher">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      
-  </div>
-
-  <div class="loader">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div class="lds-heart"><div></div></div>
     
 </div>
   
