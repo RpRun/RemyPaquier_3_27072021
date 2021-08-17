@@ -102,6 +102,100 @@ h1.heading-sections {
   margin-top: 20px;
 }
 
+@keyframes loading {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes flash {
+  0% {
+    color: #99E2D0;
+    text-shadow: 0 0 8px #9356DC;
+  }
+  90% {
+    color: #99E2D0;
+    text-shadow: none;
+  }
+  100% {
+    color: #99E2D0;
+    text-shadow: 0 0 8px #9356DC;
+  }
+}
+.loader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+.loader--content {
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  position: relative;
+  animation: loading 4s;
+  top: 0;
+  left: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letters {
+  background: #fff;
+  font-size: 80px;
+  letter-spacing: 15px;
+  margin-bottom: 150px;
+  animation: flash 1.5s linear infinite;
+}
+
+.letters:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.letters:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.letters:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.letters:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.letters:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.letters:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.letters:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.letters:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+.letters:nth-child(9) {
+  animation-delay: 0.9s;
+}
+
+.letters:nth-child(10) {
+  animation-delay: 1s;
+}
+
 i.fa-arrow-left {
   position: absolute;
   left: 5px;
@@ -205,7 +299,7 @@ span.circle {
   text-align: center;
   padding: 4px;
   line-height: 1.5;
-  font-size: 12px;
+  font-size: 17px;
   margin-right: 5px;
 }
 
@@ -279,8 +373,8 @@ span.circle {
   right: 0;
   bottom: 0;
   left: 0;
-  background: radial-gradient(circle, #ff93e1 0%, #ff46cc 100%);
-  /*linear ne fonctionne pas bienj*/
+  background: linear-gradient(171deg, #ff93e1 0%, #ff46cc 100%);
+  /*linear ne fonctionne pas bien radial-gradient(circle, lighten($colour-secondary, 5) 0%, darken($colour-secondary, 10) 100%);*/
   opacity: 0;
   z-index: -1;
   transition: opacity 300ms;
@@ -374,107 +468,6 @@ body {
 
 .restaurant-name {
   position: relative;
-}
-
-*, ::before, ::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.loader-content {
-  width: 100%;
-  margin: 0 0 0 0;
-  padding: 0;
-  text-align: center;
-  max-width: 1600px;
-}
-
-.accueil {
-  height: 100%;
-  width: 100%;
-  background: #353535;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.accueil h1 {
-  font-size: 140px;
-  margin-bottom: 450px;
-}
-
-.loader-content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #353535;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.letters {
-  color: #484848;
-  font-size: 80px;
-  letter-spacing: 15px;
-  margin-bottom: 150px;
-  animation: flash 1.5s linear infinite;
-}
-
-@keyframes flash {
-  0% {
-    color: #99E2D0;
-    text-shadow: 0 0 7px #99E2D0;
-  }
-  90% {
-    color: #484848;
-    text-shadow: none;
-  }
-  100% {
-    color: #99E2D0;
-    text-shadow: 0 0 7px #99E2D0;
-  }
-}
-.letters:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.letters:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.letters:nth-child(3) {
-  animation-delay: 0.3s;
-}
-
-.letters:nth-child(4) {
-  animation-delay: 0.4s;
-}
-
-.letters:nth-child(5) {
-  animation-delay: 0.5s;
-}
-
-.letters:nth-child(6) {
-  animation-delay: 0.6s;
-}
-
-.letters:nth-child(7) {
-  animation-delay: 0.7s;
-}
-
-.letters:nth-child(8) {
-  animation-delay: 0.8s;
-}
-
-.letters:nth-child(9) {
-  animation-delay: 0.9s;
-}
-
-.letters:nth-child(10) {
-  animation-delay: 1s;
 }
 
 .process {
