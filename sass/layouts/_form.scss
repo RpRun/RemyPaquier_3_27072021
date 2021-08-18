@@ -64,6 +64,91 @@
     margin-right: 5px;
     color: black;
 }
+/*
+.....##......##..#####...######..######...####...##..##..######..######...........####...##..##..######...####...##..##.
+....##......##...##..##..##......##......##..##..###.##....##....##..............##..##..##..##..##......##..##..##.##..
+...##......##....#####...####....####....##..##..##.###....##....####............##......######..####....##......####...
+..##......##.....##..##..##......##......##..##..##..##....##....##..............##..##..##..##..##......##..##..##.##..
+.##......##......##..##..######..##.......####...##..##....##....######...........####...##..##..######...####...##..##.
+........................................................................................................................
+*/
+.menu-cards
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    font-size: small;
+    cursor: pointer;
+    position: relative;
+    translate:0.9s;
+    &__description h3{
+        font-weight: bold;
+    }
+    /*
+           #       #       #
+          #       #       # #      #####  #  ####   ####  #    # ##### ###### #####
+         #       #       #   #     #    # # #      #    # #    #   #   #      #    #
+        #       #       #     #    #    # #  ####  #      #    #   #   #####  #    #
+       #       #        #######    #    # #      # #      #    #   #   #      #####
+      #       #         #     #    #    # # #    # #    # #    #   #   #      #   #
+     #       #          #     #    #####  #  ####   ####   ####    #   ###### #    #
+
+    */
+    &__price {
+        font-weight: bold; 
+    }
+}
+input.command {
+    display: none;
+}
+
+.menu-cards:hover>.menu-cards__check {
+    right: 0;
+
+}
+
+input.command:checked~label .command .check {
+
+    right: 0;
+}
+
+input.command:checked~label .menu-cards__price {
+
+    transform: translateX(-70px);
+
+}
+
+input.command:hover~label .menu-cards__price {
+
+    transform: translateX(-70px);
+    transition: transform 600ms ease-in-out;
+
+}
+
+input.command:hover~label .fa-check {
+    transform: rotate(-1turn);
+    transition: transform 800ms ease-in-out;
+}
+
+input.command:checked~label .fa-check {
+    transform: rotate(+1turn);
+    transition: transform 500ms ease-in-out;
+}
+
+
+
+
+
+
+
+
+
 
 .checkboxContainer {
 
@@ -74,37 +159,27 @@
     margin-bottom: 20px;
     padding: 15px 10px;
     font-size: small;
-
     display: flex;
+    
     flex-direction: row;
     flex-wrap: nowrap;
     align-content:space-between;
     align-items: flex-start;
     justify-content: space-between;
+
     cursor: pointer;
+
     transition: 0.9s;
     overflow: hidden;
     white-space: nowrap;
      text-overflow: ellipsis;
-    height: 70px;
+    
     position: relative;
-
-
-    &__description {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        position: absolute;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        
-
-}
 }
 .checkboxContainer p
 {
     
-        display: inline-block;
+        
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -119,7 +194,7 @@
     white-space: nowrap;
 }
 
-
+/*
 input.choices {
     display: none;
 }
@@ -140,14 +215,14 @@ input.choices:checked~label .price {
 
 }
 
-input.choices:hover~label .price {
+input.checkboxContainer:hover~label .price {
 
     transform: translateX(-70px);
     transition: transform 600ms ease-in-out;
 
 }
 
-input.choices:hover~label .fa-check {
+input.checkboxContainer:hover~label .fa-check {
     transform: rotate(-1turn);
     transition: transform 800ms ease-in-out;
 }
@@ -156,3 +231,4 @@ input.choices:checked~label .fa-check {
     transform: rotate(+1turn);
     transition: transform 500ms ease-in-out;
 }
+*/

@@ -557,6 +557,77 @@ section {
   color: black;
 }
 
+/*
+.....##......##..#####...######..######...####...##..##..######..######...........####...##..##..######...####...##..##.
+....##......##...##..##..##......##......##..##..###.##....##....##..............##..##..##..##..##......##..##..##.##..
+...##......##....#####...####....####....##..##..##.###....##....####............##......######..####....##......####...
+..##......##.....##..##..##......##......##..##..##..##....##....##..............##..##..##..##..##......##..##..##.##..
+.##......##......##..##..######..##.......####...##..##....##....######...........####...##..##..######...####...##..##.
+........................................................................................................................
+*/
+.menu-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 15px 10px;
+  font-size: small;
+  cursor: pointer;
+  position: relative;
+  translate: 0.9s;
+  /*
+         #       #       #
+        #       #       # #      #####  #  ####   ####  #    # ##### ###### #####
+       #       #       #   #     #    # # #      #    # #    #   #   #      #    #
+      #       #       #     #    #    # #  ####  #      #    #   #   #####  #    #
+     #       #        #######    #    # #      # #      #    #   #   #      #####
+    #       #         #     #    #    # # #    # #    # #    #   #   #      #   #
+   #       #          #     #    #####  #  ####   ####   ####    #   ###### #    #
+
+  */
+}
+.menu-cards__description h3 {
+  font-weight: bold;
+}
+.menu-cards__price {
+  font-weight: bold;
+}
+
+input.command {
+  display: none;
+}
+
+.menu-cards:hover > .menu-cards__check {
+  right: 0;
+}
+
+input.command:checked ~ label .command .check {
+  right: 0;
+}
+
+input.command:checked ~ label .menu-cards__price {
+  transform: translateX(-70px);
+}
+
+input.command:hover ~ label .menu-cards__price {
+  transform: translateX(-70px);
+  transition: transform 600ms ease-in-out;
+}
+
+input.command:hover ~ label .fa-check {
+  transform: rotate(-1turn);
+  transition: transform 800ms ease-in-out;
+}
+
+input.command:checked ~ label .fa-check {
+  transform: rotate(1turn);
+  transition: transform 500ms ease-in-out;
+}
+
 .checkboxContainer {
   background-color: #fff;
   box-shadow: 2px 2px 2px 1px #d3d3d3;
@@ -576,20 +647,10 @@ section {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  height: 70px;
   position: relative;
-}
-.checkboxContainer__description {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: absolute;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .checkboxContainer p {
-  display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -603,37 +664,44 @@ section {
   white-space: nowrap;
 }
 
+/*
 input.choices {
-  display: none;
+    display: none;
 }
 
-.checkboxContainer:hover > .check {
-  right: 0;
+.checkboxContainer:hover>.check {
+    right: 0;
+
 }
 
-input.choices:checked ~ label .checkboxContainer .check {
-  right: 0;
+input.choices:checked~label .checkboxContainer .check {
+
+    right: 0;
 }
 
-input.choices:checked ~ label .price {
-  transform: translateX(-70px);
+input.choices:checked~label .price {
+
+    transform: translateX(-70px);
+
 }
 
-input.choices:hover ~ label .price {
-  transform: translateX(-70px);
-  transition: transform 600ms ease-in-out;
+input.checkboxContainer:hover~label .price {
+
+    transform: translateX(-70px);
+    transition: transform 600ms ease-in-out;
+
 }
 
-input.choices:hover ~ label .fa-check {
-  transform: rotate(-1turn);
-  transition: transform 800ms ease-in-out;
+input.checkboxContainer:hover~label .fa-check {
+    transform: rotate(-1turn);
+    transition: transform 800ms ease-in-out;
 }
 
-input.choices:checked ~ label .fa-check {
-  transform: rotate(1turn);
-  transition: transform 500ms ease-in-out;
+input.choices:checked~label .fa-check {
+    transform: rotate(+1turn);
+    transition: transform 500ms ease-in-out;
 }
-
+*/
 footer {
   background: #353535;
   display: flex;
