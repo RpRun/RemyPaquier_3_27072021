@@ -556,7 +556,7 @@ section {
   color: black;
 }
 
-.cards_choices {
+.checkboxContainer {
   background-color: #fff;
   box-shadow: 2px 2px 2px 1px #d3d3d3;
   height: 40px;
@@ -578,7 +578,7 @@ section {
   height: 70px;
   position: relative;
 }
-.cards_choices__description {
+.checkboxContainer__description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -587,7 +587,7 @@ section {
   text-overflow: ellipsis;
 }
 
-.cards_choices p {
+.checkboxContainer p {
   display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -606,11 +606,11 @@ input.choices {
   display: none;
 }
 
-.cards_choices:hover > .check {
+.checkboxContainer:hover > .check {
   right: 0;
 }
 
-input.choices:checked ~ label .cards_choices .check {
+input.choices:checked ~ label .checkboxContainer .check {
   right: 0;
 }
 
@@ -686,7 +686,7 @@ div.green-border {
   margin-bottom: 10px;
 }
 
-.cards_choices span {
+.checkboxContainer span {
   font-weight: bold;
   margin-bottom: 10px;
   display: inline-block;
@@ -695,7 +695,7 @@ div.green-border {
   white-space: nowrap;
 }
 
-.cards_choices div {
+.checkboxContainer div {
   font-weight: bold;
   margin-bottom: 10px;
   display: inline-block;

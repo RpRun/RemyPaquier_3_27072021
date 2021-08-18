@@ -64,7 +64,7 @@
     color: black;
 }
 
-.cards_choices {
+.checkboxContainer {
 
     background-color: #fff;
     box-shadow: 2px 2px 2px 1px #d3d3d3;
@@ -100,7 +100,7 @@
 
 }
 }
-.cards_choices p
+.checkboxContainer p
 {
     
         display: inline-block;
@@ -123,12 +123,12 @@ input.choices {
     display: none;
 }
 
-.cards_choices:hover>.check {
+.checkboxContainer:hover>.check {
     right: 0;
 
 }
 
-input.choices:checked~label .cards_choices .check {
+input.choices:checked~label .checkboxContainer .check {
 
     right: 0;
 }
