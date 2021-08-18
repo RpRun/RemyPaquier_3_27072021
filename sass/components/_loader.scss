@@ -2,7 +2,7 @@
 //loading-page
 
 
-/* loader CHARGEMENT pb de z index
+/* loader CHARGEMENT pb de z index */
 @keyframes loading {
   0% {visibility: visible;}
   100% {visibility: hidden;}
@@ -21,6 +21,15 @@
     text-shadow: 0 0 8px  $colour-primary;
   }
 }
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 
 
 
@@ -29,7 +38,9 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
-  
+  z-index: 10000;
+  visibility:hidden;
+  animation:loading 10s;
   top: 0;
   left: 0;
   margin: 0;  
@@ -39,22 +50,29 @@
 {
   width: 100vw;
   height: 100vh;
-  visibility:hidden;
-  position: fixed;
-  //need to be fixed
-
-  z-index: 0.5;
-  animation:loading 4s;
   top: 0;
   left: 0;
-  background: transparent;
+  background:hsla(0, 0%, 90%, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.icons
+{
+  background:transparent;
+  font-size: 60px;
+  letter-spacing: 15px;
+  margin-bottom: 150px;
+  animation: flash 1.5s linear infinite;
+}
+//2 animations sur meme element à regler
+.icons--turning
+{
+  animation:rotation 1.5s linear infinite;
+}
 .letters{
   background:transparent;
-  font-size: 80px;
+  font-size: 60px;
   letter-spacing: 15px;
   margin-bottom: 150px;
   animation: flash 1.5s linear infinite;
@@ -89,7 +107,7 @@
 .letters:nth-child(10){
   animation-delay: 1s;
 } 
-*/
+
 
 
 

@@ -5,7 +5,10 @@ body {
    height: 100vh;
    position: relative;
 }
-
+section
+{
+   display: block;
+}
 .step-list
 {
    margin-left: 38px;
