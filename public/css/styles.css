@@ -139,7 +139,7 @@ h1.heading-sections {
   position: fixed;
   z-index: 10000;
   visibility: hidden;
-  animation: loading 10s;
+  animation: loading 4s;
   top: 0;
   left: 0;
   margin: 0;
@@ -394,7 +394,7 @@ span.circle {
   bottom: 0;
   left: 0;
   background: linear-gradient(171deg, #ff93e1 0%, #ff46cc 100%);
-  /*linear ne fonctionne pas bien radial-gradient(circle, lighten($colour-secondary, 5) 0%, darken($colour-secondary, 10) 100%);*/
+  /*si linear ne fonctionne pas bien en alternative: radial-gradient(circle, lighten($colour-secondary, 5) 0%, darken($colour-secondary, 10) 100%);*/
   opacity: 0;
   z-index: -1;
   transition: opacity 300ms;
@@ -671,7 +671,7 @@ main.menu {
   padding-top: 30px;
 }
 
-h3.heading-cards {
+h2.heading-cards {
   margin-top: 35px;
   text-transform: uppercase;
   font-weight: lighter;
@@ -687,15 +687,6 @@ div.green-border {
 }
 
 .checkboxContainer span {
-  font-weight: bold;
-  margin-bottom: 10px;
-  display: inline-block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.checkboxContainer div {
   font-weight: bold;
   margin-bottom: 10px;
   display: inline-block;

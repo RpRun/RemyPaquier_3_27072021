@@ -34,7 +34,7 @@
           bottom: 0;
           left: 0;
           background: linear-gradient((171deg,lighten($colour-secondary, 5)0%,darken($colour-secondary, 10) 100%));
-          /*linear ne fonctionne pas bien radial-gradient(circle, lighten($colour-secondary, 5) 0%, darken($colour-secondary, 10) 100%);*/
+          /*si linear ne fonctionne pas bien en alternative: radial-gradient(circle, lighten($colour-secondary, 5) 0%, darken($colour-secondary, 10) 100%);*/
           opacity: 0;
           z-index: -1;
           transition: opacity 300ms;
