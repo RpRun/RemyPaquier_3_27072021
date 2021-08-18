@@ -102,100 +102,94 @@ h1.heading-sections {
   margin-top: 20px;
 }
 
+/* loader CHARGEMENT pb de z index
 @keyframes loading {
-  0% {
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
-  }
+  0% {visibility: visible;}
+  100% {visibility: hidden;}
 }
 @keyframes flash {
   0% {
-    color: #99E2D0;
-    text-shadow: 0 0 8px #9356DC;
+    color:#99E2D0;
+    text-shadow: 0 0 8px  $colour-primary;
   }
   90% {
-    color: #99E2D0;
-    text-shadow: none;
+    color:#99E2D0;
+    text-shadow:none;
   }
-  100% {
-    color: #99E2D0;
-    text-shadow: 0 0 8px #9356DC;
+  100%{
+    color:#99E2D0;
+    text-shadow: 0 0 8px  $colour-primary;
   }
 }
+
+
+
 .loader {
+
   width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: 9999;
+
   top: 0;
   left: 0;
-  margin: 0;
-}
+  margin: 0;  
 
-.loader--content {
+}
+.loader--content
+{
   width: 100vw;
   height: 100vh;
-  visibility: hidden;
-  position: relative;
-  animation: loading 4s;
+  visibility:hidden;
+  position: fixed;
+  //need to be fixed
+
+  z-index: 0.5;
+  animation:loading 4s;
   top: 0;
   left: 0;
-  background: #fff;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.letters {
-  background: #fff;
+.letters{
+  background:transparent;
   font-size: 80px;
   letter-spacing: 15px;
   margin-bottom: 150px;
   animation: flash 1.5s linear infinite;
-}
-
-.letters:nth-child(1) {
+}  
+.letters:nth-child(1){
   animation-delay: 0.1s;
 }
-
-.letters:nth-child(2) {
+.letters:nth-child(2){
   animation-delay: 0.2s;
 }
-
-.letters:nth-child(3) {
+.letters:nth-child(3){
   animation-delay: 0.3s;
 }
-
-.letters:nth-child(4) {
+.letters:nth-child(4){
   animation-delay: 0.4s;
 }
-
-.letters:nth-child(5) {
+.letters:nth-child(5){
   animation-delay: 0.5s;
 }
-
-.letters:nth-child(6) {
+.letters:nth-child(6){
   animation-delay: 0.6s;
 }
-
-.letters:nth-child(7) {
+.letters:nth-child(7){
   animation-delay: 0.7s;
 }
-
-.letters:nth-child(8) {
+.letters:nth-child(8){
   animation-delay: 0.8s;
 }
-
-.letters:nth-child(9) {
+.letters:nth-child(9){
   animation-delay: 0.9s;
 }
-
-.letters:nth-child(10) {
+.letters:nth-child(10){
   animation-delay: 1s;
-}
-
+} 
+*/
 i.fa-arrow-left {
   position: absolute;
   left: 5px;

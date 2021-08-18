@@ -2,7 +2,7 @@
 //loading-page
 
 
-
+/* loader CHARGEMENT pb de z index
 @keyframes loading {
   0% {visibility: visible;}
   100% {visibility: hidden;}
@@ -29,27 +29,31 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: 9999;
+  
   top: 0;
   left: 0;
   margin: 0;  
+ 
 }
 .loader--content
 {
   width: 100vw;
   height: 100vh;
   visibility:hidden;
-  position:relative;
+  position: fixed;
+  //need to be fixed
+
+  z-index: 0.5;
   animation:loading 4s;
   top: 0;
   left: 0;
-  background: #fff;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .letters{
-  background:#fff;
+  background:transparent;
   font-size: 80px;
   letter-spacing: 15px;
   margin-bottom: 150px;
@@ -85,7 +89,7 @@
 .letters:nth-child(10){
   animation-delay: 1s;
 } 
-
+*/
 
 
 
