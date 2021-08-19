@@ -655,67 +655,93 @@ input.command {
     display: none;
 }
 */
-.menu-cards:hover > .menu-cards__check {
-  right: 0;
+input:checked + label .check {
+  margin-right: 70px;
 }
 
-input.command:checked ~ label .command .check {
-  right: 0;
+label.menu-cards:hover .check {
+  margin-right: 70px;
 }
 
-input.command:checked ~ label .menu-cards__price {
-  transform: translateX(-70px);
+input.command {
+  display: none;
 }
 
-input.command:hover ~ label .menu-cards__price {
-  transform: translateX(70px);
-  transition: transform 600ms ease-in-out;
+/*
+.menu-cards:hover>.menu-cards__check {
+    right: 0;
+
 }
 
-input.command:hover ~ label .fa-check {
-  transform: rotate(-1turn);
-  transition: transform 800ms ease-in-out;
+input.command:checked~label .command .check {
+
+    right: 0;
 }
 
-input.command:checked ~ label .fa-check {
-  transform: rotate(1turn);
-  transition: transform 500ms ease-in-out;
+input.command:checked~label .menu-cards__price {
+
+    transform: translateX(-70px);
+
+}
+
+input.command:hover~label .menu-cards__price {
+
+    transform: translateX(70px);
+    transition: transform 600ms ease-in-out;
+
+}
+
+input.command:hover~label .fa-check {
+    transform: rotate(-1turn);
+    transition: transform 800ms ease-in-out;
+}
+
+input.command:checked~label .fa-check {
+    transform: rotate(+1turn);
+    transition: transform 500ms ease-in-out;
 }
 
 .checkboxContainer {
-  background-color: #fff;
-  box-shadow: 2px 2px 2px 1px #d3d3d3;
-  height: 40px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  padding: 15px 10px;
-  font-size: small;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-content: space-between;
-  align-items: flex-start;
-  justify-content: space-between;
-  cursor: pointer;
-  transition: 0.9s;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  position: relative;
-}
 
-.checkboxContainer p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 1px #d3d3d3;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content:space-between;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    cursor: pointer;
+
+    transition: 0.9s;
+    overflow: hidden;
+    white-space: nowrap;
+     text-overflow: ellipsis;
+
+    position: relative;
+}
+.checkboxContainer p
+{
+
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
 }
 
 .cards_text {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 /*

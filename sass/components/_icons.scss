@@ -11,9 +11,6 @@ i.fa-arrow-left {
 .svg-logo {
     @include svg-icon ("../../../images/logo/ohmyfood@2x.svg", 45px, 100px, #fff);
 }
-
-
-
 span.circle {
     background: $colour-primary;
     border-radius: 50%;
@@ -40,8 +37,6 @@ span.circle {
     line-height: 20px;
 }
 
-
-
 .footer .fas {
     margin-right: 10px;
     width: 16px;
@@ -49,8 +44,6 @@ span.circle {
 }
 
 //coeur checkbox//
-
-
 
 //coeur checkbox svg
 
@@ -81,7 +74,6 @@ span.circle {
     /*stroke-width à revoir*/
     
 }
-
 
 .heart-filled {
     opacity: 0;
@@ -119,7 +111,6 @@ span.circle {
     line-height: 1.5;
     font-size: 17px;
     margin-right: 5px;
-
 }
 
 // voir mixins,//

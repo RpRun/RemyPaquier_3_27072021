@@ -127,6 +127,7 @@
     &__price {
         font-weight: bold; 
     }
+    //regarder boucles sass
 }
 .menu-cards:nth-child(1)
 {
@@ -170,6 +171,24 @@ input.command {
     display: none;
 }
 */
+input:checked + label .check {
+    margin-right: 70px;
+}
+label.menu-cards:hover .check {
+    margin-right: 70px;
+}
+input.command {
+    display: none;
+}
+//price pareil
+
+
+
+
+
+
+
+/*
 .menu-cards:hover>.menu-cards__check {
     right: 0;
 
