@@ -21,11 +21,6 @@
     }
 }
 
-#check-heart {
-    display: none;
-}
-
-/*redondant avec .links .cards*/
 .form {
     text-decoration: none;
     color: $colour-background;
@@ -54,12 +49,9 @@
 
 .price {
     font-weight: bold;
-
     width: 30px;
     padding: 19px;
     height: 100%;
-    /* MARGIN: AUTO; */
-
     margin-left: 5px;
     margin-right: 5px;
     color: black;
@@ -77,8 +69,6 @@
     0%{
          opacity:0;
      }
-     
-     
      100% {
          opacity:1;
      }
@@ -98,7 +88,6 @@
     font-size: small;
     cursor: pointer;
     animation: opacity 2s ease-in-out ;
-    
     position: relative;
     
     &__description h3{
@@ -155,11 +144,11 @@
 }
 */
 
-
+/*
 input.command {
     display: none;
 }
-
+*/
 .menu-cards:hover>.menu-cards__check {
     right: 0;
 

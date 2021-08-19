@@ -330,6 +330,7 @@ span.circle {
   transform: scale(1);
   transition: all 300ms;
   transition-timing-function: ease-in-out;
+  background: #fff;
   /* .selector {
   (X1,Y1)(X2,Y2)
   transition-timing-function: cubic-bezier(.42, 0, .58, 1); //=transition-timing-function:ease-in-out;//
@@ -512,11 +513,6 @@ section {
   color: #9356DC;
 }
 
-#check-heart {
-  display: none;
-}
-
-/*redondant avec .links .cards*/
 .form {
   text-decoration: none;
   color: #f2f2f2;
@@ -548,7 +544,6 @@ section {
   width: 30px;
   padding: 19px;
   height: 100%;
-  /* MARGIN: AUTO; */
   margin-left: 5px;
   margin-right: 5px;
   color: black;
@@ -636,10 +631,11 @@ section {
     animation-delay: 2.4s;
 }
 */
+/*
 input.command {
-  display: none;
+    display: none;
 }
-
+*/
 .menu-cards:hover > .menu-cards__check {
   right: 0;
 }
