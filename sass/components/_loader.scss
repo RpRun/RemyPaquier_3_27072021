@@ -9,29 +9,18 @@
 }
 @keyframes flash {
   0% {
-    color:#99E2D0;
+    color:$colour-tertiary;
     text-shadow: 0 0 8px  $colour-primary;
   }
   90% {
-    color:#99E2D0;
+    color:$colour-tertiary;
     text-shadow:none;
   }
   100%{
-    color:#99E2D0;
+    color:$colour-tertiary;
     text-shadow: 0 0 8px  $colour-primary;
   }
 }
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-
-
-
 
 .loader {
   
@@ -40,7 +29,7 @@
   position: fixed;
   z-index: 10000;
   visibility:hidden;
-  animation:loading 4s;
+  animation:loading 3s;
   top: 0;
   left: 0;
   margin: 0;  
@@ -52,7 +41,7 @@
   height: 100vh;
   top: 0;
   left: 0;
-  background:hsla(0, 0%, 90%, 0.8);
+  background:hsla(0, 0%, 90%, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,16 +52,13 @@
   font-size: 60px;
   letter-spacing: 15px;
   margin-bottom: 150px;
-  animation: flash 1.5s linear infinite;
+  animation: flash 1s linear infinite;
 }
-//2 animations sur meme element à regler
-.icons--turning
-{
-  animation:rotation 1.5s linear infinite;
-}
+
 .letters{
   background:transparent;
   font-size: 60px;
+  color:$colour-tertiary;
   letter-spacing: 15px;
   margin-bottom: 150px;
   animation: flash 1.5s linear infinite;
