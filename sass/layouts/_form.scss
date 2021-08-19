@@ -43,8 +43,9 @@
     transition: 900ms;
     display: inline-block;
     position: absolute;
+    overflow: hidden;
     top: 0;
-    right: -70px;
+    right: -80px;
 }
 
 .price {
@@ -89,10 +90,30 @@
     cursor: pointer;
     animation: opacity 2s ease-in-out ;
     position: relative;
+    transition: 0.9s;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    &__description
+    {
+        overflow: hidden;
+    }
     
     &__description h3{
         font-weight: bold;
+        transition: 0.9s;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        position: relative;
     }
+    &__description p {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        position: relative;
+    }
+
     /*
            #       #       #
           #       #       # #      #####  #  ####   ####  #    # ##### ###### #####
@@ -167,7 +188,7 @@ input.command:checked~label .menu-cards__price {
 
 input.command:hover~label .menu-cards__price {
 
-    transform: translateX(-70px);
+    transform: translateX(70px);
     transition: transform 600ms ease-in-out;
 
 }
@@ -182,15 +203,6 @@ input.command:checked~label .fa-check {
     transition: transform 500ms ease-in-out;
 }
 
-
-
-
-
-
-
-
-
-
 .checkboxContainer {
 
     background-color: #fff;
@@ -201,7 +213,6 @@ input.command:checked~label .fa-check {
     padding: 15px 10px;
     font-size: small;
     display: flex;
-    
     flex-direction: row;
     flex-wrap: nowrap;
     align-content:space-between;

@@ -535,8 +535,9 @@ section {
   transition: 900ms;
   display: inline-block;
   position: absolute;
+  overflow: hidden;
   top: 0;
-  right: -70px;
+  right: -80px;
 }
 
 .price {
@@ -579,6 +580,10 @@ section {
   cursor: pointer;
   animation: opacity 2s ease-in-out;
   position: relative;
+  transition: 0.9s;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   /*
          #       #       #
         #       #       # #      #####  #  ####   ####  #    # ##### ###### #####
@@ -590,8 +595,22 @@ section {
 
   */
 }
+.menu-cards__description {
+  overflow: hidden;
+}
 .menu-cards__description h3 {
   font-weight: bold;
+  transition: 0.9s;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+}
+.menu-cards__description p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
 }
 .menu-cards__price {
   font-weight: bold;
@@ -649,7 +668,7 @@ input.command:checked ~ label .menu-cards__price {
 }
 
 input.command:hover ~ label .menu-cards__price {
-  transform: translateX(-70px);
+  transform: translateX(70px);
   transition: transform 600ms ease-in-out;
 }
 
