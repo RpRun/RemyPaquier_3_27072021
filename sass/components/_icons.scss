@@ -49,41 +49,54 @@ span.circle {
 }
 
 //coeur checkbox//
-.fa-heart {
-    width: 50px;
-    height: 50px;
+
+
+
+//coeur checkbox svg
+
+.heart {
+    width: 20px;
+    height: 20px;
     position: absolute;
     transition: opacity 0.3s;
     cursor: pointer;
+    transition: opacity 0.3s;
 
-    &.fa-heart__cards {
-        right: 0;
-        bottom: -5px;
+    &.heart__cards {
+        right: 20px;
+        bottom: 20px;
     }
 
-    &.fa-heart__heading {
+    &.heart__heading {
         right: 0;
         top: 20px;
         font-size: larger;
     }
 }
-   
-.far.fa-heart {
-    color: black;
+
+.heart-empty {
+    fill: #fff;
+    stroke:#000000;
+    stroke-width: 4%;
+    /*stroke-width à revoir*/
+    
 }
 
-.fas.fa-heart {
 
+.heart-filled {
+    opacity: 0;
+    fill: red;
+    /*linear-gradient(171deg,$colour-secondary 10%,$colour-primary 90%)*/
+}
+
+#check-heart:checked~label .heart-empty {
     opacity: 0;
 }
 
-#check-heart:checked~label .far {
-    opacity: 0;
-}
-
-#check-heart:checked~label .fas {
+#check-heart:checked~label .heart-filled {
     opacity: 1;
-    color: rgb(255, 0, 106);
+    
+    
 }
 
 #check-heart {
@@ -92,9 +105,8 @@ span.circle {
 
 //MENU CHECK COMMANDE//
 
-.fa-check
-{
-    color:$colour-tertiary;
+.fa-check {
+    color: $colour-tertiary;
     background: #fff;
     border-radius: 50%;
     width: 20px;
@@ -103,12 +115,11 @@ span.circle {
     top: 40%;
     left: 50%;
     text-align: center;
-  padding: 4px;
-  line-height: 1.5;
-  font-size: 17px;
-  margin-right: 5px;
-    
+    padding: 4px;
+    line-height: 1.5;
+    font-size: 17px;
+    margin-right: 5px;
+
 }
 
 // voir mixins,//
-

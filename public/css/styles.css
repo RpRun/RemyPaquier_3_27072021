@@ -53,6 +53,10 @@ img {
   max-width: 100%;
 }
 
+/*
+@mixin linear-gradient()???
+linear-gradient(171deg,$colour-secondary 10%,$colour-primary 90%);
+*/
 /*@import "./utils/extensions";*/
 body {
   font-family: "Roboto", sans-serif;
@@ -131,7 +135,7 @@ h1.heading-sections {
   position: fixed;
   z-index: 10000;
   visibility: hidden;
-  animation: loading 3s;
+  animation: loading 4s;
   top: 0;
   left: 0;
   margin: 0;
@@ -149,8 +153,7 @@ h1.heading-sections {
 }
 
 .icons {
-  background: transparent;
-  font-size: 60px;
+  font-size: 30px;
   letter-spacing: 15px;
   margin-bottom: 150px;
   animation: flash 1s linear infinite;
@@ -162,7 +165,7 @@ h1.heading-sections {
   color: #99E2D0;
   letter-spacing: 15px;
   margin-bottom: 150px;
-  animation: flash 1.5s linear infinite;
+  animation: flash 2s linear infinite;
 }
 
 .letters:nth-child(1) {
@@ -258,38 +261,43 @@ span.circle {
   font-size: small;
 }
 
-.fa-heart {
-  width: 50px;
-  height: 50px;
+.heart {
+  width: 20px;
+  height: 20px;
   position: absolute;
   transition: opacity 0.3s;
   cursor: pointer;
+  transition: opacity 0.3s;
 }
-.fa-heart.fa-heart__cards {
-  right: 0;
-  bottom: -5px;
+.heart.heart__cards {
+  right: 20px;
+  bottom: 20px;
 }
-.fa-heart.fa-heart__heading {
+.heart.heart__heading {
   right: 0;
   top: 20px;
   font-size: larger;
 }
 
-.far.fa-heart {
-  color: black;
+.heart-empty {
+  fill: #fff;
+  stroke: #000000;
+  stroke-width: 4%;
+  /*stroke-width à revoir*/
 }
 
-.fas.fa-heart {
+.heart-filled {
+  opacity: 0;
+  fill: red;
+  /*linear-gradient(171deg,$colour-secondary 10%,$colour-primary 90%)*/
+}
+
+#check-heart:checked ~ label .heart-empty {
   opacity: 0;
 }
 
-#check-heart:checked ~ label .far {
-  opacity: 0;
-}
-
-#check-heart:checked ~ label .fas {
+#check-heart:checked ~ label .heart-filled {
   opacity: 1;
-  color: #ff006a;
 }
 
 #check-heart {

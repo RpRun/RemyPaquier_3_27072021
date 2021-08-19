@@ -29,7 +29,7 @@
   position: fixed;
   z-index: 10000;
   visibility:hidden;
-  animation:loading 3s;
+  animation:loading 4s;
   top: 0;
   left: 0;
   margin: 0;  
@@ -48,8 +48,8 @@
 }
 .icons
 {
-  background:transparent;
-  font-size: 60px;
+ 
+  font-size: 30px;
   letter-spacing: 15px;
   margin-bottom: 150px;
   animation: flash 1s linear infinite;
@@ -59,9 +59,9 @@
   background:transparent;
   font-size: 60px;
   color:$colour-tertiary;
-  letter-spacing: 15px;
+  letter-spacing: 15px;  
   margin-bottom: 150px;
-  animation: flash 1.5s linear infinite;
+  animation: flash 2s linear infinite;
 }  
 .letters:nth-child(1){
   animation-delay: 0.1s;

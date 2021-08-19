@@ -13,9 +13,9 @@
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 
-<body> 
-    <!-- loader CHARGEMENT pb z index...-->
-   <div class="loader"> 
+<body>
+
+    <div class="loader">
         <div class="loader--content">
             <span class="icons"><i class="fas fa-hourglass-half"></i></span>
             <span class="letters">C</span>
@@ -27,18 +27,12 @@
             <span class="letters">M</span>
             <span class="letters">E</span>
             <span class="letters">N</span>
-            <span class="letters">T</span>  
+            <span class="letters">T</span>
             <span class="icons "><i class="fas fa-hourglass-half"></i></span>
-            
-           
-            
-
-            
-
 
         </div>
     </div>
-    
+
     <header>
         <div class="header__logo"><img src="./images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
         </div>
@@ -47,11 +41,11 @@
             <form method="post" class="town-search">
                 <label for="town"><i class="fas fa-map-marker-alt"></i></label>
                 <input type="text" name="town" id="town" placeholder="Paris, Belleville" />
+            </form>
 
-                 
         </div>
     </header>
-  
+
     <main>
         <section class="search-restaurants">
             <h1 class="heading-sections">Réservez le menu qui vous convient</h1>
@@ -61,33 +55,33 @@
         <section>
             <div class="wrapp">
                 <h2 class="heading-sections">Fonctionnement</h2>
-                <!--form? caroussel?-->
+
                 <ol class="wrapp__process">
                     <!--class a à modifier step list aussi-->
                     <li class="process">
                         <div class="step-list"><span class="circle">1</span><i class="fas fa-mobile-alt"></i>
-                           <p>  Choisissez un restaurant</p>
-                           <!--<p></p>necessaire?-->  
+                            <p> Choisissez un restaurant</p>
+                            <!--<p></p>necessaire?-->
                         </div>
                     </li>
 
-                    <li class="process"><div class="step-list"><span class="circle">2</span><i class="fas fa-list-ul"></i>
-                       <p> Composez votre menu</p>
-                    </div>
+                    <li class="process">
+                        <div class="step-list"><span class="circle">2</span><i class="fas fa-list-ul"></i>
+                            <p> Composez votre menu</p>
+                        </div>
                     </li>
-
-                    <li class="process"><div class="step-list"><span class="circle">3</span><i class="fas fa-store"></i>
-                        <p> Dégustez au restaurant</p></div>
+                    <li class="process">
+                        <div class="step-list"><span class="circle">3</span><i class="fas fa-store"></i>
+                            <p> Dégustez au restaurant</p>
+                        </div>
                     </li>
                 </ol>
-                <!--form?-->
             </div>
         </section>
         <section class="restaurants">
             <div class="wrapp wrapp__list">
                 <h2 class="heading-sections">Restaurants</h2>
                 <ul class="restaurants__list">
-
                     <li class="cards">
                         <a class="links" href="menu-la_palette.html">
                             <div class="preview">
@@ -96,16 +90,32 @@
                             </div>
                             <div class="restaurant-name">
                                 <h3>La palette du goût </h3>
-                               
-                                <!---->
                                 <p>Ménilmontant</p>
                             </div>
                         </a>
-                        <input type="checkbox" id="check-heart">
+                        <!--form?--> <input type="checkbox" id="check-heart">
 
                         <label for="check-heart">
-                            <i class="far fa-heart fa-heart__cards"></i>
-                            <i class="fas fa-heart fa-heart__cards"></i>
+                            <!-- Svg Vector Icons : http://www.onlinewebfonts.com/icon -->
+                            <svg class="heart heart-empty heart__cards" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
+                                enable-background="new 0 0 1000 1000" xml:space="preserve">
+                                <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                                <g>
+                                    <path
+                                        d="M909.6,166.7c-95.3-87.5-249.7-87.5-345,0L500,226.1l-64.7-59.4c-95.3-87.5-249.7-87.5-344.9,0c-107.2,98.3-107.2,257.8,0,356.2L500,898.9l409.6-375.9C1016.8,424.5,1016.8,265.1,909.6,166.7z" />
+                                </g>
+                            </svg>
+                            <svg class="heart heart-filled heart__cards" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000"
+                                xml:space="preserve">
+                                <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                                <g>
+                                    <path
+                                        d="M909.6,166.7c-95.3-87.5-249.7-87.5-345,0L500,226.1l-64.7-59.4c-95.3-87.5-249.7-87.5-344.9,0c-107.2,98.3-107.2,257.8,0,356.2L500,898.9l409.6-375.9C1016.8,424.5,1016.8,265.1,909.6,166.7z" />
+                                </g>
+                            </svg>
                         </label>
                     </li>
                     <li class="cards">
@@ -113,7 +123,6 @@
                             <div class="preview">
                                 <img class="preview-image" alt="assiette gastronomique"
                                     src="./images/restaurants/note_enchantée.jpg">
-
                                 <h3>La note enchantée</h3>
                                 <p>Charonne</p>
                             </div>
@@ -129,7 +138,6 @@
                             <p>Cité rouge</p>
                         </a>
                     </li>
-
                     <li class="cards">
                         <a class="links" href="menu-le_délice_des_sens.html">
                             <div class="preview">
@@ -157,7 +165,6 @@
             </ul>
         </div>
     </footer>
-
 </body>
 
 </html>
