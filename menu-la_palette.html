@@ -28,23 +28,31 @@
         <div class="banner"></div>
     </header>
     <main class="menu">
-        <form method="POST" action="posttratitement.php">
-            <div class="restaurant-name">
-                <h1>À la française</h1>
-                
-                    <input type="checkbox" id="check-heart">
-                    <label for="check-heart">
-                        <i class="far fa-heart fa-heart__heading"></i>
-                        <i class="fas fa-heart fa-heart__heading"></i>
-                    </label>
-        </form>
+        <div class="restaurant-name">
+            <h1>À la française</h1>
+            
+            
+            <form method="POST" action="posttraitement.php">
+                <input type="checkbox" id="check-heart">
+                <label for="check-heart">
+                    <!-- Svg Vector Icons : http://www.onlinewebfonts.com/icon -->
+                    <span class="svg-heart heart-empty heart__cards"></span>
+
+                    <span class="svg-heart heart-filled heart__cards"></span>
+                </label>
+                <!--  
+                            <i class="far fa-heart fa-heart__heading"></i>
+                            <i class="fas fa-heart fa-heart__heading"></i>
+                        -->
+            </form>
+        </div>
+        <section class="starters">
+            <h2 class="heading-cards">Entrées</h2>
+            <div class="green-border">
             </div>
-            <section class="starters">
-                <h2 class="heading-cards">Entrées</h2>
-                <div class="green-border">
-                </div>
-                <input type="checkbox" id="coucou" class="command">
-                <label class="menu-cards" for="coucou">
+            <form action="">
+            <input type="checkbox" id="coucou" class="command">
+                    <label class="menu-cards" for="coucou">
                     <div class="menu-cards__description">
                         <h3>Tartare de poulpe acidulé</h3>
                         <P>Aux zestes d'orange</P>
@@ -53,35 +61,35 @@
                     <span class="check">
                         <i class="fas fa-check"></i>
                     </span>
-                </label>
+                     </label>
+                        <input type="checkbox" id="coucou1" class="command">
+                        <label class="menu-cards" for="coucou1">
+                            <div class="menu-cards__description">
+                                <h3>Tartare de poulpe acidulé</h3>
+                                <P>Aux zestes d'orange</P>
+                            </div>
+                            <span class="menu-cards__price"> 25€</span>
+                            <span class="check">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </label>
+                        <input type="checkbox" id="coucou2" class="command">
+                        <label class="menu-cards" for="coucou2">
+                            <div class="menu-cards__description">
+                                <h3>Tartare de poulpe acidulé</h3>
+                                <P>Aux zestes d'orange</P>
+                            </div>
+                            <span class="menu-cards__price"> 25€</span>
+                            <span class="check">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </label>
+                    
+                        <button class="btn btn__order" type="submit">Commander</button>
 
-                <input type="checkbox" id="coucou1" class="command">
-                <label class="menu-cards" for="coucou1">
-                    <div class="menu-cards__description">
-                        <h3>Tartare de poulpe acidulé</h3>
-                        <P>Aux zestes d'orange</P>
-                    </div>
-                    <span class="menu-cards__price"> 25€</span>
-                    <span class="check">
-                        <i class="fas fa-check"></i>
-                    </span>
-                </label>
 
-                <input type="checkbox" id="coucou2" class="command">
-                <label class="menu-cards" for="coucou2">
-                    <div class="menu-cards__description">
-                        <h3>Tartare de poulpe acidulé</h3>
-                        <P>Aux zestes d'orange</P>
-                    </div>
-                    <span class="menu-cards__price"> 25€</span>
-                    <span class="check">
-                        <i class="fas fa-check"></i>
-                    </span>
-                </label>
-                
-            </section>
-            <button class="btn btn__order" type="submit">Commander</button>
-        </form>
+            </form>
+        </section>
     </main>
     <footer>
         <div class="wrapp wrapp__footer">
