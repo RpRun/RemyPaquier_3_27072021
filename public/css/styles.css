@@ -261,15 +261,21 @@ span.circle {
   font-size: small;
 }
 
-#check-heart {
+.restaurant-like {
   display: none;
 }
 
 .svg-heart {
   position: absolute;
   right: 0;
-  top: 23px;
+  transition: cubic-bezier(0.4, 0, 1, 1) opacity 2s;
   cursor: pointer;
+}
+.svg-heart__heading {
+  top: 23px;
+}
+.svg-heart__cards {
+  bottom: 23px;
 }
 
 .heart-empty {
@@ -287,11 +293,11 @@ span.circle {
   opacity: 0;
 }
 
-#check-heart:checked ~ label .heart-empty {
+input:checked ~ label .heart-empty {
   opacity: 0;
 }
 
-#check-heart:checked ~ label .heart-filled {
+input:checked ~ label .heart-filled {
   opacity: 1;
   height: 30px;
   width: 60px;
