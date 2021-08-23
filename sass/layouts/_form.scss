@@ -29,7 +29,8 @@ form
 .form {
     text-decoration: none;
     color: $colour-background;
-    
+    display: flex;
+    flex-direction: row;
 }
 
 #town {
@@ -111,7 +112,7 @@ form
         overflow: hidden;
     }
     
-    &__description h3{
+    &__description--h3{
         font-weight: bold;
         transition: 0.9s;
         overflow: hidden;
@@ -119,7 +120,7 @@ form
         text-overflow: ellipsis;
         position: relative;
     }
-    &__description p {
+    &__description--p {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
