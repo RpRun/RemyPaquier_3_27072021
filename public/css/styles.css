@@ -542,17 +542,17 @@ section {
   position: absolute;
   overflow: hidden;
   top: 0;
-  right: -80px;
+  right: -70px;
 }
 
-.price {
+.menu-cards__price {
   font-weight: bold;
   width: 30px;
-  padding: 19px;
-  height: 100%;
-  margin-left: 5px;
-  margin-right: 5px;
-  color: black;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transition: 900ms;
 }
 
 /*
@@ -617,9 +617,6 @@ section {
   text-overflow: ellipsis;
   position: relative;
 }
-.menu-cards__price {
-  font-weight: bold;
-}
 
 .menu-cards:nth-child(1) {
   animation-delay: 2s;
@@ -670,6 +667,14 @@ label.menu-cards:hover .check {
 
 input.command {
   display: none;
+}
+
+input:checked + label .menu-cards__price {
+  margin-right: 70px;
+}
+
+label.menu-cards:hover .menu-cards__price {
+  margin-right: 70px;
 }
 
 /*
