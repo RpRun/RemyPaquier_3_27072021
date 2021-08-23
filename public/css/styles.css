@@ -518,6 +518,12 @@ section {
   color: #9356DC;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form {
   text-decoration: none;
   color: #f2f2f2;
@@ -548,8 +554,8 @@ section {
 .menu-cards__price {
   font-weight: bold;
   width: 30px;
+  padding: 15px;
   display: inline-block;
-  position: absolute;
   top: 50%;
   right: 0px;
   transition: 900ms;
@@ -577,6 +583,8 @@ section {
   justify-content: space-between;
   align-items: flex-start;
   height: 40px;
+  width: 80%;
+  min-width: 240px;
   background-color: #fff;
   border-radius: 20px;
   margin-bottom: 20px;
