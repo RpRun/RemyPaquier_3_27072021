@@ -65,7 +65,7 @@ span.circle {
 
 .heart-empty {
 
-    @include svg-icon ("../../../images/svg/like-empty.svg", 30px, 60px, #000);
+    @include svg-icon ("../../../images/svg/like-empty.svg", 24px, 24px, #000);
 }
 
 .heart-filled {
@@ -78,7 +78,7 @@ input:checked~label .heart-empty {
 
 input:checked~label .heart-filled {
     opacity: 1;
-    @include svg-icon ("../../../images/svg/like-filled.svg", 30px, 60px, linear-gradient(171deg, $colour-secondary 10%, $colour-primary 90%));
+    @include svg-icon ("../../../images/svg/like-filled.svg", 24px, 24px, linear-gradient(171deg, $colour-secondary 10%, $colour-primary 90%));
 
 }
 
@@ -91,11 +91,10 @@ input:checked~label .heart-filled {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 25%;
+    left: 30%;
     text-align: center;
     padding: 4px;
-    line-height: 1.5;
     font-size: 17px;
     margin-right: 5px;
 }

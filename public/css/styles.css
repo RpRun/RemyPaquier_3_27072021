@@ -279,8 +279,8 @@ span.circle {
 }
 
 .heart-empty {
-  height: 30px;
-  width: 60px;
+  height: 24px;
+  width: 24px;
   background: #000;
   mask-image: url("../../../images/svg/like-empty.svg");
   background-size: cover;
@@ -299,8 +299,8 @@ input:checked ~ label .heart-empty {
 
 input:checked ~ label .heart-filled {
   opacity: 1;
-  height: 30px;
-  width: 60px;
+  height: 24px;
+  width: 24px;
   background: linear-gradient(171deg, #FF79DA 10%, #9356DC 90%);
   mask-image: url("../../../images/svg/like-filled.svg");
   background-size: cover;
@@ -316,11 +316,10 @@ input:checked ~ label .heart-filled {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 40%;
-  left: 50%;
+  top: 25%;
+  left: 30%;
   text-align: center;
   padding: 4px;
-  line-height: 1.5;
   font-size: 17px;
   margin-right: 5px;
 }
@@ -562,10 +561,8 @@ form {
 .menu-cards__price {
   font-weight: bold;
   width: 30px;
-  padding: 15px;
+  padding-left: 20px;
   display: inline-block;
-  top: 50%;
-  right: 0px;
   transition: 900ms;
 }
 
@@ -587,13 +584,13 @@ form {
 }
 .menu-cards {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-content: space-between;
-  align-items: flex-start;
-  height: 40px;
-  width: 80%;
+  align-items: flex-end;
+  height: 30px;
+  width: 100%;
   min-width: 240px;
   background-color: #fff;
   border-radius: 20px;
@@ -620,19 +617,18 @@ form {
 }
 .menu-cards__description {
   overflow: hidden;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu-cards__description--h3 {
   font-weight: bold;
   transition: 0.9s;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  position: relative;
+  position: absolute;
+  top: 10px;
+  margin-top: 5px;
 }
 .menu-cards__description--p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   position: relative;
 }
 
