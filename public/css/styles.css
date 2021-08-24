@@ -587,8 +587,10 @@ form {
 }
 .menu-cards {
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-content: space-between;
   align-items: flex-start;
   height: 40px;
   width: 80%;
@@ -691,6 +693,16 @@ input:checked + label .menu-cards__price {
 
 label.menu-cards:hover .menu-cards__price {
   margin-right: 70px;
+}
+
+input.menu-cards:hover ~ label .fa-check {
+  transform: rotate(-1turn);
+  transition: transform 800ms ease-in-out;
+}
+
+input.restaurant-like:checked ~ label .fa-check {
+  transform: rotate(1turn);
+  transition: transform 500ms ease-in-out;
 }
 
 /*
