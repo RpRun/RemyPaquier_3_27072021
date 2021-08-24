@@ -203,16 +203,16 @@ label.menu-cards:hover .menu-cards__price {
     margin-right: 70px;
 }
 
-
-input.menu-cards:hover~label .fa-check {
+input:hover+label .fa-check {
     transform: rotate(-1turn);
-    transition: transform 800ms ease-in-out;
+    transition: transform 0.9s ease-in-out;
 }
 
-input.restaurant-like:checked~label .fa-check {
+input:checked+label .fa-check {
     transform: rotate(+1turn);
-    transition: transform 500ms ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
+
 
 
 
