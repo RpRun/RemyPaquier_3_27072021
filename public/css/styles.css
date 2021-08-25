@@ -106,7 +106,6 @@ h1.heading-sections {
   margin-top: 20px;
 }
 
-/* loader CHARGEMENT pb de z index */
 @keyframes loading {
   0% {
     visibility: visible;
@@ -135,7 +134,7 @@ h1.heading-sections {
   position: fixed;
   z-index: 10000;
   visibility: hidden;
-  animation: loading 2s;
+  animation: loading 5s;
   top: 0;
   left: 0;
   margin: 0;
@@ -591,7 +590,7 @@ form {
   align-items: flex-end;
   height: 30px;
   width: 100%;
-  min-width: 240px;
+  min-width: 243px;
   background-color: #fff;
   border-radius: 20px;
   margin-bottom: 20px;

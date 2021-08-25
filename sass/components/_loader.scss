@@ -1,8 +1,6 @@
 
 //loading-page
 
-
-/* loader CHARGEMENT pb de z index */
 @keyframes loading {
   0% {visibility: visible;}
   100% {visibility: hidden;}
@@ -29,7 +27,7 @@
   position: fixed;
   z-index: 10000;
   visibility:hidden;
-  animation:loading 2s;
+  animation:loading 5s;
   top: 0;
   left: 0;
   margin: 0;  
