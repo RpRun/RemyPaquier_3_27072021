@@ -217,6 +217,10 @@ i.fa-arrow-left {
   /* à eclaircir*/
 }
 
+.town-search i {
+  margin-right: 10px;
+}
+
 .svg-logo {
   height: 45px;
   width: 100px;
@@ -275,6 +279,7 @@ span.circle {
 }
 .svg-heart__cards {
   bottom: 23px;
+  right: 15px;
 }
 
 .heart-empty {
@@ -341,7 +346,7 @@ input:checked ~ label .heart-filled {
   */
 }
 .cards:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 .cards .links {
   text-decoration: none;
@@ -448,10 +453,6 @@ header {
   background-position: center;
 }
 
-.restaurants__list {
-  width: 100%;
-}
-
 body {
   margin: 0 auto;
   text-align: center;
@@ -482,6 +483,9 @@ section {
   margin-top: 60px;
   display: flex;
   flex-direction: column;
+}
+.restaurants__list {
+  width: 100%;
 }
 
 .wrapp {
@@ -528,18 +532,19 @@ form {
   align-items: center;
 }
 
-.form {
-  text-decoration: none;
-  color: #f2f2f2;
-  display: flex;
+.town-search {
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
 }
 
 #town {
   border: none;
   font-size: large;
   background: #e5e5e5;
-  width: 34%;
+  display: flex;
 }
 
 .check {
@@ -565,20 +570,15 @@ form {
   transition: 900ms;
 }
 
-/*
-.....##......##..#####...######..######...####...##..##..######..######...........####...##..##..######...####...##..##.
-....##......##...##..##..##......##......##..##..###.##....##....##..............##..##..##..##..##......##..##..##.##..
-...##......##....#####...####....####....##..##..##.###....##....####............##......######..####....##......####...
-..##......##.....##..##..##......##......##..##..##..##....##....##..............##..##..##..##..##......##..##..##.##..
-.##......##......##..##..######..##.......####...##..##....##....######...........####...##..##..######...####...##..##.
-........................................................................................................................
-*/
-@keyframes opacity {
+@keyframes step {
   0% {
     opacity: 0;
+    translateY: 10000px;
   }
   100% {
     opacity: 1;
+    translateY: 0px;
+    transition: ease-in-out;
   }
 }
 .menu-cards {
@@ -597,25 +597,14 @@ form {
   padding: 15px 10px;
   font-size: small;
   cursor: pointer;
-  animation: opacity 2s ease-in-out;
+  animation: step 3s ease-out;
+  animation-fill-mode: backwards;
   position: relative;
-  transition: 0.9s;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  /*
-         #       #       #
-        #       #       # #      #####  #  ####   ####  #    # ##### ###### #####
-       #       #       #   #     #    # # #      #    # #    #   #   #      #    #
-      #       #       #     #    #    # #  ####  #      #    #   #   #####  #    #
-     #       #        #######    #    # #      # #      #    #   #   #      #####
-    #       #         #     #    #    # # #    # #    # #    #   #   #      #   #
-   #       #          #     #    #####  #  ####   ####   ####    #   ###### #    #
-
-  */
 }
 .menu-cards__description {
-  overflow: hidden;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -631,40 +620,18 @@ form {
   position: relative;
 }
 
+.menu-cards {
+  animation-delay: 0.9s;
+}
+
 .menu-cards:nth-child(1) {
-  animation-delay: 2s;
+  animation-delay: 0.6s;
 }
 
 .menu-cards:nth-child(2) {
-  animation-delay: 4s;
+  animation-delay: 0.3s;
 }
 
-.menu-cards:nth-child(3) {
-  animation-delay: 6s;
-}
-
-.menu-cards:nth-child(4) {
-  animation-delay: 8s;
-}
-
-/*
-.menu-cards:nth-child(5)
-{
-    animation-delay: 1.5s;
-}
-.menu-cards:nth-child(6)
-{
-    animation-delay: 1.8s;
-}
-.menu-cards:nth-child(7)
-{
-    animation-delay: 2.1s;
-}
-.menu-cards:nth-child(8)
-{
-    animation-delay: 2.4s;
-}
-*/
 /*
 input.command {
     display: none;
@@ -692,7 +659,7 @@ label.menu-cards:hover .menu-cards__price {
 
 input:hover + label .fa-check {
   transform: rotate(-1turn);
-  transition: transform 0.9s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 input:checked + label .fa-check {

@@ -13,18 +13,17 @@ header {
     padding-bottom: 12px;
     /*background-image: repeating-linear-gradient(45deg,$colour-background,$colour-background 5px,black 5px,black 25px);
     color: #fff;*/
-    
+
     border-top: 1px solid darken($color: $colour-background, $amount: 10%);
-    box-shadow: 
-    inset 0 -4px 8px 8px darken($color: $colour-background, $amount: 5%),
-    inset 0 1px 2px 0px rgba(50, 50, 50, 0.75);
-   /* box-shadow:inset 0 1px 2px 2px darken($color: $colour-background, $amount: 15%); */
-   text-decoration: none;
-    
-   display: flex;
-   flex-direction: row;
-   margin-left: auto;
-   margin-right: auto;
+    box-shadow:
+        inset 0 -4px 8px 8px darken($color: $colour-background, $amount: 5%),
+        inset 0 1px 2px 0px rgba(50, 50, 50, 0.75);
+    /* box-shadow:inset 0 1px 2px 2px darken($color: $colour-background, $amount: 15%); */
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -34,10 +33,8 @@ header {
 
 .banner {
     background-image: url("/images/restaurants/à_la_française.jpg");
-
     width: 100%;
     height: 270px;
-
     object-fit: cover;
     margin-bottom: -44px;
     background-size: cover;

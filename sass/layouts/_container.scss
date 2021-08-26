@@ -28,6 +28,10 @@ section
    margin-top: 60px;
    display: flex;
    flex-direction: column;
+   &__list
+   {
+       width: 100%;
+   }
 }
 
 .wrapp {
