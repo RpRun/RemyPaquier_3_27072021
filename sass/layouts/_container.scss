@@ -8,6 +8,7 @@ body {
 section
 {
    display: block;
+   width: 100%;
 }
 .step-list
 {
@@ -53,4 +54,5 @@ section
 .restaurant-name {
    position: relative;
    white-space: nowrap;
+   width: 100%;
 }
