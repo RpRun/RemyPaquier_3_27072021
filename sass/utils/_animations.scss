@@ -48,9 +48,9 @@
     padding: 15px 10px;
     font-size: small;
     cursor: pointer;
-    animation: step 0.3s;
-    transition: ease-out;
-    animation-fill-mode: backwards;
+    animation: step 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
     position: relative;
     overflow: hidden;
     white-space: nowrap;
@@ -77,16 +77,25 @@
 
 @keyframes step {
     0% {
+        visibility: hidden;
         opacity: 0;
-        transform: translateY(1000px);  
+        transform: translateY(10px);  
     }
 
-    80% { opacity: 0.7;
+    
+
+    80% {
+        visibility: visible;
+        opacity: 1;
+        transform: ease-out translateY(5px);
         
     }
-    100% { opacity: 1;
+    
+   
+    100% {
+        visibility: visible;
+        opacity: 1;
         transform: translateY(0px);
-
     }
 }
 @for $i from 1 to 10 {
