@@ -1,6 +1,6 @@
 
 //loading-page
-/*
+
 @keyframes loading {
   0% {visibility: visible;}
   100% {visibility: hidden;}
@@ -61,6 +61,13 @@
   margin-bottom: 150px;
   animation: flash 2s linear infinite;
 }  
+
+@for $i from 1 to 11 {
+  .letters:nth-child(#{$i}) {
+    animation-delay: 0ms+($i*100);
+  }
+}
+/*
 .letters:nth-child(1){
   animation-delay: 0.1s;
 }
@@ -91,8 +98,8 @@
 .letters:nth-child(10){
   animation-delay: 1s;
 } 
-
 */
+
 
 
 
