@@ -1,20 +1,18 @@
-footer
-{
-    background:$colour-bg_footer;
+footer {
+    background: $colour-bg_footer;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: auto;
     margin-right: auto;
     padding-top: 20px;
-     ul{ 
+
+    ul {
         text-align: left;
-     }
+    }
 }
 
-
-
-footer a{
+footer a {
     color: #fff;
     text-decoration: none;
 }

@@ -57,36 +57,6 @@ img {
 @mixin linear-gradient()???
 linear-gradient(171deg,$colour-secondary 10%,$colour-primary 90%);
 */
-/*
-      ____           _                 _   _
-     / / /\         (_)               | | (_)
-    / / /  \   _ __  _ _ __ ___   __ _| |_ _  ___  _ __  ___
-   / / / /\ \ | '_ \| | '_ ` _ \ / _` | __| |/ _ \| '_ \/ __|
-  / / / ____ \| | | | | | | | | | (_| | |_| | (_) | | | \__ \
- /_/_/_/    \_\_| |_|_|_| |_| |_|\__,_|\__|_|\___/|_| |_|___/
-
-
-*/
-/*
-      _________
-     / / / ____|
-    / / / |     ___   ___ _   _ _ __
-   / / /| |    / _ \ / _ \ | | | '__|
-  / / / | |___| (_) |  __/ |_| | |
- /_/_/   \_____\___/ \___|\__,_|_|
-
-
-*/
-/*
-      ____    _       _          __     _                        _
-     / / /   | |     | |         \_\   | |                      | |
-    / / / __ | | __ _| |_ ___    __ _  | | __ _    ___ __ _ _ __| |_ ___
-   / / / '_ \| |/ _` | __/ __|  / _` | | |/ _` |  / __/ _` | '__| __/ _ \
-  / / /| |_) | | (_| | |_\__ \ | (_| | | | (_| | | (_| (_| | |  | ||  __/
- /_/_/ | .__/|_|\__,_|\__|___/  \__,_| |_|\__,_|  \___\__,_|_|   \__\___|
-       | |
-       |_|
-*/
 .menu-cards {
   display: flex;
   flex-direction: row;
@@ -182,7 +152,56 @@ linear-gradient(171deg,$colour-secondary 10%,$colour-primary 90%);
   animation-delay: 2.7s;
 }
 
-/*@import "./utils/extensions";*/
+@keyframes groove {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+input:checked + label .check {
+  margin-right: 70px;
+}
+
+label.menu-cards:hover .check {
+  margin-right: 70px;
+}
+
+input.command {
+  display: none;
+}
+
+input:checked + label .menu-cards__price {
+  margin-right: 70px;
+}
+
+label.menu-cards:hover .menu-cards__price {
+  margin-right: 70px;
+}
+
+input:hover + label .fa-check {
+  transform: rotate(-1turn);
+  transition: transform 0.7s ease-in-out;
+}
+
+input:checked + label .fa-check {
+  transform: scale(0.5) translate(-100%, -100%);
+  transition: transform 0.4s ease-in-out;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -332,38 +351,6 @@ h1.heading-sections {
   animation-delay: 1000ms;
 }
 
-/*
-.letters:nth-child(1){
-  animation-delay: 0.1s;
-}
-.letters:nth-child(2){
-  animation-delay: 0.2s;
-}
-.letters:nth-child(3){
-  animation-delay: 0.3s;
-}
-.letters:nth-child(4){
-  animation-delay: 0.4s;
-}
-.letters:nth-child(5){
-  animation-delay: 0.5s;
-}
-.letters:nth-child(6){
-  animation-delay: 0.6s;
-}
-.letters:nth-child(7){
-  animation-delay: 0.7s;
-}
-.letters:nth-child(8){
-  animation-delay: 0.8s;
-}
-.letters:nth-child(9){
-  animation-delay: 0.9s;
-}
-.letters:nth-child(10){
-  animation-delay: 1s;
-} 
-*/
 i.fa-arrow-left {
   position: absolute;
   left: 5px;
@@ -483,6 +470,7 @@ input:checked ~ label .heart-filled {
   padding: 4px;
   font-size: 17px;
   margin-right: 5px;
+  animation: groove 2s;
 }
 
 .cards {
@@ -584,11 +572,8 @@ header {
   width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
-  /*background-image: repeating-linear-gradient(45deg,$colour-background,$colour-background 5px,black 5px,black 25px);
-  color: #fff;*/
   border-top: 1px solid #d9d9d9;
   box-shadow: inset 0 -4px 8px 8px #e5e5e5, inset 0 1px 2px 0px rgba(50, 50, 50, 0.75);
-  /* box-shadow:inset 0 1px 2px 2px darken($color: $colour-background, $amount: 15%); */
   text-decoration: none;
   display: flex;
   flex-direction: row;
@@ -730,156 +715,6 @@ form {
   transition: 900ms;
 }
 
-/*
-input.command {
-    display: none;
-}
-*/
-input:checked + label .check {
-  margin-right: 70px;
-}
-
-label.menu-cards:hover .check {
-  margin-right: 70px;
-}
-
-input.command {
-  display: none;
-}
-
-input:checked + label .menu-cards__price {
-  margin-right: 70px;
-}
-
-label.menu-cards:hover .menu-cards__price {
-  margin-right: 70px;
-}
-
-input:hover + label .fa-check {
-  transform: rotate(-1turn);
-  transition: transform 0.5s ease-in-out;
-}
-
-input:checked + label .fa-check {
-  transform: rotate(1turn);
-  transition: transform 0.4s ease-in-out;
-}
-
-/*
-.menu-cards:hover>.menu-cards__check {
-    right: 0;
-
-}
-
-input.command:checked~label .command .check {
-
-    right: 0;
-}
-
-input.command:checked~label .menu-cards__price {
-
-    transform: translateX(-70px);
-
-}
-
-input.command:hover~label .menu-cards__price {
-
-    transform: translateX(70px);
-    transition: transform 600ms ease-in-out;
-
-}
-
-input.command:hover~label .fa-check {
-    transform: rotate(-1turn);
-    transition: transform 800ms ease-in-out;
-}
-
-input.command:checked~label .fa-check {
-    transform: rotate(+1turn);
-    transition: transform 500ms ease-in-out;
-}
-
-.checkboxContainer {
-
-    background-color: #fff;
-    box-shadow: 2px 2px 2px 1px #d3d3d3;
-    height: 40px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    padding: 15px 10px;
-    font-size: small;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content:space-between;
-    align-items: flex-start;
-    justify-content: space-between;
-
-    cursor: pointer;
-
-    transition: 0.9s;
-    overflow: hidden;
-    white-space: nowrap;
-     text-overflow: ellipsis;
-
-    position: relative;
-}
-.checkboxContainer p
-{
-
-
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-
-}
-
-.cards_text {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-/*
-input.choices {
-    display: none;
-}
-
-.checkboxContainer:hover>.check {
-    right: 0;
-
-}
-
-input.choices:checked~label .checkboxContainer .check {
-
-    right: 0;
-}
-
-input.choices:checked~label .price {
-
-    transform: translateX(-70px);
-
-}
-
-input.checkboxContainer:hover~label .price {
-
-    transform: translateX(-70px);
-    transition: transform 600ms ease-in-out;
-
-}
-
-input.checkboxContainer:hover~label .fa-check {
-    transform: rotate(-1turn);
-    transition: transform 800ms ease-in-out;
-}
-
-input.choices:checked~label .fa-check {
-    transform: rotate(+1turn);
-    transition: transform 500ms ease-in-out;
-}
-*/
 footer {
   background: #353535;
   display: flex;
