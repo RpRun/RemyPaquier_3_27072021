@@ -3,47 +3,50 @@ body {
    text-align: center;
    position: relative;
    height: 100vh;
-  
-}
-.grid
-{   
-   height: 100%;
-   width: 100%;
-   display: grid; 
-   grid-template-areas: "header header header header"
-  "s s o o"
-  "r r r r"
-  "footer footer footer footer";
-}
-.header {
-   grid-area: header;
+
 }
 
-.s {
-   grid-area: s;
-   
+@media screen and (min-width: 769px) {
+
+
+   header {
+      height: 130px;
+   }
+
+   .grid {
+      display: grid;
+      height: auto;
+      max-width: 1599px;
+      margin-left: auto;
+      margin-right: auto;
+      grid-template-areas:
+
+         "o o s s"
+         "r r r r";
+   }
+
+   .s {
+      grid-area: s;
+   }
+
+   .operation {
+      grid-area: o;
+   }
+
+   .restaurants {
+      grid-area: r;
+   }
+
+   footer {
+      grid-area: footer;
+      height: 200px;
+   }
+
 }
 
-.operation {
-   grid-area: o;
-}
-
-.restaurants {
-   grid-area: r;
-}
-
-footer {
-   grid-area: footer;
-}
 
 
 
-
-
-section {
-   display: block;
-   width: 100%;
-}
 
 .step-list {
    margin-left: 38px;
