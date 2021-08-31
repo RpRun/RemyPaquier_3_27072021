@@ -4,6 +4,50 @@ body {
   position: relative;
   height: 100vh;
 }
+.step-list {
+   margin-left: 38px;
+ }
+ 
+ .step-list p {
+   margin-left: 5px;
+ }
+ 
+ .search-restaurants,
+ .restaurants {
+   background-color: $colour-background;
+ }
+ 
+ .restaurants {
+   padding-bottom: 60px;
+   margin-top: 60px;
+   display: flex;
+   flex-direction: column;
+ 
+   &__list {
+     width: 100%;
+   }
+ }
+ 
+ .wrapp {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-left: auto;
+   margin-right: auto;
+   width: 80%;
+   max-width: 1599px;
+ 
+   &__process {
+     width: 100%;
+   }
+ }
+ 
+ .restaurant-name {
+   position: relative;
+   white-space: nowrap;
+   width: 100%;
+ }
+ 
 
 @media screen and (min-width: 769px) {
   header {
@@ -56,45 +100,3 @@ body {
 
 
 
-.step-list {
-  margin-left: 38px;
-}
-
-.step-list p {
-  margin-left: 5px;
-}
-
-.search-restaurants,
-.restaurants {
-  background-color: $colour-background;
-}
-
-.restaurants {
-  padding-bottom: 60px;
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-
-  &__list {
-    width: 100%;
-  }
-}
-
-.wrapp {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-
-  &__process {
-    width: 100%;
-  }
-}
-
-.restaurant-name {
-  position: relative;
-  white-space: nowrap;
-  width: 100%;
-}
