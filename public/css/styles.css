@@ -609,6 +609,9 @@ body {
   margin: 0 auto;
   text-align: center;
   position: relative;
+}
+
+.wrapp-page {
   height: 100vh;
 }
 
@@ -668,12 +671,12 @@ body {
     grid-template-areas: "o o s s" "r r r r";
   }
 
-  .s {
+  .search-restaurants {
+    margin: 30px;
     grid-area: s;
     border-radius: 50px;
     grid-gap: 5px;
     padding: 10px;
-    margin-right: 10px;
   }
 
   .operation {
@@ -696,6 +699,17 @@ body {
   .cards {
     min-width: 310px;
     width: 45%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .search-restaurants {
+    margin: 40px;
+    padding: 0;
+  }
+
+  .restaurants {
+    border-radius: 50px;
+    margin: 40px;
   }
 }
 .process {

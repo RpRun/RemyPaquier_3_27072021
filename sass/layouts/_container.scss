@@ -2,7 +2,11 @@ body {
   margin: 0 auto;
   text-align: center;
   position: relative;
-  height: 100vh;
+  
+}
+.wrapp-page
+{
+   height: 100vh;
 }
 .step-list {
    margin-left: 38px;
@@ -64,14 +68,14 @@ body {
       "o o s s"
       "r r r r";
   }
-
-  .s {
-    grid-area: s;
-    border-radius: 50px;
-    grid-gap: 5px;
-    padding: 10px;
-    margin-right: 10px;
-  }
+  .search-restaurants {
+   margin: 30px;
+   grid-area: s;
+   border-radius: 50px;
+   grid-gap: 5px;
+   padding: 10px;
+}
+  
 
   .operation {
     grid-area: o;
@@ -98,5 +102,17 @@ body {
   
 }
 
+@media screen and (min-width: 1025px) {
+  
+.search-restaurants {
+   margin: 40px;
+   padding: 0;
+}
+.restaurants {
+   border-radius: 50px;
+   margin: 40px;
+}
 
+
+   }
 
