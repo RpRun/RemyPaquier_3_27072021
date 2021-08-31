@@ -1,73 +1,62 @@
-
-@keyframes loading {
-  0% {
-    visibility: visible;
-  }
-
-  100% {
-    visibility: hidden;
-  }
-}
-
-@keyframes flash {
-  0% {
-    color: $colour-tertiary;
-    text-shadow: 0 0 8px $colour-primary;
-  }
-
-  90% {
-    color: $colour-tertiary;
-    text-shadow: none;
-  }
-
-  100% {
-    color: $colour-tertiary;
-    text-shadow: 0 0 8px $colour-primary;
-  }
-}
-
 .loader {
   width: 100vw;
   height: 100vh;
-  position: fixed;
-  z-index: 10000;
-  visibility: hidden;
-  animation: loading 5s;
+  position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
+  visibility: hidden;
+  background: #f3f3f3;
+  opacity: 0.9;
+  animation: appear 5s;
+  z-index: 1000;
+
 }
 
-.loader--content {
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background: hsla(0, 0%, 90%, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.spinner {
+  width: 100px;
+  height: 100px;
+  background: rgb(147,86,220);
+  /*can i use*/
+  background: linear-gradient(171deg,$colour-secondary 10%,$colour-primary 90%);
+  animation: spin 1s infinite linear;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  padding: 20px;
+  margin-left: -50px;
 }
 
-.icons {
-  font-size: 30px;
-  letter-spacing: 15px;
-  margin-bottom: 150px;
-  animation: flash 1s linear infinite;
+.spinner-bg {
+  border: 10px solid TRANSPARENT;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
 }
 
-.letters {
-  background: transparent;
-  font-size: 60px;
-  color: $colour-tertiary;
-  letter-spacing: 15px;
-  margin-bottom: 150px;
-  animation: flash 2s linear infinite;
+
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
 }
 
-@for $i from 1 to 11 {
-  .letters:nth-child(#{$i}) {
-    animation-delay: 0ms+($i*100);
+@keyframes appear {
+  0% {
+      visibility: visible;
+  }
+
+  100% {
+      visibility: hidden;
   }
 }
