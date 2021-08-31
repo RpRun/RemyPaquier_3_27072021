@@ -637,6 +637,7 @@ body {
   }
 
   .restaurants {
+    height: 795px;
     grid-area: r;
   }
   .restaurants__list {
