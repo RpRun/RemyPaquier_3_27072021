@@ -1,92 +1,100 @@
 body {
-   margin: 0 auto;
-   text-align: center;
-   position: relative;
-   height: 100vh;
-
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  height: 100vh;
 }
 
 @media screen and (min-width: 769px) {
+  header {
+    height: 130px;
+  }
 
+  .grid {
+    display: grid;
+    height: auto;
+    max-width: 1599px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-areas:
+      "o o s s"
+      "r r r r";
+  }
 
-   header {
-      height: 130px;
-   }
+  .s {
+    grid-area: s;
+    border-radius: 50px;
+    grid-gap: 5px;
+    padding: 10px;
+    margin-right: 10px;
+  }
 
-   .grid {
-      display: grid;
-      height: auto;
-      max-width: 1599px;
-      margin-left: auto;
-      margin-right: auto;
-      grid-template-areas:
+  .operation {
+    grid-area: o;
+  }
 
-         "o o s s"
-         "r r r r";
-   }
+  .restaurants {
+    grid-area: r;
+    &__list {
+       
+   display: flex;
+    flex-wrap: wrap;
 
-   .s {
-      grid-area: s;
-   }
+    }
+  }
 
-   .operation {
-      grid-area: o;
-   }
-
-   .restaurants {
-      grid-area: r;
-   }
-
-   footer {
-      grid-area: footer;
-      height: 200px;
-   }
-
+  footer {
+    grid-area: footer;
+    height: 200px;
+  }
+  .cards {
+   min-width: 310px;
+   width: 45%;
+  }
+  
 }
-
-
 
 
 
 .step-list {
-   margin-left: 38px;
+  margin-left: 38px;
 }
 
 .step-list p {
-   margin-left: 5px;
+  margin-left: 5px;
 }
 
 .search-restaurants,
 .restaurants {
-   background-color: $colour-background;
+  background-color: $colour-background;
 }
 
 .restaurants {
-   padding-bottom: 60px;
-   margin-top: 60px;
-   display: flex;
-   flex-direction: column;
+  padding-bottom: 60px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
 
-   &__list {
-      width: 100%;
-   }
+  &__list {
+    width: 100%;
+  }
 }
 
 .wrapp {
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   margin-left: auto;
-   margin-right: auto;
-   width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 
-   &__process {
-      width: 100%;
-   }
+  &__process {
+    width: 100%;
+  }
 }
 
 .restaurant-name {
-   position: relative;
-   white-space: nowrap;
-   width: 100%;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
 }

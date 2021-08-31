@@ -627,6 +627,10 @@ body {
 
   .s {
     grid-area: s;
+    border-radius: 50px;
+    grid-gap: 5px;
+    padding: 10px;
+    margin-right: 10px;
   }
 
   .operation {
@@ -636,10 +640,19 @@ body {
   .restaurants {
     grid-area: r;
   }
+  .restaurants__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   footer {
     grid-area: footer;
     height: 200px;
+  }
+
+  .cards {
+    min-width: 310px;
+    width: 45%;
   }
 }
 .step-list {
