@@ -440,18 +440,12 @@ input:checked ~ label .heart-filled {
   border-radius: 20px;
   box-shadow: 2px 2px 2px 1px #d3d3d3;
   height: 270px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
+  margin: 20px;
   transform: scale(1);
   transition: all 300ms;
   transition-timing-function: ease-in-out;
   background: #fff;
-  /* .selector {
-  (X1,Y1)(X2,Y2)
-  transition-timing-function: cubic-bezier(.42, 0, .58, 1); //=transition-timing-function:ease-in-out;//
-  }
-  */
+  max-width: 540px;
 }
 .cards:hover {
   transform: scale(1.1);
@@ -578,7 +572,7 @@ body {
 }
 
 .operation {
-  margin: 20px;
+  margin: 0px 20px 60px 20px;
 }
 
 .menu__section {
@@ -600,7 +594,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  max-width: 1599px;
+  max-width: 1280px;
 }
 .wrapp__footer__process {
   width: 100%;
@@ -617,7 +611,7 @@ body {
     display: grid;
     height: auto;
     justify-items: center;
-    max-width: 1599px;
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     grid-template-areas: "operation operation search-restaurants search-restaurants" "restaurants restaurants restaurants restaurants";
@@ -636,13 +630,14 @@ body {
   }
 
   .restaurants {
-    height: 795px;
     grid-area: restaurants;
     justify-content: space-around;
+    padding-bottom: 20px;
   }
   .restaurants__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   footer {
@@ -652,7 +647,7 @@ body {
 
   .cards {
     min-width: 310px;
-    width: 45%;
+    width: 100%;
   }
 
   /* partie responsive carte de restaurants */
@@ -660,7 +655,7 @@ body {
     display: grid;
     justify-content: space-evenly;
     align-items: stretch;
-    max-width: 1599px;
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
@@ -711,6 +706,18 @@ body {
 
   .wrapp__footer {
     align-items: center;
+  }
+
+  .heading-sections {
+    padding-top: 30px;
+  }
+
+  .cards {
+    height: 425px;
+  }
+
+  .preview-image {
+    height: 350px;
   }
 }
 .process {

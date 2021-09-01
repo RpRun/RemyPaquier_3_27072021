@@ -4,7 +4,6 @@ body {
   height: 100vh;
 }
 
-
 .step-list {
   margin-left: 38px;
 }
@@ -17,13 +16,16 @@ body {
 .restaurants {
   background-color: $colour-background;
 }
-.operation
-{
-  margin: 20px;
+
+.operation {
+  margin: 0px 20px 60px 20px;
+
 }
+
 .menu__section {
   width: 100%;
 }
+
 .restaurants {
 
   display: flex;
@@ -41,7 +43,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  max-width: 1599px;
+  max-width: 1280px;
 
   &__process {
     width: 100%;
@@ -60,7 +62,7 @@ body {
     display: grid;
     height: auto;
     justify-items: center;
-    max-width: 1599px;
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     grid-template-areas:
@@ -76,20 +78,21 @@ body {
     padding: 10px;
   }
 
-
   .operation {
     grid-area: operation;
   }
 
   .restaurants {
-    height: 795px;
+    
     grid-area: restaurants;
     justify-content: space-around;
+    padding-bottom: 20px;
 
     &__list {
 
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
 
     }
   }
@@ -101,7 +104,7 @@ body {
 
   .cards {
     min-width: 310px;
-    width: 45%;
+    width: 100%;
   }
 
   /* partie responsive carte de restaurants */
@@ -109,7 +112,7 @@ body {
     display: grid;
     justify-content: space-evenly;
     align-items: stretch;
-    max-width: 1599px;
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
@@ -162,9 +165,20 @@ body {
     border-radius: 50px;
     margin: 40px;
   }
+
   .wrapp__footer {
-   
+
     align-items: center;
+  }
+  
+  .heading-sections {
+      padding-top: 30px;
+  }
+  .cards {
+    height: 425px;
+  }
+  .preview-image {
+    height: 350px;
   }
 
 }
