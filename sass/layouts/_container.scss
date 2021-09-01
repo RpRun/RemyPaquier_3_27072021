@@ -30,12 +30,26 @@ body {
 
   display: flex;
   flex-direction: column;
+  align-items: stretch;
+  padding: 20px;
+  margin-bottom: 30px;
 
   &__list {
     width: 100%;
   }
 }
-
+.wrapp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrapp__process {
+  width: 100%;
+}
 .wrapp__footer {
   display: flex;
   flex-direction: column;
@@ -67,7 +81,7 @@ body {
     margin-right: auto;
     grid-template-areas:
       "operation operation search-restaurants search-restaurants"
-      "restaurants restaurants restaurants restaurants";
+      "r r r r";
   }
 
   .search-restaurants {
@@ -84,9 +98,10 @@ body {
 
   .restaurants {
     
-    grid-area: restaurants;
+    grid-area: r;
     justify-content: space-around;
-    padding-bottom: 20px;
+    border-radius: 25px;
+    padding: 30px;
 
     &__list {
 
@@ -164,6 +179,7 @@ body {
   .restaurants {
     border-radius: 50px;
     margin: 40px;
+    width: 100%;
   }
 
   .wrapp__footer {
