@@ -66,7 +66,7 @@ linear-gradient(171deg,$colour-secondary 10%,$colour-primary 90%);
   align-items: flex-end;
   height: 30px;
   width: 96%;
-  min-width: 243px;
+  min-width: 255px;
   background-color: #fff;
   border-radius: 20px;
   margin-bottom: 20px;
@@ -564,11 +564,6 @@ body {
   height: 100vh;
 }
 
-.wrapp-page {
-  height: 100vh;
-  /*ne fonctionne pas*/
-}
-
 .step-list {
   margin-left: 38px;
 }
@@ -582,8 +577,12 @@ body {
   background-color: #f2f2f2;
 }
 
-main section {
-  padding: 40px;
+.operation {
+  margin: 20px;
+}
+
+.menu__section {
+  width: 100%;
 }
 
 .restaurants {
@@ -621,24 +620,24 @@ main section {
     max-width: 1599px;
     margin-left: auto;
     margin-right: auto;
-    grid-template-areas: "o o s s" "r r r r";
+    grid-template-areas: "operation operation search-restaurants search-restaurants" "restaurants restaurants restaurants restaurants";
   }
 
   .search-restaurants {
     margin: 30px;
-    grid-area: s;
+    grid-area: search-restaurants;
     border-radius: 50px;
     grid-gap: 5px;
     padding: 10px;
   }
 
   .operation {
-    grid-area: o;
+    grid-area: operation;
   }
 
   .restaurants {
     height: 795px;
-    grid-area: r;
+    grid-area: restaurants;
     justify-content: space-around;
   }
   .restaurants__list {
@@ -665,7 +664,7 @@ main section {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
-    grid-template-areas: "name name " "starters button" "dishes desserts";
+    grid-template-areas: "name name " "starters dishes" "desserts button";
   }
 
   .restaurant-name {
@@ -739,7 +738,19 @@ form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  /*
+        __  _                         _   _               _               _   _              _       __
+       / /\| |/\                     | | (_)             | |             | | (_)          /\| |/\   / /
+      / /\ ` ' / __ _ _   _  ___  ___| |_ _  ___  _ __   | |__   __ _ ___| |_ _  ___ _ __ \ ` ' /  / /
+     / /|_     _/ _` | | | |/ _ \/ __| __| |/ _ \| '_ \  | '_ \ / _` / __| __| |/ _ \ '_ \_     _|/ /
+    / /  / , . \ (_| | |_| |  __/\__ \ |_| | (_) | | | | | |_) | (_| \__ \ |_| |  __/ | | / , . \/ /
+   /_/   \/|_|\/\__, |\__,_|\___||___/\__|_|\___/|_| |_| |_.__/ \__,_|___/\__|_|\___|_| |_\/|_|\/_/
+                   | |
+                   |_|
+  */
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .town-search {

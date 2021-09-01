@@ -4,10 +4,6 @@ body {
   height: 100vh;
 }
 
-.wrapp-page {
-  height: 100vh;
-  /*ne fonctionne pas*/
-}
 
 .step-list {
   margin-left: 38px;
@@ -21,9 +17,12 @@ body {
 .restaurants {
   background-color: $colour-background;
 }
-main section
+.operation
 {
-  padding: 40px;
+  margin: 20px;
+}
+.menu__section {
+  width: 100%;
 }
 .restaurants {
 
@@ -65,13 +64,13 @@ main section
     margin-left: auto;
     margin-right: auto;
     grid-template-areas:
-      "o o s s"
-      "r r r r";
+      "operation operation search-restaurants search-restaurants"
+      "restaurants restaurants restaurants restaurants";
   }
 
   .search-restaurants {
     margin: 30px;
-    grid-area: s;
+    grid-area: search-restaurants;
     border-radius: 50px;
     grid-gap: 5px;
     padding: 10px;
@@ -79,12 +78,12 @@ main section
 
 
   .operation {
-    grid-area: o;
+    grid-area: operation;
   }
 
   .restaurants {
     height: 795px;
-    grid-area: r;
+    grid-area: restaurants;
     justify-content: space-around;
 
     &__list {
@@ -116,8 +115,8 @@ main section
     margin-bottom: 100px;
     grid-template-areas:
       "name name "
-      "starters button"
-      "dishes desserts";
+      "starters dishes"
+      "desserts button";
   }
 
   .restaurant-name {
