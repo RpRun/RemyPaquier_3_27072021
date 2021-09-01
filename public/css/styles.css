@@ -582,9 +582,11 @@ body {
   background-color: #f2f2f2;
 }
 
+main section {
+  padding: 40px;
+}
+
 .restaurants {
-  padding-bottom: 60px;
-  margin-top: 60px;
   display: flex;
   flex-direction: column;
 }
@@ -592,7 +594,7 @@ body {
   width: 100%;
 }
 
-.wrapp {
+.wrapp__footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -601,7 +603,7 @@ body {
   width: 80%;
   max-width: 1599px;
 }
-.wrapp__process {
+.wrapp__footer__process {
   width: 100%;
 }
 
@@ -615,6 +617,7 @@ body {
   .grid {
     display: grid;
     height: auto;
+    justify-items: center;
     max-width: 1599px;
     margin-left: auto;
     margin-right: auto;
@@ -705,6 +708,10 @@ body {
   .restaurants {
     border-radius: 50px;
     margin: 40px;
+  }
+
+  .wrapp__footer {
+    align-items: center;
   }
 }
 .process {

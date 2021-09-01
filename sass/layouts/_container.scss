@@ -21,10 +21,12 @@ body {
 .restaurants {
   background-color: $colour-background;
 }
-
+main section
+{
+  padding: 40px;
+}
 .restaurants {
-  padding-bottom: 60px;
-  margin-top: 60px;
+
   display: flex;
   flex-direction: column;
 
@@ -33,7 +35,7 @@ body {
   }
 }
 
-.wrapp {
+.wrapp__footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -58,6 +60,7 @@ body {
   .grid {
     display: grid;
     height: auto;
+    justify-items: center;
     max-width: 1599px;
     margin-left: auto;
     margin-right: auto;
@@ -159,6 +162,10 @@ body {
   .restaurants {
     border-radius: 50px;
     margin: 40px;
+  }
+  .wrapp__footer {
+   
+    align-items: center;
   }
 
 }
