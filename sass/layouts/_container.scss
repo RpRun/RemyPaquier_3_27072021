@@ -1,62 +1,59 @@
 body {
   margin: 0 auto;
   text-align: center;
-  position: relative;
-  
+  height: 100vh;
 }
-.wrapp-page
-{
-   height: 100vh;
+
+.wrapp-page {
+  height: 100vh;
+  /*ne fonctionne pas*/
 }
+
 .step-list {
-   margin-left: 38px;
- }
- 
- .step-list p {
-   margin-left: 5px;
- }
- 
- .search-restaurants,
- .restaurants {
-   background-color: $colour-background;
- }
- 
- .restaurants {
-   padding-bottom: 60px;
-   margin-top: 60px;
-   display: flex;
-   flex-direction: column;
- 
-   &__list {
-     width: 100%;
-   }
- }
- 
- .wrapp {
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   margin-left: auto;
-   margin-right: auto;
-   width: 80%;
-   max-width: 1599px;
- 
-   &__process {
-     width: 100%;
-   }
- }
- 
- .restaurant-name {
-   position: relative;
-   white-space: nowrap;
-   width: 100%;
- }
- 
+  margin-left: 38px;
+}
+
+.step-list p {
+  margin-left: 5px;
+}
+
+.search-restaurants,
+.restaurants {
+  background-color: $colour-background;
+}
+
+.restaurants {
+  padding-bottom: 60px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+
+  &__list {
+    width: 100%;
+  }
+}
+
+.wrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  max-width: 1599px;
+
+  &__process {
+    width: 100%;
+  }
+}
+
+.restaurant-name {
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+}
 
 @media screen and (min-width: 769px) {
-  header {
-    height: 130px;
-  }
 
   .grid {
     display: grid;
@@ -68,14 +65,15 @@ body {
       "o o s s"
       "r r r r";
   }
+
   .search-restaurants {
-   margin: 30px;
-   grid-area: s;
-   border-radius: 50px;
-   grid-gap: 5px;
-   padding: 10px;
-}
-  
+    margin: 30px;
+    grid-area: s;
+    border-radius: 50px;
+    grid-gap: 5px;
+    padding: 10px;
+  }
+
 
   .operation {
     grid-area: o;
@@ -84,36 +82,83 @@ body {
   .restaurants {
     height: 795px;
     grid-area: r;
+    justify-content: space-around;
+
     &__list {
-       
-   display: flex;
-    flex-wrap: wrap;
+
+      display: flex;
+      flex-wrap: wrap;
 
     }
   }
 
   footer {
     grid-area: footer;
-    height: 200px;
+    height: 246px;
   }
+
   .cards {
-   min-width: 310px;
-   width: 45%;
+    min-width: 310px;
+    width: 45%;
   }
-  
+
+  /* partie responsive carte de restaurants */
+  .grid__card {
+    display: grid;
+    justify-content: space-evenly;
+    align-items: stretch;
+    max-width: 1599px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    grid-template-areas:
+      "name name "
+      "starters button"
+      "dishes desserts";
+  }
+
+  .restaurant-name {
+    grid-area: name;
+  }
+
+  .starters {
+    grid-area: starters;
+  }
+
+  .desserts {
+    grid-area: desserts;
+  }
+
+  .btn__order {
+    min-width: 190px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    grid-area: button;
+  }
+
+  .menu__section {
+    width: 450px;
+    height: 311px;
+  }
 }
 
 @media screen and (min-width: 1025px) {
-  
-.search-restaurants {
-   margin: 40px;
-   padding: 0;
+
+  .banner {
+    height: 440px;
+  }
+
+  .search-restaurants {
+    margin: 40px;
+    padding: 0;
+  }
+
+  .restaurants {
+    border-radius: 50px;
+    margin: 40px;
+  }
+
 }
-.restaurants {
-   border-radius: 50px;
-   margin: 40px;
-}
-
-
-   }
-
