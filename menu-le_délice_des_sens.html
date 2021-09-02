@@ -1,129 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Ohmyfood! Paris - Carte "Le délice des sens"</title>
+  <meta name="description"
+    content="Commandez vos repas en ligne avec Ohmyfood! Notre concept vous permets de composer votre propre menu et de réduire votre temps d’attente dans les restaurants!" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./public/css/prefixed/styles.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <header class="heading-menu">
+    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+    <a href="#">
+      <div class="header__logo"><img class="heading-logo" src="./images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+      </div>
+    </a>
+    <div class="banner"></div>
+  </header>
+  <main class="menu">
+    <form class="grid__card">
+      <div class="restaurant-name">
+        <h1>Le délice des sens</h1>
+        <input type="checkbox" id="check-heart--title" class="restaurant-like">
+        <label for="check-heart--title">
+          <span class="svg-heart heart-empty svg-heart__heading"></span>
+          <span class="svg-heart heart-filled svg-heart__heading"></span>
+        </label>
+      </div>
+      <section class="menu__section starters">
+        <h2 class="heading-cards">Entrées</h2>
+        <div class="green-border"></div>
+        <input type="checkbox" id="choice1" class="command">
+        <label class="menu-cards" for="choice1">
+          <span class="menu-cards__description menu-cards__description--h3">Tartare de thon</span>
+          <span class=" menu-cards__description menu-cards__description--p">Assaisonné au yuzu</span>
+          <span class="menu-cards__price">25€</span>
+          <span class="check"><i class="fas fa-check"></i></span>
+        </label>
+        <input type="checkbox" id="choice2" class="command">
+        <label class="menu-cards" for="choice2">
+          <span class="menu-cards__description menu-cards__description--h3">Bouchée de homard croustillant</span>
+          <span class=" menu-cards__description menu-cards__description--p">Et sa farandole de petits légumes</span>
+          <span class="menu-cards__price">35€</span>
+          <span class="check"><i class="fas fa-check"></i></span>
+        </label>
+        <input type="checkbox" id="choice3" class="command">
+        <label class="menu-cards" for="choice3">
+          <span class="menu-cards__description menu-cards__description--h3">Velouté de cèpes</span>
+          <span class=" menu-cards__description menu-cards__description--p">Aux truffes</span>
+          <span class="menu-cards__price">20€</span>
+          <span class="check"><i class="fas fa-check"></i></span>
+        </label>
+      </section>
+      <section class="menu__section dishes">
+        <h2 class="heading-cards">Plats</h2>
+        <div class="green-border"></div>
+        <input type="checkbox" id="choice4" class="command">
+        <label class="menu-cards" for="choice4">
+          <span class="menu-cards__description menu-cards__description--h3">Poulet rôti aux herbes de Provence </span>
+          <span class=" menu-cards__description menu-cards__description--p">Et sa crème de truffe</span>
+          <span class="menu-cards__price">40€</span>
+          <span class="check"><i class="fas fa-check"></i></span>
+        </label>
+        <input type="checkbox" id="choice5" class="command">
+        <label class="menu-cards" for="choice5">
+          <span class="menu-cards__description menu-cards__description--h3">Langouste rôtie</span>
+          <span class=" menu-cards__description menu-cards__description--p">Et ses légumes de saison</span>
+          <span class="menu-cards__price">35€</span>
+          <span class="check"><i class="fas fa-check"></i></span>
+        </label>
+        <input type="checkbox" id="choice6" class="command">
+        <label class="menu-cards" for="choice6">
+          <span class="menu-cards__description menu-cards__description--h3">Côte de boeuf Angus</span>
+          <span class=" menu-cards__description menu-cards__description--p">Et sa purée de panais</span>
+          <span class="menu-cards__price">44€</span>
+          <span class="check"><i class="fas fa-check"></i></span>
+        </label>
+      </section>
+      <section class="menu__section desserts">
+        <h2 class="heading-cards">Desserts</h2>
+        <div class="green-border"></div>
+        <input type="checkbox" id="choice7" class="command">
+        <label class="menu-cards" for="choice7">
+          <span class="menu-cards__description menu-cards__description--h3">Farandole de desserts</span>
+          <span class=" menu-cards__description menu-cards__description--p">Du chef</span>
+          <span class="menu-cards__price">18€</span>
+          <span class="check"><i class="fas fa-check"></i></span>
+        </label>
+        <input type="checkbox" id="choice8" class="command">
+        <label class="menu-cards" for="choice8">
+          <span class="menu-cards__description menu-cards__description--h3">Crème brulée
+          </span>
+          <span class=" menu-cards__description menu-cards__description--p">Revisitée</span>
+          <span class="menu-cards__price">22€</span>
+          <span class="check"><i class="fas fa-check"></i></span>
+        </label>
+        <input type="checkbox" id="choice9" class="command">
+        <label class="menu-cards" for="choice9">
+          <span class="menu-cards__description menu-cards__description--h3">Tiramisu</span>
+          <span class=" menu-cards__description menu-cards__description--p">À la noisette</span>
+          <span class="menu-cards__price">23€</span>
+          <span class="check"><i class="fas fa-check"></i></span>
+        </label>
+      </section>
 
-    <style>
-        .fa-heart {
-            width: 30px;
-            height: 20px;
-            position: absolute;
-            margin-top: 30px;
-            top: 0;
-            left: 50%;
-            transition: opacity 4s;
-        }
-        .fas {
-            opacity: 0;
-        }
-        .far {
-            background: #fff;
-        }
-        #check-heart:checked~label .far {
-            opacity: 0;
-        }
-        #check-heart:checked~label .fas {
-            opacity: 1;
-            color: #FF79DA;
-        }
-        #check-heart {
-            display: none;
-        }
+      <button class="btn btn__order" type="submit">Commander</button>
+    </form>
 
-.box
-{
-  border: blueviolet 1px dotted;
-  margin: 25px auto;
-  white-space: nowrap;
-  padding: 30px;
-}
-.box__text{
-  color: cadetblue;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.lds-heart {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-  transform: rotate(45deg);
-  transform-origin: 40px 40px;
-}
-.lds-heart div {
-  top: 32px;
-  left: 32px;
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  background: rgb(47, 218, 138);
-  animation: lds-heart 1.9s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-.lds-heart div:after,
-.lds-heart div:before {
-  content: " ";
-  position: absolute;  
-  display: block;
-  width: 32px;
-  height: 32px;
-  background: rgb(47, 50, 218);
-}
-.lds-heart div:before {
-  left: -24px;
-  border-radius: 50% 0 0 50%;
-}
-.lds-heart div:after {
-  top: -24px;
-  border-radius: 50% 50% 0 0;
-}
-@keyframes lds-heart {
-  0% {
-    transform: scale(0.95);
-  }
-  5% {
-    transform: scale(1.1);
-  }
-  39% {
-    transform: scale(0.85);
-  }
-  45% {
-    transform: scale(1);
-  }
-  60% {
-    transform: scale(0.95);
-  }
-  100% {
-    transform: scale(0.9);
-  }
-}
-
-    </style>
-  <div class="box">
-    <p class="box__text">Alors c est l histoire d'un mec, il tombe du 3 eme etage... et il se répete sans cesse: jusqu ici tout va bien, jusqu ici tout va bien... mais l'important c'est pas la chute.</p>
-
-  </div>
-    <input type="checkbox" id="check-heart">
-
-    <label for="check-heart">
-        <i class="far fa-heart"></i>
-        <i class="fas fa-heart"></i>
-    </label>
-
-    <div class="lds-heart"><div></div></div>
-    
-</div>
-
-<div class="test"></div>
-  
+  </main>
+  <footer>
+    <div class="wrapp wrapp__footer">
+      <div class="svg-logo"></div>
+      <!--en suivant ce tuto:https://medium.com/@no.steiner/change-svg-icons-color-with-css-only-ba6a4912e6ba 
+         -->
+      <ul class="footer">
+        <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
+        <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 
 </html>
