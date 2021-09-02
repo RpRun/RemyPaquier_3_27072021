@@ -19,6 +19,16 @@ body {
 
 .operation {
   margin: 0px 20px 60px 20px;
+  .operation {
+    margin: 0px 20px 60px 20px;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 }
 
@@ -32,7 +42,7 @@ body {
   flex-direction: column;
   align-items: stretch;
   padding: 20px;
-  margin-bottom: 30px;
+  
 
   &__list {
     width: 100%;
@@ -43,9 +53,13 @@ body {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    max-width: 550px;
+    max-width: 550px;    
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
+}
+.wrapp-page
+{
+  height: 100vh;
 }
 .wrapp__process {
   width: 100%;
@@ -81,7 +95,7 @@ body {
     margin-right: auto;
     grid-template-areas:
       "operation operation search-restaurants search-restaurants"
-      "r r r r";
+      "restaurants restaurants restaurants restaurants";
   }
 
   .search-restaurants {
@@ -95,19 +109,24 @@ body {
   .operation {
     grid-area: operation;
   }
+  
 
   .restaurants {
     
-    grid-area: r;
+    grid-area: restaurants;
     justify-content: space-around;
     border-radius: 25px;
-    padding: 30px;
+    padding: 30px;  
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
 
     &__list {
 
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      /*max-width: 550px;*/
 
     }
   }
@@ -136,7 +155,9 @@ body {
       "starters dishes"
       "desserts button";
   }
-
+  .wrapp {
+    align-items: center;
+  }
   .restaurant-name {
     grid-area: name;
   }
@@ -165,7 +186,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
 
   .banner {
     height: 440px;
@@ -178,10 +199,14 @@ body {
 
   .restaurants {
     border-radius: 50px;
-    margin: 40px;
-    width: 100%;
   }
-
+  .restaurants__list {
+    width: 100%;
+    max-width: 1280px;
+  }
+  .wrapp {
+    max-width: 1280px;
+  }
   .wrapp__footer {
 
     align-items: center;
