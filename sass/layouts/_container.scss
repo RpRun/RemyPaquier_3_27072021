@@ -80,7 +80,7 @@ body {
 
 .restaurant-name {
   position: relative;
-  white-space: nowrap;
+  
   width: 100%;
 }
 
@@ -181,7 +181,7 @@ body {
   }
 
   .menu__section {
-    width: 450px;
+    width: 340px;
     height: auto;
   }
 }
@@ -217,6 +217,7 @@ body {
   }
   .cards {
     height: 425px;
+    margin: 15px 15px 25px 15px;
   }
   .preview-image {
     height: 350px;
