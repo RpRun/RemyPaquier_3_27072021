@@ -11,7 +11,6 @@ main.menu {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 30px;
-    
 }
 
 h2.heading-cards {
@@ -20,29 +19,27 @@ h2.heading-cards {
     font-weight: lighter;
     font-size: 1rem;
 }
-div.green-border{
+
+div.green-border {
     width: 11%;
     height: 4px;
     background: $colour-tertiary;
     margin-top: 5px;
     margin-bottom: 10px;
 }
+
 .banner1 {
     background-image: url("/images/restaurants/palette_du_goût.jpg");
 }
+
 .banner2 {
     background-image: url("/images/restaurants/note_enchantée.jpg");
 }
+
 .banner3 {
     background-image: url("/images/restaurants/à_la_française.jpg");
 }
+
 .banner4 {
     background-image: url("/images/restaurants/délice_des_sens.jpg");
 }
-
-
-
-
-
-    
-
