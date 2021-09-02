@@ -265,7 +265,7 @@ h1.heading-sections {
 
 @media screen and (min-width: 1024px) {
   body {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   .header__logo img {
@@ -273,7 +273,7 @@ h1.heading-sections {
   }
 
   h1, h2 {
-    font-size: 29px;
+    font-size: 25px;
   }
 }
 .loader {
@@ -694,6 +694,7 @@ body {
   footer {
     grid-area: footer;
     height: 246px;
+    margin-top: 69px;
   }
 
   .cards {
