@@ -4,7 +4,7 @@
   border-radius: 50px;
   border-style: none;
   font-size: 17px;
-  line-height: 80px;
+  line-height: 60px;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 60px;
@@ -44,9 +44,9 @@
 
   &__order {
     min-width: 190px;
-    height: 80px;
-    margin-top: 46px;
-    margin-bottom: 98px;
+    max-height: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     
   }
 }

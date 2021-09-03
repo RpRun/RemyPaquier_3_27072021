@@ -8,15 +8,14 @@
   bottom: 0;
   visibility: hidden;
   background: #f3f3f3;
-  
-  animation: appear 9s;
+  animation: appear 3s;
   z-index: 1000;
 
 }
 
 .svg-logo {
   position: absolute;
-  top: 37%;
+  top: 35%;
   left: 50%;
   margin-left: -100px;
   @include svg-icon ("../../../images/logo/ohmyfood@2x.svg", 200px, 200px, linear-gradient((171deg, lighten($colour-secondary, 5)0%, darken($colour-secondary, 10) 100%))); 
@@ -29,7 +28,7 @@
   background: rgb(147,86,220);
   /*can i use*/
   background: linear-gradient(171deg,$colour-secondary 10%,$colour-primary 90%);
-  animation: spin 1s infinite linear;
+  animation: spin 0.6s infinite linear;
   border-radius: 50%;
   position: absolute;
   top: calc(50% - 50px);
@@ -44,7 +43,7 @@
   width: 80px;
   height: 80px;
   border-radius: 50px;
-  background: #fff;
+  background: #f3f3f3;
   position: relative;
 }
 

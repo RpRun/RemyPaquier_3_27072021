@@ -407,13 +407,13 @@ input:checked ~ label .heart-filled {
   bottom: 0;
   visibility: hidden;
   background: #f3f3f3;
-  animation: appear 9s;
+  animation: appear 3s;
   z-index: 1000;
 }
 
 .svg-logo {
   position: absolute;
-  top: 37%;
+  top: 35%;
   left: 50%;
   margin-left: -100px;
   height: 200px;
@@ -432,7 +432,7 @@ input:checked ~ label .heart-filled {
   background: #9356dc;
   /*can i use*/
   background: linear-gradient(171deg, #FF79DA 10%, #9356DC 90%);
-  animation: spin 1s infinite linear;
+  animation: spin 0.6s infinite linear;
   border-radius: 50%;
   position: absolute;
   top: calc(50% - 50px);
@@ -446,7 +446,7 @@ input:checked ~ label .heart-filled {
   width: 80px;
   height: 80px;
   border-radius: 50px;
-  background: #fff;
+  background: #f3f3f3;
   position: relative;
 }
 
@@ -504,7 +504,7 @@ input:checked ~ label .heart-filled {
   border-radius: 50px;
   border-style: none;
   font-size: 17px;
-  line-height: 80px;
+  line-height: 60px;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 60px;
@@ -538,9 +538,9 @@ input:checked ~ label .heart-filled {
 }
 .btn__order {
   min-width: 190px;
-  height: 80px;
-  margin-top: 46px;
-  margin-bottom: 98px;
+  max-height: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 header {
@@ -697,13 +697,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /*max-width: 550px;*/
   }
 
   footer {
     grid-area: footer;
     height: 246px;
-    margin-top: 69px;
   }
 
   .cards {
@@ -793,6 +791,11 @@ body {
 
   .preview-image {
     height: 350px;
+  }
+
+  .btn__order {
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 .process {
