@@ -75,7 +75,7 @@ linear-gradient(171deg,$colour-secondary 10%,$colour-primary 90%);
   padding: 15px 10px;
   font-size: small;
   cursor: pointer;
-  animation: step 1s;
+  animation: step 1s ease-in-out;
   animation-fill-mode: forwards;
   visibility: hidden;
   position: relative;
@@ -108,7 +108,6 @@ linear-gradient(171deg,$colour-secondary 10%,$colour-primary 90%);
   80% {
     visibility: visible;
     opacity: 1;
-    transform: ease-out translateY(5px);
     /*
           ##       ## ######## ########  ########  ######## ##     ## ########        ###    ##     ##    ##     ##    ###    ##       #### ########     ###    ######## ######## ##     ## ########        ##       ##
          ##       ##  ##       ##     ## ##     ## ##       ##     ## ##     ##      ## ##   ##     ##    ##     ##   ## ##   ##        ##  ##     ##   ## ##      ##    ##       ##     ## ##     ##      ##       ##
@@ -490,9 +489,8 @@ input:checked ~ label .heart-filled {
   box-shadow: 0px 3px 6px 3px #d3d3d3;
   border-radius: 50px;
   border-style: none;
-  padding: 4%;
   font-size: 1em;
-  line-height: 20px;
+  line-height: 80px;
   margin-top: 20px;
   margin-bottom: 60px;
   margin-left: auto;
@@ -503,11 +501,7 @@ input:checked ~ label .heart-filled {
   position: relative;
   z-index: 1;
 }
-.btn:hover {
-  border-radius: 50px;
-}
 .btn:hover::after {
-  border-radius: 50px;
   box-shadow: 0px 3px 5px 3px #d3d3d3;
   opacity: 1;
 }
@@ -520,16 +514,16 @@ input:checked ~ label .heart-filled {
   bottom: 0;
   left: 0;
   background: linear-gradient(171deg, #ff93e1 0%, #ff46cc 100%);
-  /*si linear ne fonctionne pas bien en alternative: radial-gradient(circle, lighten($colour-secondary, 5) 0%, darken($colour-secondary, 10) 100%);*/
   opacity: 0;
   z-index: -1;
-  transition: opacity 300ms;
+  transition: opacity 0.9s;
 }
 .btn__explore {
   min-width: 240px;
 }
 .btn__order {
   min-width: 190px;
+  height: 80px;
   margin-top: 46px;
   margin-bottom: 98px;
 }
