@@ -497,15 +497,15 @@ div.green-border {
 }
 
 .banner1 {
-  background-image: url("/images/restaurants/palette_du_goût.jpg");
+  background-image: url("../../../images/restaurants/palette_du_goût.jpg");
 }
 
 .banner2 {
-  background-image: url("./images/restaurants/note_enchantée.jpg");
+  background-image: url("../../../images/restaurants/note_enchantée.jpg");
 }
 
 .banner3 {
-  background-image: url("/../../../images/restaurants/délice_des_sens.jpg");
+  background-image: url("../../../images/restaurants/à_la_française.jpg");
 }
 
 .banner4 {
