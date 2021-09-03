@@ -11,9 +11,10 @@ i.fa-arrow-left {
 {
     margin-right: 10px;
 }
-.svg-logo {
+
+.svg-logo__footer {
     @include svg-icon ("../../../images/logo/ohmyfood@2x.svg", 45px, 100px, #fff);
-}
+}  
 
 span.circle {
     background: $colour-primary;

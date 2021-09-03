@@ -1,18 +1,27 @@
 .loader {
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   visibility: hidden;
   background: #f3f3f3;
-  opacity: 0.9;
-  animation: appear 1.5s;
+  
+  animation: appear 9s;
   z-index: 1000;
 
 }
+
+.svg-logo {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  margin-left: -100px;
+  @include svg-icon ("../../../images/logo/ohmyfood@2x.svg", 200px, 200px, linear-gradient((171deg, lighten($colour-secondary, 5)0%, darken($colour-secondary, 10) 100%))); 
+}
+
 
 .spinner {
   width: 100px;
@@ -23,18 +32,18 @@
   animation: spin 1s infinite linear;
   border-radius: 50%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  margin-left: -20px;
   padding: 20px;
-  margin-left: -50px;
+  
 }
 
 .spinner-bg {
   border: 10px solid TRANSPARENT;
   width: 80px;
   height: 80px;
-  border-radius: 50%;
+  border-radius: 50px;
   background: #fff;
   position: relative;
 }

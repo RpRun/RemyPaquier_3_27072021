@@ -275,61 +275,6 @@ h1.heading-sections {
     font-size: 25px;
   }
 }
-.loader {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  visibility: hidden;
-  background: #f3f3f3;
-  opacity: 0.9;
-  animation: appear 1.5s;
-  z-index: 1000;
-}
-
-.spinner {
-  width: 100px;
-  height: 100px;
-  background: #9356dc;
-  /*can i use*/
-  background: linear-gradient(171deg, #FF79DA 10%, #9356DC 90%);
-  animation: spin 1s infinite linear;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 20px;
-  margin-left: -50px;
-}
-
-.spinner-bg {
-  border: 10px solid TRANSPARENT;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background: #fff;
-  position: relative;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes appear {
-  0% {
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
-  }
-}
 i.fa-arrow-left {
   position: absolute;
   left: 5px;
@@ -344,7 +289,7 @@ i.fa-arrow-left {
   margin-right: 10px;
 }
 
-.svg-logo {
+.svg-logo__footer {
   height: 45px;
   width: 100px;
   background: #fff;
@@ -452,6 +397,75 @@ input:checked ~ label .heart-filled {
   animation: groove 2s;
 }
 
+.loader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  background: #f3f3f3;
+  animation: appear 9s;
+  z-index: 1000;
+}
+
+.svg-logo {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  margin-left: -100px;
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(171deg, #ff93e1 0%, #ff46cc 100%);
+  mask-image: url("../../../images/logo/ohmyfood@2x.svg");
+  background-size: cover;
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  background: #9356dc;
+  /*can i use*/
+  background: linear-gradient(171deg, #FF79DA 10%, #9356DC 90%);
+  animation: spin 1s infinite linear;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  margin-left: -20px;
+  padding: 20px;
+}
+
+.spinner-bg {
+  border: 10px solid TRANSPARENT;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  background: #fff;
+  position: relative;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes appear {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
 .cards {
   border-radius: 20px;
   box-shadow: 2px 2px 2px 1px #d3d3d3;
@@ -489,15 +503,16 @@ input:checked ~ label .heart-filled {
   box-shadow: 0px 3px 6px 3px #d3d3d3;
   border-radius: 50px;
   border-style: none;
-  font-size: 1em;
+  font-size: 17px;
   line-height: 80px;
+  text-align: center;
   margin-top: 20px;
   margin-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
   color: #fff;
   cursor: pointer;
-  width: 40%;
+  width: 45%;
   position: relative;
   z-index: 1;
 }
@@ -516,7 +531,7 @@ input:checked ~ label .heart-filled {
   background: linear-gradient(171deg, #ff93e1 0%, #ff46cc 100%);
   opacity: 0;
   z-index: -1;
-  transition: opacity 0.9s;
+  transition: opacity 0.7s;
 }
 .btn__explore {
   min-width: 240px;
@@ -904,11 +919,11 @@ div.green-border {
 }
 
 .banner1 {
-  background-image: url("./images/restaurants/note_enchantée.jpg");
+  background-image: url("../../../images/logo/restaurants/note_enchantée.jpg");
 }
 
 .banner2 {
-  background-image: url("images/restaurants/note_enchantée.jpg");
+  background-image: url("/images/restaurants/note_enchantée.jpg");
 }
 
 .banner3 {
