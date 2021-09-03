@@ -466,6 +466,52 @@ input:checked ~ label .heart-filled {
     visibility: hidden;
   }
 }
+main.menu {
+  border-radius: 50px 50px 0 0;
+  background-color: #f2f2f2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+}
+
+h2.heading-cards {
+  margin-top: 35px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+div.green-border {
+  width: 11%;
+  height: 4px;
+  background: #99E2D0;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.banner1 {
+  background-image: url("../../../images/logo/restaurants/note_enchantée.jpg");
+}
+
+.banner2 {
+  background-image: url("/images/restaurants/note_enchantée.jpg");
+}
+
+.banner3 {
+  background-image: url("../images/restaurants/note_enchantée.jpg");
+}
+
+.banner4 {
+  background-image: url("../../images/restaurants/note_enchantée.jpg");
+}
+
 .cards {
   border-radius: 20px;
   box-shadow: 2px 2px 2px 1px #d3d3d3;
@@ -889,52 +935,6 @@ footer a {
   line-height: 25px;
   padding-bottom: 30px;
   margin-top: 10px;
-}
-
-main.menu {
-  border-radius: 50px 50px 0 0;
-  background-color: #f2f2f2;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 30px;
-}
-
-h2.heading-cards {
-  margin-top: 35px;
-  text-transform: uppercase;
-  font-weight: lighter;
-  font-size: 1rem;
-}
-
-div.green-border {
-  width: 11%;
-  height: 4px;
-  background: #99E2D0;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-
-.banner1 {
-  background-image: url("../../../images/logo/restaurants/note_enchantée.jpg");
-}
-
-.banner2 {
-  background-image: url("/images/restaurants/note_enchantée.jpg");
-}
-
-.banner3 {
-  background-image: url("../images/restaurants/note_enchantée.jpg");
-}
-
-.banner4 {
-  background-image: url("../../images/restaurants/note_enchantée.jpg");
 }
 
 /*# sourceMappingURL=styles.css.map */
