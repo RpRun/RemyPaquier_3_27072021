@@ -501,15 +501,15 @@ div.green-border {
 }
 
 .banner2 {
-  background-image: url("../../../images/restaurants/note_enchantée.jpg");
+  background-image: url("/images/restaurants/note_enchantée.jpg");
 }
 
 .banner3 {
-  background-image: url(".imagesrestaurantsnote_enchantée.jpg");
+  background-image: url("/images/restaurants/à_la_française.jpg");
 }
 
 .banner4 {
-  background-image: url("/../RemyPaquier_3_27072021/images/restaurants/note_enchantée.jpg");
+  background-image: url("/images/restaurants/délice_des_sens.jpg");
 }
 
 .cards {
