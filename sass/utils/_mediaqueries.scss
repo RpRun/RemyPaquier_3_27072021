@@ -1,0 +1,148 @@
+@media screen and (min-width: 769px) {
+
+    .grid {
+      display: grid;
+      height: auto;
+      justify-items: center;
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto;
+      grid-template-areas:
+        "operation operation search-restaurants search-restaurants"
+        "restaurants restaurants restaurants restaurants";
+    }
+  
+    .search-restaurants {
+      margin: 30px;
+      grid-area: search-restaurants;
+      border-radius: 50px;
+      grid-gap: 5px;
+      padding: 10px;
+    }
+  
+    .operation {
+      grid-area: operation;
+    }
+  
+    .restaurants {
+  
+      grid-area: restaurants;
+      justify-content: space-around;
+      border-radius: 25px;
+      padding: 30px;
+      margin-bottom: 30px;
+      margin-left: 40px;
+      margin-right: 40px;
+  
+      &__list {
+  
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  
+    footer {
+      grid-area: footer;
+      height: 246px;
+    }
+  
+    .cards {
+      min-width: 310px;
+      width: 100%;
+    }
+  
+    /* partie responsive carte de restaurants */
+    .grid__card {
+      display: grid;
+      justify-content: space-evenly;
+      align-items: stretch;
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 100px;
+      grid-template-areas:
+        "name name "
+        "starters dishes"
+        "desserts button";
+    }
+  
+    .wrapp {
+      align-items: center;
+    }
+  
+    .restaurant-name {
+      grid-area: name;
+      text-align: center;
+    }
+  
+    .starters {
+      grid-area: starters;
+    }
+  
+    .desserts {
+      grid-area: desserts;
+    }
+  
+    .btn__order {
+      min-width: 190px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      grid-area: button;
+    }
+  
+    .menu__section {
+      width: 340px;
+      height: auto;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+  
+    .banner {
+      height: 440px;
+    }
+  
+    .search-restaurants {
+      margin: 40px;
+      padding-top: 25px;
+    }
+  
+    .restaurants {
+      border-radius: 50px;
+    }
+  
+    .restaurants__list {
+      width: 100%;
+      max-width: 1280px;
+    }
+  
+    .wrapp {
+      max-width: 1280px;
+    }
+  
+    .wrapp__footer {
+  
+      align-items: center;
+    }
+  
+    .heading-sections {
+      padding-top: 30px;
+    }
+  
+    .cards {
+      height: 425px;
+      margin: 15px 15px 25px 15px;
+    }
+  
+    .preview-image {
+      height: 350px;
+    }
+    .btn__order {
+      margin-top:auto;
+      margin-bottom: auto;
+    }
+  }
