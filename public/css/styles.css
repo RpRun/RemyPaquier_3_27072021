@@ -418,8 +418,9 @@ input:checked ~ label .heart-filled {
 
 .svg-logo {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
+  margin-bottom: 100px;
   margin-left: -100px;
   height: 200px;
   width: 200px;

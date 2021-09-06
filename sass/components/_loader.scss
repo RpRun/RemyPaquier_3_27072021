@@ -21,15 +21,15 @@
 
 .svg-logo {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
-  
+  margin-bottom: 100px;
   margin-left: -100px;
   @include svg-icon ("../../../images/logo/ohmyfood@2x.svg", 200px, 200px, linear-gradient((171deg, lighten($colour-secondary, 5)0%, darken($colour-secondary, 10) 100%))); 
 }
 
 
-.spinner {  
+.spinner {
   width: 100px;
   height: 100px;
   background: rgb(147,86,220);
