@@ -503,7 +503,7 @@ div.green-border {
 
 .cards {
   border-radius: 20px;
-  box-shadow: 2px 2px 2px 1px #d3d3d3;
+  box-shadow: 2px 2px 7px 2px #d3d3d3;
   height: 270px;
   max-width: 540px;
   width: 100%;
