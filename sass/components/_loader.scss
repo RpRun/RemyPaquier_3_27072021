@@ -12,11 +12,9 @@
   z-index: 1000;
   display: flex;
   flex-direction: row;
-  margin: auto;
   justify-content: center;
   align-items: center;
-  
-
+  margin: auto;
 }
 
 .svg-logo {
@@ -25,16 +23,15 @@
   left: 50%;
   margin-bottom: 100px;
   margin-left: -100px;
-  @include svg-icon ("../../../images/logo/ohmyfood@2x.svg", 200px, 200px, linear-gradient((171deg, lighten($colour-secondary, 5)0%, darken($colour-secondary, 10) 100%))); 
+  @include svg-icon ("../../../images/logo/ohmyfood@2x.svg", 200px, 200px, linear-gradient((171deg, lighten($colour-secondary, 5)0%, darken($colour-secondary, 10) 100%)));
 }
-
 
 .spinner {
   width: 100px;
   height: 100px;
-  background: rgb(147,86,220);
+  background: rgb(147, 86, 220);
   /*can i use*/
-  background: linear-gradient(171deg,$colour-secondary 10%,$colour-primary 90%);
+  background: linear-gradient(171deg, $colour-secondary 10%, $colour-primary 90%);
   animation: spin 0.6s infinite linear;
   border-radius: 50%;
   position: absolute;
@@ -42,7 +39,6 @@
   left: calc(50% - 50px);
   margin-left: -20px;
   padding: 20px;
-  
 }
 
 .spinner-bg {
@@ -54,24 +50,22 @@
   position: relative;
 }
 
-
-
 @keyframes spin {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes appear {
   0% {
-      visibility: visible;
+    visibility: visible;
   }
 
   100% {
-      visibility: hidden;
+    visibility: hidden;
   }
 }

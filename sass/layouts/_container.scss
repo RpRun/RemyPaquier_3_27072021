@@ -12,25 +12,13 @@ body {
   margin-left: 5px;
 }
 
-.search-restaurants,
+.explore-restaurants,
 .restaurants {
   background-color: $colour-background;
 }
 
 .operation {
   margin: 0px 20px 60px 20px;
-
-  .operation {
-    margin: 0px 20px 60px 20px;
-    max-width: 550px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
 }
 
 .menu__section {
@@ -38,13 +26,10 @@ body {
 }
 
 .restaurants {
-
   display: flex;
   flex-direction: column;
   align-items: stretch;
   padding: 20px;
-
-
   &__list {
     width: 100%;
   }
@@ -76,15 +61,10 @@ body {
   margin-right: auto;
   width: 80%;
   max-width: 1280px;
-
-  &__process {
-    width: 100%;
-  }
 }
 
 .restaurant-name {
   position: relative;
-
   width: 96%;
 }
 

@@ -2,33 +2,28 @@
     border-radius: 20px;
     box-shadow: 2px 2px 2px 1px #d3d3d3;
     height: 270px;
+    max-width: 540px;
+    width: 100%;
     margin: 20px auto 20px auto;
     transform: scale(1);
     transition: all 300ms;
     transition-timing-function: ease-in-out;
     background: #fff;
-    max-width: 540px;
-    width: 100%;
-
+    
     &:hover {
         transform: scale(1.04);
+    }
+
+    &__img {
+        border-radius: 25px 25px 0 0;
+        height: 210px;
+        width: 100%;
+        object-fit: cover;
+        background-position: center;
     }
 
     .links {
         text-decoration: none;
         color: #020202;
     }
-}
-
-.preview {
-    border-radius: 25px 25px 0 0;
-
-}
-
-.preview-image {
-    height: 210px;
-    width: 100%;
-    border-radius: 25px 25px 0 0;
-    object-fit: cover;
-    background-position: center;
 }

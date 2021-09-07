@@ -14,37 +14,37 @@
 </head>
 
 <body>
-    
+    <!--LOADER-->
     <div class="loader">
         <div class="svg-logo"></div>
         <div class="spinner">
             <div class="spinner-bg">
             </div>
         </div>
-        
     </div>
- <div class="wrapp-page">
+    <!--WRAPP-PAGE-->
+    <div class="wrapp-page">
+        <!--HEADER-->
         <header class="header">
             <div class="header__logo"><img src="./images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
             </div>
             <div class="localisation">
-
                 <form method="post" class="town-search">
                     <label for="town"><i class="fas fa-map-marker-alt"></i></label>
                     <input type="text" name="town" id="town" placeholder="Paris, Belleville" />
                 </form>
-
             </div>
         </header>
-
+        <!--HEADER-->
+        <!--MAIN-->
         <main class="grid">
-            <section class="search-restaurants s">
-                <!--explore-restaurants?-->
+            <section class="explore-restaurants">
+
                 <h1 class="heading-sections">Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 <button class="btn btn__explore" type="submit">Explorer nos restaurants</button>
             </section>
-            <section class="operation o">
+            <section class="operation">
                 <div class="wrapp">
                     <h2 class="heading-sections">Fonctionnement</h2>
 
@@ -69,23 +69,24 @@
                     </ol>
                 </div>
             </section>
-            <section class="restaurants r">
+            <section class="restaurants">
                 <div class="wrapp wrapp__list">
                     <h2 class="heading-sections">Restaurants</h2>
+                    <!--FORM-->
                     <form>
-                    <ul class="restaurants__list">
-                        <li class="cards">
-                            <a class="links" href="menu-la_palette.html">
-                                <div class="preview">
-                                    <img class="preview-image" alt="assiette gastronomique"
-                                        src="./images/restaurants/palette_du_goût.jpg">
-                                </div>
-                                <div class="restaurant-name">
-                                    <h3>La palette du goût </h3>
-                                    <p>Ménilmontant</p>
-                                </div>
-                            </a>
-                            
+                        <ul class="restaurants__list">
+                            <li class="cards">
+                                <a class="links" href="menu-la_palette.html">
+                                    
+                                        <img class="cards__img" alt="assiette gastronomique"
+                                            src="./images/restaurants/palette_du_goût.jpg">
+                                    
+                                    <div class="restaurant-name">
+                                        <h3>La palette du goût </h3>
+                                        <p>Ménilmontant</p>
+                                    </div>
+                                </a>
+
                                 <input type="checkbox" id="check-heart1" class="restaurant-like">
                                 <label for="check-heart1">
                                     <!-- <div>Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a>
@@ -94,62 +95,64 @@
                                     <span class="svg-heart heart-filled svg-heart__cards"></span>
                                 </label>
 
-                        </li>
-                        <li class="cards">
-                            <a class="links" href="menu-la_note_enchantée.html">
-                                <div class="preview">
-                                    <img class="preview-image" alt="assiette gastronomique"
-                                        src="./images/restaurants/note_enchantée.jpg">
-                                    <h3>La note enchantée</h3>
-                                    <p>Charonne</p>
-                                </div>
-                            </a>
+                            </li>
+                            <li class="cards">
+                                <a class="links" href="menu-la_note_enchantée.html">
+                                    
+                                        <img class="cards__img" alt="assiette gastronomique"
+                                            src="./images/restaurants/note_enchantée.jpg">
+                                        <h3>La note enchantée</h3>
+                                        <p>Charonne</p>
+                                    
+                                </a>
+                                <input type="checkbox" id="check-heart2" class="restaurant-like">
+                                <label for="check-heart2">
+                                    <span class="svg-heart heart-empty svg-heart__cards"></span>
+                                    <span class="svg-heart heart-filled svg-heart__cards"></span>
+                                </label>
 
-                            <input type="checkbox" id="check-heart2" class="restaurant-like">
-                            <label for="check-heart2">
-                                <span class="svg-heart heart-empty svg-heart__cards"></span>
-                                <span class="svg-heart heart-filled svg-heart__cards"></span>
-                            </label>
+                            </li>
+                            <li class="cards">
+                                <a class="links" href="menu-à_la_française.html">
+                                    
+                                        <img class="cards__img" alt="assiette gastronomique"
+                                            src="./images/restaurants/à_la_française.jpg">
+                                    
+                                    <h3>À la française</h3>
+                                    <p>Cité rouge</p>
+                                </a>
 
-                        </li>
-                        <li class="cards">
-                            <a class="links" href="menu-à_la_française.html">
-                                <div class="preview">
-                                    <img class="preview-image" alt="assiette gastronomique"
-                                        src="./images/restaurants/à_la_française.jpg">
-                                </div>
-                                <h3>À la française</h3>
-                                <p>Cité rouge</p>
-                            </a>
+                                <input type="checkbox" id="check-heart3" class="restaurant-like">
+                                <label for="check-heart3">
+                                    <span class="svg-heart heart-empty svg-heart__cards"></span>
+                                    <span class="svg-heart heart-filled svg-heart__cards"></span>
+                                </label>
+                            </li>
+                            <li class="cards">
+                                <a class="links" href="menu-le_délice_des_sens.html">
+                                    
+                                        <img class="cards__img" alt="assiette gastronomique"
+                                            src="./images/restaurants/délice_des_sens.jpg">
+                                    
+                                    <h3>Le délice des sens</h3>
+                                    <p>Folie-Méricourt</p>
+                                </a>
 
-                            <input type="checkbox" id="check-heart3" class="restaurant-like">
-                            <label for="check-heart3">
-                                <span class="svg-heart heart-empty svg-heart__cards"></span>
-                                <span class="svg-heart heart-filled svg-heart__cards"></span>
-                            </label>
-                        </li>
-                        <li class="cards">
-                            <a class="links" href="menu-le_délice_des_sens.html">
-                                <div class="preview">
-                                    <img class="preview-image" alt="assiette gastronomique"
-                                        src="./images/restaurants/délice_des_sens.jpg">
-                                </div>
-                                <h3>Le délice des sens</h3>
-                                <p>Folie-Méricourt</p>
-                            </a>
+                                <input type="checkbox" id="check-heart4" class="restaurant-like">
+                                <label for="check-heart4">
+                                    <span class="svg-heart heart-empty svg-heart__cards"></span>
+                                    <span class="svg-heart heart-filled svg-heart__cards"></span>
+                                </label>
 
-                            <input type="checkbox" id="check-heart4" class="restaurant-like">
-                            <label for="check-heart4">
-                                <span class="svg-heart heart-empty svg-heart__cards"></span>
-                                <span class="svg-heart heart-filled svg-heart__cards"></span>
-                            </label>
-                    
-                        </li>
-                    </ul>
-                </form>
+                            </li>
+                        </ul>
+                    </form>
+                    <!--FORM-->
                 </div>
             </section>
         </main>
+        <!--MAIN-->
+        <!-- FOOTER-->
         <footer>
             <div class="wrapp wrapp__footer">
                 <div class="svg-logo__footer"></div>
@@ -163,6 +166,7 @@
                 </ul>
             </div>
         </footer>
+        <!-- FOOTER-->
     </div>
 </body>
 

@@ -53,10 +53,6 @@ img {
   max-width: 100%;
 }
 
-/*
-@mixin linear-gradient()???
-linear-gradient(171deg,$colour-secondary 10%,$colour-primary 90%);
-*/
 .menu-cards {
   display: flex;
   flex-direction: row;
@@ -218,11 +214,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.header__logo {
-  margin-top: 25px;
-  margin-bottom: 10px;
-}
-
 h1,
 h2 {
   font-weight: bold;
@@ -239,7 +230,7 @@ h1.heading-sections {
   margin-right: 20px;
 }
 
-.search-restaurants P {
+.explore-restaurants p {
   margin-left: 4%;
   margin-right: 4%;
   margin-bottom: 15px;
@@ -262,19 +253,6 @@ h1.heading-sections {
   margin-top: 20px;
 }
 
-@media screen and (min-width: 1024px) {
-  body {
-    font-size: 20px;
-  }
-
-  .header__logo img {
-    height: 60px;
-  }
-
-  h1, h2 {
-    font-size: 25px;
-  }
-}
 i.fa-arrow-left {
   position: absolute;
   left: 5px;
@@ -283,6 +261,11 @@ i.fa-arrow-left {
   font-size: 22px;
   color: #000000;
   /* à eclaircir*/
+}
+
+.header__logo {
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 .town-search i {
@@ -411,9 +394,9 @@ input:checked ~ label .heart-filled {
   z-index: 1000;
   display: flex;
   flex-direction: row;
-  margin: auto;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .svg-logo {
@@ -522,32 +505,27 @@ div.green-border {
   border-radius: 20px;
   box-shadow: 2px 2px 2px 1px #d3d3d3;
   height: 270px;
+  max-width: 540px;
+  width: 100%;
   margin: 20px auto 20px auto;
   transform: scale(1);
   transition: all 300ms;
   transition-timing-function: ease-in-out;
   background: #fff;
-  max-width: 540px;
-  width: 100%;
 }
 .cards:hover {
   transform: scale(1.04);
 }
+.cards__img {
+  border-radius: 25px 25px 0 0;
+  height: 210px;
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+}
 .cards .links {
   text-decoration: none;
   color: #020202;
-}
-
-.preview {
-  border-radius: 25px 25px 0 0;
-}
-
-.preview-image {
-  height: 210px;
-  width: 100%;
-  border-radius: 25px 25px 0 0;
-  object-fit: cover;
-  background-position: center;
 }
 
 .btn {
@@ -558,10 +536,7 @@ div.green-border {
   font-size: 17px;
   line-height: 60px;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto 60px auto;
   color: #fff;
   cursor: pointer;
   width: 45%;
@@ -569,7 +544,6 @@ div.green-border {
   z-index: 1;
 }
 .btn:hover::after {
-  box-shadow: 0px 3px 5px 3px #d3d3d3;
   opacity: 1;
 }
 .btn::after {
@@ -580,6 +554,7 @@ div.green-border {
   right: 0;
   bottom: 0;
   left: 0;
+  box-shadow: 0px 3px 5px 3px #d3d3d3;
   background: linear-gradient(171deg, #ff93e1 0%, #ff46cc 100%);
   opacity: 0;
   z-index: -1;
@@ -624,7 +599,6 @@ header {
 .banner {
   width: 100%;
   height: 270px;
-  object-fit: cover;
   margin-bottom: -44px;
   background-size: cover;
   background-position: center;
@@ -644,23 +618,13 @@ body {
   margin-left: 5px;
 }
 
-.search-restaurants,
+.explore-restaurants,
 .restaurants {
   background-color: #f2f2f2;
 }
 
 .operation {
   margin: 0px 20px 60px 20px;
-}
-.operation .operation {
-  margin: 0px 20px 60px 20px;
-  max-width: 550px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .menu__section {
@@ -703,9 +667,6 @@ body {
   margin-right: auto;
   width: 80%;
   max-width: 1280px;
-}
-.wrapp__footer__process {
-  width: 100%;
 }
 
 .restaurant-name {
@@ -814,12 +775,12 @@ footer a {
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
-    grid-template-areas: "operation operation search-restaurants search-restaurants" "restaurants restaurants restaurants restaurants";
+    grid-template-areas: "operation operation explore-restaurants explore-restaurants" "restaurants restaurants restaurants restaurants";
   }
 
-  .search-restaurants {
+  .explore-restaurants {
     margin: 30px;
-    grid-area: search-restaurants;
+    grid-area: explore-restaurants;
     border-radius: 50px;
     grid-gap: 5px;
     padding: 10px;
@@ -847,6 +808,10 @@ footer a {
   footer {
     grid-area: footer;
     height: 246px;
+  }
+
+  .svg-heart__heading {
+    right: 190px;
   }
 
   .cards {
@@ -899,11 +864,24 @@ footer a {
   }
 }
 @media screen and (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+
+  .header__logo img {
+    height: 60px;
+  }
+
+  h1,
+h2 {
+    font-size: 25px;
+  }
+
   .banner {
     height: 440px;
   }
 
-  .search-restaurants {
+  .explore-restaurants {
     margin: 40px;
     padding-top: 25px;
   }
@@ -917,6 +895,7 @@ footer a {
     max-width: 1280px;
   }
 
+  /* max-width to force grid on to 2 columns */
   .wrapp {
     max-width: 1280px;
   }
@@ -934,7 +913,7 @@ footer a {
     margin: 15px 15px 25px 15px;
   }
 
-  .preview-image {
+  .cards__img {
     height: 350px;
   }
 

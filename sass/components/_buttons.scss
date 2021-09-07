@@ -6,10 +6,7 @@
   font-size: 17px;
   line-height: 60px;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto 60px auto;
   color: #fff;
   cursor: pointer;
   width: 45%;
@@ -17,9 +14,7 @@
   z-index: 1;
 
   &:hover {
-
-    &::after {
-      box-shadow: 0px 3px 5px 3px #d3d3d3;
+    &::after {    
       opacity: 1;
     }
   }
@@ -32,6 +27,7 @@
     right: 0;
     bottom: 0;
     left: 0;
+    box-shadow: 0px 3px 5px 3px #d3d3d3;
     background: linear-gradient((171deg, lighten($colour-secondary, 5)0%, darken($colour-secondary, 10) 100%));
     opacity: 0;
     z-index: -1;
@@ -47,6 +43,5 @@
     max-height: 60px;
     margin-top: 60px;
     margin-bottom: 60px;
-    
   }
 }
