@@ -13,6 +13,17 @@
     &:hover {
         transform: scale(1.04);
     }
+    &__new {
+        background: $colour-tertiary;
+        padding: 0.5em;
+        width: 4.5em;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        border-radius: 3px;
+        color: darken($color: $colour-tertiary, $amount: 40%);
+        font-weight: bold;
+    }
 
     &__img {
         border-radius: 25px 25px 0 0;

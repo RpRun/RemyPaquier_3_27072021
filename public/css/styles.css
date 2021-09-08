@@ -387,7 +387,7 @@ input:checked ~ label .heart-filled {
   bottom: 0;
   visibility: hidden;
   background: #f3f3f3;
-  animation: appear 3s;
+  animation: appear 1s;
   z-index: 1000;
   display: flex;
   flex-direction: row;
@@ -512,6 +512,17 @@ div.green-border {
 }
 .cards:hover {
   transform: scale(1.04);
+}
+.cards__new {
+  background: #99E2D0;
+  padding: 0.5em;
+  width: 4.5em;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 3px;
+  color: #278870;
+  font-weight: bold;
 }
 .cards__img {
   border-radius: 25px 25px 0 0;
