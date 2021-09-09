@@ -256,7 +256,7 @@ i.fa-arrow-left {
   padding: 20px;
   top: 10px;
   font-size: 22px;
-  color: #000000;
+  color: #666666;
   /* à eclaircir*/
 }
 
@@ -474,7 +474,7 @@ h2.heading-cards {
   font-size: 1rem;
 }
 
-div.green-border {
+.green-border {
   width: 11%;
   height: 4px;
   background: #99E2D0;

@@ -4,7 +4,7 @@ i.fa-arrow-left {
     padding: 20px;
     top: 10px;
     font-size: 22px;
-    color: #000000;
+    color: lighten($color: #000000, $amount: 40%);
     /* à eclaircir*/
 }
 .header__logo {
