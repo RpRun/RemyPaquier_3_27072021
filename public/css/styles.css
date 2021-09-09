@@ -84,6 +84,7 @@ img {
   width: 30px;
   padding-left: 20px;
   display: inline-block;
+  transition: 900ms;
 }
 .menu-cards__description {
   overflow: hidden;
