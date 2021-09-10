@@ -7,10 +7,10 @@
     <meta name="description"
         content="Commandez vos repas en ligne avec Ohmyfood! Notre concept vous permets de composer votre propre menu et de réduire votre temps d’attente dans les restaurants!" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="./public/css/prefixed/styles.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/css/prefixed/styles.css" />
+    
 </head>
 
 <body>
@@ -21,15 +21,14 @@
             <div class="spinner-bg">
             </div>
         </div>
-    </div>
-    <!--WRAPP-PAGE-->
-    <div class="wrapp-page">
+    </div>  
         <!--HEADER-->
         <header class="header">
-            <div class="header__logo"><img src="./images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
-            </div>
+            <a href="#">
+            <img  class="header__logo" src="./images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+             </a>
             <div class="localisation">
-                <form method="post" class="town-search">
+                <form action="/" method="post" class="town-search">
                     <label for="town"><i class="fas fa-map-marker-alt"></i></label>
                     <input type="text" name="town" id="town" placeholder="Paris, Belleville" />
                 </form>
@@ -47,7 +46,7 @@
                 <div class="wrapp">
                     <h2 class="heading-sections">Fonctionnement</h2>
                     <ol class="wrapp__process">
-                        <!--class a à modifier step list aussi-->
+                        
                         <li class="process">
                             <div class="step-list"><span class="circle">1</span><i class="fas fa-mobile-alt"></i>
                                 <p>Choisissez un restaurant</p>
@@ -84,8 +83,6 @@
                                 </a>
                                 <input type="checkbox" id="check-heart1" class="restaurant-like">
                                 <label for="check-heart1">
-                                    <!-- <div>Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a>
-                                from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
                                     <span class="svg-heart heart-empty svg-heart__cards"></span>
                                     <span class="svg-heart heart-filled svg-heart__cards"></span>
                                 </label>
@@ -152,7 +149,7 @@
             </div>
         </footer>
         <!-- FOOTER-->
-    </div>
+   
 </body>
 
 </html>

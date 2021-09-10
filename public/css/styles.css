@@ -258,7 +258,6 @@ i.fa-arrow-left {
   top: 10px;
   font-size: 22px;
   color: #666666;
-  /* à eclaircir*/
 }
 
 .header__logo {
@@ -388,7 +387,7 @@ input:checked ~ label .heart-filled {
   bottom: 0;
   visibility: hidden;
   background: #f3f3f3;
-  animation: appear 1s;
+  animation: appear 2.5s;
   z-index: 1000;
   display: flex;
   flex-direction: row;
@@ -657,10 +656,6 @@ body {
   max-width: 550px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.wrapp-page {
-  height: 100vh;
 }
 
 .wrapp__process {
