@@ -1,10 +1,11 @@
-.btn {
+a.btn, .btn {
   background: linear-gradient(171deg, $colour-secondary 10%, $colour-primary 90%);
   box-shadow: 0px 3px 6px 3px #d3d3d3;
   border-radius: 50px;
   border-style: none;
   font-size: 17px;
   line-height: 60px;
+  display: inline-block;
   text-align: center;
   margin: 20px auto 60px auto;
   color: #fff;
