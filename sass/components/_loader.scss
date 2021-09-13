@@ -29,8 +29,6 @@
 .spinner {
   width: 100px;
   height: 100px;
-  background: rgb(147, 86, 220);
-  /*can i use*/
   background: linear-gradient(171deg, $colour-secondary 10%, $colour-primary 90%);
   animation: spin 0.6s infinite linear;
   border-radius: 50%;

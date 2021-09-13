@@ -54,7 +54,7 @@
     width: 100%;
   }
 
-  /* partie responsive carte de restaurants */
+  /* responsive part menu cards */
   .grid__card {
     display: grid;
     justify-content: space-evenly;
@@ -134,7 +134,8 @@
     width: 100%;
     max-width: 1280px;
   }
-/* max-width to force grid on to 2 columns */
+
+  /* max-width to force grid on to 2 columns */
   .wrapp {
     max-width: 1280px;
   }

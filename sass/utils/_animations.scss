@@ -31,7 +31,7 @@
         display: inline-block;
         transition: 900ms;
     }
-    
+
     &__description {
         overflow: hidden;
         white-space: nowrap;
@@ -60,7 +60,7 @@
 
     80% {
         visibility: visible;
-        
+
         opacity: 1;
     }
 
@@ -78,32 +78,6 @@
 }
 
 // basket-checked
-
-@keyframes groove {
-    0% {
-        transform: scale(0.95);
-    }
-   
-    5% {
-        transform: scale(1.1);
-    }
-
-    39% {
-        transform: scale(0.85);
-    }
-
-    45% {
-        transform: scale(1);
-    }
-
-    60% {
-        transform: scale(0.95);
-    }
-
-    100% {
-        transform: scale(0.9);
-    }
-}
 
 input:checked+label .check {
     margin-right: 70px;
@@ -125,12 +99,8 @@ label.menu-cards:hover .menu-cards__price {
     margin-right: 70px;
 }
 
-input:hover+label .fa-check , input:checked+label .fa-check{
+input:hover+label .fa-check,
+input:checked+label .fa-check {
     transform: rotate(-1turn);
     transition: transform 0.7s ease-in-out;
 }
-/*
-input:checked+label .fa-check {
-    transform: scale(0.5) translate(-100%, -100%);
-    transition: transform 0.4s ease-in-out;
-}*/
