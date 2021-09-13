@@ -34,6 +34,7 @@ les animations ou transitions CSS, pas de JavaScript ni de librairie.
 5
 
 Boutons
+
 ● Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir.
 L’ombre portée devra également être plus visible.
 
