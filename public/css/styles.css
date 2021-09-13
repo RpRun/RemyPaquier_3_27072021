@@ -71,7 +71,7 @@ img {
   padding: 15px 10px;
   font-size: small;
   cursor: pointer;
-  animation: step 1s ease-in-out;
+  animation: step 0.09s ease-in-out;
   animation-fill-mode: forwards;
   visibility: hidden;
   position: relative;
@@ -577,6 +577,10 @@ a.btn__order, .btn__order {
   max-height: 60px;
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {

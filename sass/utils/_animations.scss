@@ -16,7 +16,7 @@
     padding: 15px 10px;
     font-size: small;
     cursor: pointer;
-    animation: step 1s ease-in-out;
+    animation: step 0.09s ease-in-out;
     animation-fill-mode: forwards;
     visibility: hidden;
     position: relative;
@@ -60,6 +60,7 @@
 
     80% {
         visibility: visible;
+        
         opacity: 1;
     }
 
