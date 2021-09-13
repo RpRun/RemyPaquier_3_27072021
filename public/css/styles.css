@@ -198,16 +198,16 @@ label.menu-cards:hover .menu-cards__price {
   margin-right: 70px;
 }
 
-input:hover + label .fa-check {
+input:hover + label .fa-check, input:checked + label .fa-check {
   transform: rotate(-1turn);
   transition: transform 0.7s ease-in-out;
 }
 
-input:checked + label .fa-check {
-  transform: scale(0.5) translate(-100%, -100%);
-  transition: transform 0.4s ease-in-out;
-}
-
+/*
+input:checked+label .fa-check {
+    transform: scale(0.5) translate(-100%, -100%);
+    transition: transform 0.4s ease-in-out;
+}*/
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -374,7 +374,6 @@ input:checked ~ label .heart-filled {
   padding: 4px;
   font-size: 17px;
   margin-right: 5px;
-  animation: groove 2s;
 }
 
 .loader {
@@ -387,7 +386,7 @@ input:checked ~ label .heart-filled {
   bottom: 0;
   visibility: hidden;
   background: #f3f3f3;
-  animation: appear 0.5s;
+  animation: appear 2.5s;
   z-index: 1000;
   display: flex;
   flex-direction: row;
